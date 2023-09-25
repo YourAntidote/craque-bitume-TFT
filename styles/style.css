@@ -103,7 +103,8 @@ body {
 
 footer{
   background-color: none;
-  border: 5px solid #e2c15f;
+  border: 5px solid #e7c762;
+  border-bottom: none;
   border-radius: 15px;
   bottom: 0px;
   position: absolute;
@@ -111,25 +112,35 @@ footer{
 }
 
 .section {
-  color: #ffff;
+  color: #f5edd8;
   font-weight: 100;
 }
 
-.sous-section {
+.adresse {
   color: #e2c15f;
+  text-decoration: none;
+}
+
+.adresse:hover {
+  color: #f5edd8;
+}
+
+.telephone{
+  color:#e2c15f;
 }
 
 .logo.footer{
-  width:150px;
+  width:100px;
 }
 
-.bi{
+.reseaux_footer{
   color: #e7c762;
   margin:5px;
+  text-decoration: none;
 }
 
-.bi:hover{
-  color: #ffffff;
+.reseaux_footer:hover{
+  color: #f5edd8;
 }
 
 .footer_sous_texte{
@@ -137,5 +148,28 @@ footer{
 }
 
 .footer_sous_texte:hover{
-  color: #ffffff;
+  color: #f5edd8;
+}
+
+.credit{
+  position: absolute;
+  color: #f5edd8 !important;
+  bottom:0;
+  right:5vw;
+}
+
+.logo.sponsor1{
+  display: flex;
+    align-content: space-between;
+    flex-direction: column;
+}
+
+.ligne-design{
+  background-color: #f5edd8;
+  width:80vw;
+  height:0.1vh;
+  margin:25px;
+  margin-left:auto;
+  margin-right: auto;
+
 }
