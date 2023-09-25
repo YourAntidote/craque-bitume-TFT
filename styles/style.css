@@ -250,11 +250,15 @@ footer{
   right:5vw;
 }
 
-.logo.sponsor1{
-  display: flex;
-    align-content: space-between;
-    flex-direction: column;
+.sponsor-colonne{
+width:100%;
+display: flex;
+flex-wrap: wrap;
+align-content: space-between;
+margin:0;
+padding:0;
 }
+
 
 .ligne-design{
   background-color: #f5edd8;
@@ -263,8 +267,17 @@ footer{
   margin:25px;
   margin-left:auto;
   margin-right: auto;
-
 }
+
+.sponsor{
+  filter: blur(1px);
+}
+
+.sponsor:hover{
+  filter: blur(0px);
+}
+
+
 
 
 
