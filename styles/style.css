@@ -1,22 +1,105 @@
 /* ----------------- SECTION PAGE ACCUEIL ----------------------- */
 html{
   height: 100%;
+  min-width: 375px !important;
+  width: 100%;
+  position: relative;
 }
+
 body {
   background-color: #354E38;
   font-family: system-ui;
   font-size: 15px;
   height: 100%;
+  min-width: 375px;
+  position: relative;
+}
+
+.navbar{
+  border-bottom: 1px solid #e7c762;
+  background-color: #354E38;
+}
+.ignorez{
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 80px;
 }
 
 main{
   height: 100%;
+  position: relative;
+  width: 100%;
 }
 
 .logo {
   max-width: 80px;
 }
 
+
+.navbar-toggler {
+  background-color: #e7c762;
+}
+/*
+.ligne-deco{
+  width: 100% !important ; 
+  margin-top: 10px !important;
+  margin-bottom: 0px !important;
+}
+*/
+#btn-don{
+  right: 0px;
+  position: relative;
+  padding: 5px 10px;
+}
+
+/* ----------------- SECTION HERO ----------------------- */
+
+.accueil {
+  position: relative;
+
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  height: 100vh;
+}
+
+
+.swiperBtn {
+  --swiper-theme-color: var(--bs-secondary);
+}
+
+
+.nature-swiper {
+  max-height: 300px;
+  position: relative;
+}
+
+.swiper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  opacity: 0.50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-screenshots{
+  overflow: visible;
+}
+.swiper-slide-visible {
+  opacity: 1;
+}
+.swiper-slide-active {
+  opacity: 1;
+}
+/*---------------------------------------------------------*/
 .grid {
   display: flex;
   justify-content: center;
