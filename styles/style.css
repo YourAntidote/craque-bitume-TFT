@@ -168,7 +168,7 @@ footer{
 }
 
 .sponsor-colonne{
-  width:100%;
+width:100%;
 display: flex;
 flex-wrap: wrap;
 align-content: space-between;
@@ -184,8 +184,17 @@ padding:0;
   margin:25px;
   margin-left:auto;
   margin-right: auto;
-
 }
+
+.sponsor{
+  filter: blur(1px);
+}
+
+.sponsor:hover{
+  filter: blur(0px);
+}
+
+
 
 
 
