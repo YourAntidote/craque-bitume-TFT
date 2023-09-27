@@ -55,50 +55,43 @@ main{
 }
 
 /* ----------------- SECTION HERO ----------------------- */
-
-.accueil {
-  position: relative;
-
-  width: 100%;
+#hero {
   padding: 0px;
   margin: 0px;
+  width: 100%;
   height: 100vh;
-}
-
-
-.swiperBtn {
-  --swiper-theme-color: var(--bs-secondary);
-}
-
-
-.nature-swiper {
-  max-height: 300px;
   position: relative;
+  background-color: #354E38;
 }
 
-.swiper {
+.collectif{
+  background: #e7c762;
+  border-radius: 10px;
+  
+}
+
+.swiper-container {
+  width: 100%;
   position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 5px solid #e7c762;
+}
+
+.swiper-slide img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+}
+.swiper-button-next, .swiper-button-prev {
+  color: #8D3126;
+
+}
+.swiper-pagination-bullet {
+  scale: 2;
 }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  opacity: 0.50;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.swiper-screenshots{
-  overflow: visible;
-}
-.swiper-slide-visible {
-  opacity: 1;
-}
-.swiper-slide-active {
-  opacity: 1;
-}
+
 /*---------------------------------------------------------*/
 .grid {
   display: flex;

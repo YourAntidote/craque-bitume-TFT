@@ -1,31 +1,28 @@
 /* ----------------- SECTION NAV -------------------------------- */
 
-
 /* ----------------- SECTION PAGE ACCUEIL ----------------------- */
 
-const swiper = new Swiper(".swiper-screenshots", {
-  direction: "horizontal",
-  loop: true,
-  centeredSlides: true,
-  
+document.addEventListener("DOMContentLoaded", function () {
+  const swiper = new Swiper(".swiper-container", {
+    direction: "horizontal",
+    loop: true,
+    centeredSlides: true,
 
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  grabCursor: true,
-  slidesPerView: 1,
-  spaceBetween: 25,
-  watchSlidesVisibility: true,
-  
-  breakpoints: {
-    1200: {
-      slidesPerView: 3,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
     },
-  },
 
-  
-
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    grabCursor: true,
+    slidesPerView: 1,
+    spaceBetween: 25,
+    watchSlidesVisibility: true,
+    
+  });
 });
 
 /* ----------------- SECTION PAGE NOUVELLE ---------------------- */
@@ -39,7 +36,4 @@ const swiper = new Swiper(".swiper-screenshots", {
 /* ----------------- SECTION PAGE PROPOS ------------------------ */
 
 /* ----------------- SECTION PAGE 404 --------------------------- */
-let btn_return = document.getElementById("return-btn");
-btn_return.addEventListener("click", function () {
-  window.location.href = "index.html";
-});
+
