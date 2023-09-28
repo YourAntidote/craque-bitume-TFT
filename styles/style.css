@@ -16,6 +16,7 @@ html{
   min-width: 375px !important;
   width: 100%;
   position: relative;
+  background-color: #354E38;
 }
 
 body {
@@ -350,6 +351,10 @@ padding:0;
   display: flex;
   justify-content: center;
   align-items: start;
+  background-image: url("/sources/medias/erreur_404/montagne_vide_erreur.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
 
 }
 
@@ -366,12 +371,14 @@ padding:0;
 }
 .erreur-titre{
   display: flex;
-  color: #fff;
+  color: #e7c762;
   font-weight: bolder;
   text-transform: uppercase;
 }
 .erreur-description{
   display: flex;
-  color: #fff;
+  color: #f5edd8;
   font-size: 1rem;
+  text-align: center;
 }
+
