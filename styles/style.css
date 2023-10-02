@@ -68,6 +68,14 @@ main{
   position: relative;
   padding: 5px 10px;
 }
+.navbar-dark .navbar-nav .nav-link {
+  color: #F5EDD8;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #E7C762;
+  text-decoration: underline;
+}
+  
 
 /* ----------------- SECTION HERO ----------------------- */
 #hero {
