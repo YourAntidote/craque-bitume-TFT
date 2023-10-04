@@ -406,6 +406,7 @@ padding:0;
 
 .banner__text{
 color:#ffffff;
+flex-grow: 1;
 }
 
 .banner__close {
