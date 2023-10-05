@@ -161,8 +161,55 @@ main{
 
 
 /* ----------------- SECTION PAGE NOUVELLE ---------------------- */
+.nouvelles__container{
+  background-color: #354E38;
+  font-family: 'rubik';
+
+}
+
+.nouvelles__titre{
+  color: #f5edd8;
+  font-family: 'rubik';
+  font-weight: bold;
+
+  padding-left: 20px;
+
+}
+
+.nouvelles__cards{
+ background-color: #f5edd8;
+ color-scheme: #354E38;
+ font-family: 'rubik';
+
+
+ padding-left: 20px;
+}
+
+.nouvelles__cards:hover{
+  background-color: #e5d01b;
+ }
+
+
+.cards__title{
+  font-weight: bolder;
+ }
+
+ .nouvelles__plus{
+  color: #e5d01b;
+  
+ }
 
 /* ----------------- SECTION PAGE SERVICE ----------------------- */
+.services__container{
+  background-color: #354E38;
+  color:#f5edd8;
+  font-family: 'rubik';
+
+}
+
+.services__logo{
+  color:#e5d01b;
+}
 
  
 
@@ -174,11 +221,14 @@ main{
 
 .propos__section{
   background-color: #354E38;
+  border: 2px dotted #8D3126;
+  
 }
 
 .propos__title{
   color: #f5edd8;
   font-family: 'rubik';
+  font-weight: bold;
 }
 
 .propos__text{
