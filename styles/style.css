@@ -172,6 +172,20 @@ main{
 
 /* ----------------- SECTION PAGE PROPOS ------------------------ */
 
+.propos__section{
+  background-color: #354E38;
+}
+
+.propos__title{
+  color: #f5edd8;
+  font-family: 'rubik';
+}
+
+.propos__text{
+  color: #f5edd8;
+  font-family: 'rubik';
+}
+
 /* ----------------- SECTION BANNER X ------------------------ */
 .banner{
   background-color: #121a12;
