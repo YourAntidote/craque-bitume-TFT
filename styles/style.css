@@ -216,6 +216,26 @@ main{
 /* ----------------- SECTION PAGE EQUIPE ------------------------ */
 
 /* ----------------- SECTION PAGE HISTOIRE ---------------------- */
+.histoire__container{
+  background-color: #354E38;
+  
+  font-family: 'rubik';
+
+}
+
+.histoire__titre{
+  color: #f5edd8;
+  font-family: 'rubik';
+  font-weight: bolder;
+
+}
+
+.histoire__texte {
+  color: #f5edd8;
+  font-family: 'rubik';
+  
+
+}
 
 /* ----------------- SECTION PAGE PROPOS ------------------------ */
 
