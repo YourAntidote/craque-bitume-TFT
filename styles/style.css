@@ -274,7 +274,7 @@ main{
   z-index: 2;
   position: fixed;
   width: 100%;
-  z-index: 9999;
+  z-index: 1029;
 }
 
 .banner__content{
