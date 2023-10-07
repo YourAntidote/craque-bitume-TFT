@@ -28,22 +28,23 @@ body {
   position: relative;
 }
 
-.navbar{
-  border-bottom: 1px solid #e7c762;
-  background-color: #354E38;
+main{
+  height: 100%;
+  position: relative;
+  width: 100%;
 }
+
 .ignorez{
   position: relative;
   top: 0px;
   left: 0px;
   width: 100%;
-  height: 80px;
+  height: 86.64px;
 }
 
-main{
-  height: 100%;
-  position: relative;
-  width: 100%;
+.navbar{
+  border-bottom: 1px solid #e7c762;
+  background-color: #354E38;
 }
 
 .logo {
@@ -56,17 +57,28 @@ main{
   background-color: #e7c762 !important;
 
 }
-/*
-.ligne-deco{
-  width: 100% !important ; 
-  margin-top: 10px !important;
-  margin-bottom: 0px !important;
-}
-*/
+
 #btn-don{
   right: 0px;
   position: relative;
   padding: 5px 10px;
+  border: none;
+  background-color: #E7C762;
+  color: #fff;
+  font-size: 16px;
+}
+
+#btn-don:hover{
+  border: 2px solid #E7C762;
+  background-color: #354E38;
+}
+.navbar-nav{
+  text-align: end;
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+    width: 100%;
+  }
 }
 .navbar-dark .navbar-nav .nav-link {
   color: #F5EDD8;
@@ -258,29 +270,36 @@ main{
 
 /* ----------------- SECTION BANNER X ------------------------ */
 .banner{
-  background-color: #121a12;
-  
+  background-color: #8D3126;
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
 }
 
 .banner__content{
   padding: 10px;
-  max-width: 500px;
   margin: 0 auto;
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .banner__text{
-color:#ffffff;
-flex-grow: 1;
+  color:#f5edd8;
+  flex-grow: 1;
+  text-align: center;
 }
 
 .banner__close {
   background: none;
   border: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .banner__close .material-icons {
- color:#ffffff;
+ color:#E7C762;
+ font-weight: 900;
 }
