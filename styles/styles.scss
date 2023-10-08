@@ -11,6 +11,7 @@ $background-color_4: #f5edd8;
 
 /*---------------------------PAGE ERREUR 404---------------------- */
 .contenu {
+	position:absolute;
 	width: 100%;
 	height: 100%;
 	display: flex;
@@ -19,6 +20,28 @@ $background-color_4: #f5edd8;
 	background-image: url("/sources/medias/erreur_404/montagne_vide_erreur.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+
+	.fleche{
+		width:350px;
+	
+		&.jaune{
+			position:absolute;
+			left:-50px;
+			top:0px;	
+		}
+
+		&.vert{
+			position:absolute;
+			left:-40px;
+			top:0px;	
+		}
+
+		&.rouge{
+			position:absolute;
+			left:-60px;
+			top:0px;	
+		}
+	}
 }
 .message-erreur {
 	position: absolute;

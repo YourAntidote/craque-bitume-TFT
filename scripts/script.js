@@ -41,4 +41,3 @@ document.addEventListener("DOMContentLoaded", function () {
 /* ----------------- SECTION PAGE PROPOS ------------------------ */
 
 /* ----------------- SECTION PAGE 404 --------------------------- */
-
