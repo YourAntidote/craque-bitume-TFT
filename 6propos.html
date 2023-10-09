@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Craque-Bitume</title>
-  <link href="./styles/variables.scss" rel="stylesheet">
+  <link href="./css/styles.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="./styles/style.css" type="text/css">
@@ -49,16 +49,74 @@
       </div>
     </nav>
     <div class="contenu">
-    <div class="message-erreur">
-      <h1 class="erreur-titre">Page À propros</h1>
-      <br>
-      <p class="erreur-description">Désolé, il semblerait que cette page n'est pas encore de contenu.</p>
-      <button type="button" id="return-btn">Retour à la page d'accueil</button>
+      <div class="message-erreur">
+        <h1 class="erreur-titre">Page À propros</h1>
+        <br>
+        <p class="erreur-description">Désolé, il semblerait que cette page n'est pas encore de contenu.</p>
+        <button type="button" id="return-btn">Retour à la page d'accueil</button>
+      </div>
+
+      <div class="accordion accordion_faq m-5" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              <strong>Comment puis-je m'inscrire à une formation?</strong>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Notre nouveau site web est conçu pour y recevoir vos inscriptions!<br> Vous n'avez qu'à sélectionner la
+              formation qui vous intéresse, puis cliquer sur « Ajouter au panier ». Vous pourrez ensuite procéder
+              au paiement directement dans votre panier. Une fois le paiement effectué, votre place sera réservée
+              pour la formation! Vous recevrez un courriel de confirmation vous communiquant les informations
+              importantes dans les quelques jours qui précèdent la formation. Si vous ne l'avez pas reçu, pensez à
+              vérifier vos indésirables. <br> <br>
+              En cas de problème avec votre inscription, contactez-nous directement par téléphone ou via
+              l'adresse courriel formation@craquebitume.org.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <strong>Comment puis-je accéder au rabais de 5$?</strong>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Ce rabais est offert aux membres de Craque-Bitume. Vous pouvez vous procurer votre adhésion
+              membre sur notre site web, dans la section magasin général. Une fois connecté à l'espace membre,
+              le 5$ de rabais s'appliquera automatiquement lors de vos prochains achats! Ce rabais sur nos
+              formations est notre manière de vous remercier de soutenir notre organisme.
+
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <strong>Comment dois-je m'y prendre pour accéder au prix réduit d'une série de formations?</strong>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Nous pouvons offrir des prix réduits grâce à notre partenaire financier, le Centre de formation pour
+              adultes Louis-Jolliet qui reconnait certaines de nos formations comme une démarche
+              d'apprentissage citoyenne. Pour y avoir accès, vous devez vous inscrire comme étudiant·e du Louis-
+              Jolliet et vous engager à certaines obligations supplémentaires. Pour en connaître d'avantage,
+              consultez la section de notre site web dédiée à cet effet en cliquant sur « en savoir plus » sur la page
+              de la série de formation en question.
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-    
-    
-</main>
+
+  </main>
+
 
   <!-- FOOTER -->
 
@@ -74,30 +132,42 @@
     <div class="col mb-2">
       <h5 class="section">Nouvelles</h5>
       <ul class="nav flex-column">
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">Actualités</p></a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary sous-section">
+            <p class="footer_sous_texte">Actualités</p>
+          </a></li>
       </ul>
     </div>
 
     <div class="col mb-2">
       <h5 class="section">Services</h5>
       <ul class="nav flex-column">
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">Jardin</p></a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">Composte</p></a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary sous-section">
+            <p class="footer_sous_texte">Jardin</p>
+          </a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary sous-section">
+            <p class="footer_sous_texte">Composte</p>
+          </a></li>
       </ul>
     </div>
 
     <div class="col mb-2">
       <h5 class="section">Équipes</h5>
       <ul class="nav flex-column">
-        <li class="nav-ite mb-2"><a href="#" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">Notre équipe</p></a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">Joindre l'équipe</p></a></li>
+        <li class="nav-ite mb-2"><a href="#" class="nav-link p-0 text-body-secondary sous-section">
+            <p class="footer_sous_texte">Notre équipe</p>
+          </a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary sous-section">
+            <p class="footer_sous_texte">Joindre l'équipe</p>
+          </a></li>
       </ul>
     </div>
 
     <div class="col mb-2">
       <h5 class="section">Histoire</h5>
       <ul class="nav flex-column">
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">Notre histoire</p></a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary sous-section">
+            <p class="footer_sous_texte">Notre histoire</p>
+          </a></li>
       </ul>
     </div>
 
@@ -106,51 +176,51 @@
         <img class="logo footer" src="./sources/logo.png" alt="Logo">
       </a>
     </div>
-  <div class="row">
-    <div class="col mb-2">
-      <p class="sous-section">Carrefour Cardijn</p>
-      <p class="sous-section">435 rue Du Roi</p>
-      <p class="sous-section">+418 523-4580</p>
-    </div>
+    <div class="row">
+      <div class="col mb-2">
+        <p class="sous-section">Carrefour Cardijn</p>
+        <p class="sous-section">435 rue Du Roi</p>
+        <p class="sous-section">+418 523-4580</p>
+      </div>
 
-    <div class="col mb-2">
-      <h5 class="section"> LIENS RÉSEAUX</h5>
-      <a href="/" class="">
-        <i class="bi bi-instagram"></i>
-      </a>
-      <a href="/" class="">
-        <i class="bi bi-twitter"></i>
-      </a>
-      <a href="/" class="">
-        <i class="bi bi-facebook"></i>
-      </a>
-      <a href="/" class="">
-        <i class="bi bi-linkedin"></i>
-      </a>
-    </div>
+      <div class="col mb-2">
+        <h5 class="section"> LIENS RÉSEAUX</h5>
+        <a href="/" class="">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="/" class="">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="/" class="">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="/" class="">
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
 
-    <div class="col mb-2">
-      <button type="button" class="btn btn-outline-warning btn-lg">Don</button>
-      </ul>
-    </div>
+      <div class="col mb-2">
+        <button type="button" class="btn btn-outline-warning btn-lg">Don</button>
+        </ul>
+      </div>
 
 
-    <div class="col mb-2">
-    </div>
+      <div class="col mb-2">
+      </div>
 
-    <div class="col mb-2">
-    </div>
+      <div class="col mb-2">
+      </div>
 
-    <div class="col mb-2">
-      <p class="text-body-secondary sous-section">&copy; 2023, Craque-Bitume, TFT</p>
-    </div>
+      <div class="col mb-2">
+        <p class="text-body-secondary sous-section">&copy; 2023, Craque-Bitume, TFT</p>
+      </div>
 
-</footer>
+  </footer>
 
   <script src="./scripts/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-  crossorigin="anonymous"></script>
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
