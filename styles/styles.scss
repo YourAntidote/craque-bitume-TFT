@@ -11,7 +11,7 @@ $background-color_4: #f5edd8;
 /* ----------------- SECTION PAGE PROPOS ------------------------ */
 
 .propos {
-	position: relative;
+  position: absolute;
   &__section {
     background-color: #354e38;
     border: 2px dotted #8d3126;
@@ -29,16 +29,21 @@ $background-color_4: #f5edd8;
   }
 }
 
-div.accordion-item{
-	color:$color_1;
-	background-color: $background-color_3;
+div.accordion-item {
+  color: $color_1;
+  background-color: $background-color_3;
 }
 
-.accordion-button{
-	color:#8d3126;
-	background-color: $color_3;
-}
+.accordion {
+  position: absolute;
+  top:100px;
 
+  &-button {
+    color: #8d3126 !important;
+    background-color: $color_3 !important;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgb(141 49 38 / 42%);
+  }
+}
 /*---------------------------PAGE ERREUR 404---------------------- */
 .contenu {
   position: absolute;
@@ -47,7 +52,7 @@ div.accordion-item{
   display: flex;
   justify-content: center;
   align-items: start;
-  
+
   background-repeat: no-repeat;
   background-size: cover;
 

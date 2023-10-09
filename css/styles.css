@@ -1,6 +1,6 @@
 /* ----------------- SECTION PAGE PROPOS ------------------------ */
 .propos {
-  position: relative;
+  position: absolute;
 }
 .propos__section {
   background-color: #354e38;
@@ -21,9 +21,14 @@ div.accordion-item {
   background-color: #354e38;
 }
 
+.accordion {
+  position: absolute;
+  top: 100px;
+}
 .accordion-button {
-  color: #8d3126;
-  background-color: #e7c762;
+  color: #8d3126 !important;
+  background-color: #e7c762 !important;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgb(141 49 38 / 42%);
 }
 
 /*---------------------------PAGE ERREUR 404---------------------- */
