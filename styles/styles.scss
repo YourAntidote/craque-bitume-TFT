@@ -18,6 +18,9 @@ $background-color_4: #f5edd8;
   }
 
   &__title {
+    display: block;
+    position: absolute;
+    top:150px;
     color: #f5edd8;
     font-family: "rubik";
     font-weight: bold;
@@ -36,7 +39,7 @@ div.accordion-item {
 
 .accordion {
   position: absolute;
-  top:100px;
+  top:200px;
 
   &-button {
     color: #8d3126 !important;

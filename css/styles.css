@@ -7,6 +7,9 @@
   border: 2px dotted #8d3126;
 }
 .propos__title {
+  display: block;
+  position: absolute;
+  top: 150px;
   color: #f5edd8;
   font-family: "rubik";
   font-weight: bold;
@@ -23,7 +26,7 @@ div.accordion-item {
 
 .accordion {
   position: absolute;
-  top: 100px;
+  top: 200px;
 }
 .accordion-button {
   color: #8d3126 !important;
