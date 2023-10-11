@@ -20,7 +20,7 @@ $background-color_4: #f5edd8;
   &__title {
     display: block;
     position: absolute;
-    top:150px;
+    top: 150px;
     color: #f5edd8;
     font-family: "rubik";
     font-weight: bold;
@@ -39,7 +39,7 @@ div.accordion-item {
 
 .accordion {
   position: absolute;
-  top:200px;
+  top: 200px;
 
   &-button {
     color: #8d3126 !important;
@@ -56,8 +56,11 @@ div.accordion-item {
   justify-content: center;
   align-items: start;
 
-  background-repeat: no-repeat;
-  background-size: cover;
+  &.body {
+    background-image: url("../sources/medias/erreur_404/montagne_vide_erreur.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
   .fleche {
     width: 350px;
