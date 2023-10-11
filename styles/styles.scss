@@ -1,13 +1,302 @@
 @use "variables";
 
+$color_00: #000;
+$color_0: #fff;
 $color_1: #f5edd8;
 $color_2: #e2c15f;
-$color_3: #e7c762;
+$color_3: #E7C762;
+$color_5: #8D3126;
 $background-color_1: #ffffff;
 $background-color_2: #8d3126;
 $background-color_3: #354e38;
 $background-color_4: #f5edd8;
 
+$font-family_1: system-ui;
+$font-family_2: 'pacifico';
+$font-family_3: 'rubik';
+$color_2: #F5EDD8;
+$color_8: #e5d01b;
+
+$background-color_1: #354E38;
+$background-color_2: #e7c762;
+$background-color_3: #E7C762;
+$background-color_4: #8D3126;
+$background-color_5: rgba(255, 255, 255, 0);
+$background-color_6: #f5edd8;
+$background-color_7: #e5d01b;
+
+/*--------------------------- FONT -------------------------------*/
+@font-face {
+	font-family: "pacifico";
+	src: url("https://use.typekit.net/af/5f850c/00000000000000003b9b136f/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/5f850c/00000000000000003b9b136f/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/5f850c/00000000000000003b9b136f/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+	font-display: auto;
+	font-style: normal;
+	font-weight: 400;
+	font-stretch: normal;
+}
+@font-face {
+	font-family: "rubik";
+	src: url("https://use.typekit.net/af/8e7336/0000000000000000774ed06c/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/8e7336/0000000000000000774ed06c/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/8e7336/0000000000000000774ed06c/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+	font-display: auto;
+	font-style: normal;
+	font-weight: 400;
+	font-stretch: normal;
+}
+
+
+
+
+
+html {
+	height: 2500px;
+	min-width: 375px !important;
+	width: 100%;
+	position: relative;
+	background-color: $background-color_1;
+}
+body {
+	background-color: $background-color_1;
+	font-family: $font-family_1;
+	font-size: 15px;
+	height: 100%;
+	min-width: 375px;
+	position: relative;
+}
+main {
+	height: 100%;
+	position: relative;
+	width: 100%;
+}
+/* ----------------- SECTION PAGE ACCUEIL ----------------------- */
+
+.ignorez {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 88px;
+}
+.navbar {
+	border-bottom: 1px solid #e7c762;
+	background-color: $background-color_1;
+}
+.logo {
+	max-width: 80px;
+}
+.container-fluid {
+	padding: 12px !important;
+}
+.navbar-toggler {
+	background-color: $background-color_2 !important;
+}
+#btn-don {
+	right: 0px;
+	position: relative;
+	padding: 5px 10px;
+	border: none;
+	background-color: $background-color_3;
+	color: $color_1;
+	font-size: 16px;
+	&:hover {
+		border: 2px solid #E7C762;
+		background-color: $background-color_1;
+	}
+}
+.navbar-nav {
+	text-align: end;
+}
+.navbar-dark {
+	.navbar-nav {
+		.nav-link {
+			color: $color_2;
+			&:hover {
+				color: $color_3;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+/* ----------------- SECTION BANNER X ------------------------ */
+.banner {
+	background-color: $background-color_4;
+	z-index: 2;
+	position: fixed;
+	width: 100%;
+	z-index: 1029;
+}
+.banner__content {
+	padding: 10px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+.banner__text {
+	color: $color_4;
+	flex-grow: 1;
+	text-align: center;
+}
+.banner__close {
+	background: none;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	.material-icons {
+		color: $color_3;
+		font-weight: 900;
+	}
+}
+
+/* ----------------- SECTION HERO ----------------------- */
+
+
+#hero {
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	background-color: $background-color_1;
+}
+.collectif {
+	background: #e7c762;
+	border-radius: 10px;
+}
+.swiper-container {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+	border: 5px solid #e7c762;
+}
+.swiper-slide {
+	img {
+		width: 100%;
+		height: 100%;
+		aspect-ratio: 5/4;
+		object-fit: cover;
+	}
+}
+.swiper-button-next {
+	&::after {
+		font-size: 50px;
+		font-weight: bold;
+	}
+	color: $color_5;
+}
+.swiper-button-prev {
+	&::after {
+		font-size: 50px;
+		font-weight: bold;
+	}
+	color: $color_5;
+}
+.swiper-pagination-bullet {
+	scale: 2;
+	background-color: $background-color_4;
+}
+.hero-titre-2 {
+	font-family: $font-family_2;
+	color: $color_6;
+	font-size: calc(20px + 5vh);
+	padding: 0px;
+	margin: 0px;
+}
+.hero-titre-1 {
+	font-family: $font-family_3;
+	color: $color_4;
+	font-size: calc(15px + 3vh);
+	font-weight: bold;
+	padding: 0px;
+	margin: 0px;
+}
+.hero-titre-3 {
+	font-family: $font-family_3;
+	color: $color_4;
+	font-size: calc(15px + 3vh);
+	font-weight: bold;
+	padding: 0px;
+	margin: 0px;
+}
+.hero-titre-4 {
+	font-family: $font-family_3;
+	color: $color_4;
+	font-weight: normal;
+	font-size: calc(5px + 1vh);
+}
+.hero-btn {
+	background-color: $background-color_5;
+	border: 2px solid #e7c762;
+	box-shadow: 5px 5px 10px 2px #000;
+	font-family: $font-family_3;
+	color: $color_4;
+	max-width: 230px;
+	&:hover {
+		background-color: $background-color_2;
+		color: $color_7;
+	}
+}
+
+/* ----------------- SECTION PAGE NOUVELLE ---------------------- */
+
+.nouvelles__container {
+	background-color: $background-color_1;
+	font-family: $font-family_3;
+}
+.nouvelles__titre {
+	color: $color_4;
+	font-family: $font-family_3;
+	font-weight: bold;
+	padding-left: 20px;
+}
+.nouvelles__cards {
+	background-color: $background-color_6;
+	color-scheme: #354E38;
+	font-family: $font-family_3;
+	padding-left: 20px;
+	&:hover {
+		background-color: $background-color_7;
+	}
+}
+.cards__title {
+	font-weight: bolder;
+}
+.nouvelles__plus {
+	color: $color_8;
+}
+/* ----------------- SECTION PAGE SERVICE ----------------------- */
+.services__container {
+	background-color: $background-color_1;
+	color: $color_4;
+	font-family: $font-family_3;
+}
+.services__logo {
+	color: $color_8;
+}
+
+/* ----------------- SECTION PAGE HISTOIRE ---------------------- */
+.histoire__container {
+	background-color: $background-color_1;
+	font-family: $font-family_3;
+}
+.histoire__titre {
+	color: $color_4;
+	font-family: $font-family_3;
+	font-weight: bolder;
+}
+.histoire__texte {
+	color: $color_4;
+	font-family: $font-family_3;
+}
+@media (min-width: 992px) {
+	.navbar-expand-lg {
+		.navbar-nav {
+			width: 100%;
+		}
+	}
+}
+/* ----------------- SECTION PAGE EQUIPE ------------------------ */
 /* ----------------- SECTION PAGE PROPOS ------------------------ */
 
 .propos {
