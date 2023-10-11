@@ -437,7 +437,7 @@ footer {
   }
 }
 .telephone {
-  color: variables.$light;;
+  color: variables.$light;
 }
 .logo.footer {
   width: 100px;
@@ -451,14 +451,14 @@ footer {
   }
 }
 .footer_sous_texte {
-  color: $color_3;
+  color: variables.$light;
   &:hover {
-    color: $color_1;
+    color: "dark";
   }
 }
 .credit {
   position: absolute;
-  color: $color_1 !important;
+  color: variables.$light !important;
   bottom: 0;
   right: 5vw;
 }
@@ -471,7 +471,7 @@ footer {
   padding: 0;
 }
 .ligne-design {
-  background-color: $background-color_4;
+  background-color: variables.$light;
   width: 80vw;
   height: 0.1vh;
   margin: 25px;
@@ -493,7 +493,7 @@ footer {
     order: 0;
   }
   .date-block {
-    background-color: $background-color_2;
+    background-color: variables.$light;
     width: 300px;
     height: fit-content;
     font-size: 30px;
