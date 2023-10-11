@@ -416,7 +416,6 @@ div.accordion-item {
   object-fit: cover;
 }
 footer {
-  background-color: variable.$dark;
   border: 5px solid #e7c762;
   border-bottom: none;
   border-radius: 15px;
@@ -424,6 +423,7 @@ footer {
   position: relative;
   width: 100%;
   height: auto;
+  background-color: variables.$dark;
 }
 .section {
   color: $color_1;
