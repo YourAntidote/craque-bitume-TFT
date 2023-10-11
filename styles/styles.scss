@@ -1,30 +1,5 @@
 @use "variables";
 
-$color_00: #000;
-$color_0: #fff;
-$color_1: #f5edd8;
-$color_2: #e2c15f;
-$color_3: #E7C762;
-$color_5: #8D3126;
-$background-color_1: #ffffff;
-$background-color_2: #8d3126;
-$background-color_3: #354e38;
-$background-color_4: #f5edd8;
-
-$font-family_1: system-ui;
-$font-family_2: 'pacifico';
-$font-family_3: 'rubik';
-$color_2: #F5EDD8;
-$color_8: #e5d01b;
-
-$background-color_1: #354E38;
-$background-color_2: #e7c762;
-$background-color_3: #E7C762;
-$background-color_4: #8D3126;
-$background-color_5: rgba(255, 255, 255, 0);
-$background-color_6: #f5edd8;
-$background-color_7: #e5d01b;
-
 /*--------------------------- FONT -------------------------------*/
 @font-face {
 	font-family: "pacifico";
@@ -42,9 +17,6 @@ $background-color_7: #e5d01b;
 	font-weight: 400;
 	font-stretch: normal;
 }
-
-
-
 
 
 html {
@@ -444,7 +416,7 @@ div.accordion-item {
   object-fit: cover;
 }
 footer {
-  background-color: $background-color_3;
+  background-color: variable.$dark;
   border: 5px solid #e7c762;
   border-bottom: none;
   border-radius: 15px;
