@@ -20,12 +20,12 @@ html {
   min-width: 375px !important;
   width: 100%;
   position: relative;
-  background-color: #354E38;
+  background-color: #354e38;
 }
 
 body {
-  background-color: #354E38;
-  font-family: system-ui;
+  background-color: #354e38;
+  font-family: #000;
   font-size: 15px;
   height: 100%;
   min-width: 375px;
@@ -36,6 +36,12 @@ main {
   height: 100%;
   position: relative;
   width: 100%;
+}
+
+h5 {
+  color: #F5EDD8;
+  font-size: 30px;
+  text-align: center;
 }
 
 /* ----------------- SECTION PAGE ACCUEIL ----------------------- */
@@ -49,7 +55,7 @@ main {
 
 .navbar {
   border-bottom: 1px solid #e7c762;
-  background-color: #354E38;
+  background-color: #354e38;
 }
 
 .logo {
@@ -61,7 +67,7 @@ main {
 }
 
 .navbar-toggler {
-  background-color: #e7c762 !important;
+  background-color: #E7C762 !important;
 }
 
 #btn-don {
@@ -70,12 +76,12 @@ main {
   padding: 5px 10px;
   border: none;
   background-color: #E7C762;
-  color: #fff;
+  color: white;
   font-size: 16px;
 }
 #btn-don:hover {
   border: 2px solid #E7C762;
-  background-color: #354E38;
+  background-color: #354e38;
 }
 
 .navbar-nav {
@@ -108,7 +114,7 @@ main {
 }
 
 .banner__text {
-  color: #f5edd8;
+  color: #F5EDD8;
   flex-grow: 1;
   text-align: center;
 }
@@ -132,11 +138,11 @@ main {
   width: 100%;
   height: 100vh;
   position: relative;
-  background-color: #354E38;
+  background-color: #354e38;
 }
 
 .collectif {
-  background: #e7c762;
+  background: #E7C762;
   border-radius: 10px;
 }
 
@@ -145,7 +151,7 @@ main {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  border: 5px solid #e7c762;
+  box-shadow: 2px 2px 10px 1px #000;
 }
 
 .swiper-slide img {
@@ -179,7 +185,7 @@ main {
 
 .hero-titre-2 {
   font-family: "pacifico";
-  color: #e7c762;
+  color: #E7C762;
   font-size: calc(20px + 5vh);
   padding: 0px;
   margin: 0px;
@@ -187,7 +193,7 @@ main {
 
 .hero-titre-1 {
   font-family: "rubik";
-  color: #f5edd8;
+  color: #F5EDD8;
   font-size: calc(15px + 3vh);
   font-weight: bold;
   padding: 0px;
@@ -196,7 +202,7 @@ main {
 
 .hero-titre-3 {
   font-family: "rubik";
-  color: #f5edd8;
+  color: #F5EDD8;
   font-size: calc(15px + 3vh);
   font-weight: bold;
   padding: 0px;
@@ -205,80 +211,101 @@ main {
 
 .hero-titre-4 {
   font-family: "rubik";
-  color: #f5edd8;
+  color: #F5EDD8;
   font-weight: normal;
   font-size: calc(5px + 1vh);
 }
 
 .hero-btn {
-  background-color: rgba(255, 255, 255, 0);
-  border: 2px solid #e7c762;
+  background-color: #354e38;
+  border: 2px solid #E7C762;
   box-shadow: 5px 5px 10px 2px #000;
   font-family: "rubik";
-  color: #f5edd8;
+  color: #F5EDD8;
   max-width: 230px;
 }
 .hero-btn:hover {
-  background-color: #e7c762;
+  background-color: #E7C762;
   color: #000;
 }
 
 /* ----------------- SECTION PAGE NOUVELLE ---------------------- */
 .nouvelles__container {
-  background-color: #354E38;
+  background-color: #354e38;
   font-family: "rubik";
 }
 
 .nouvelles__titre {
-  color: #f5edd8;
+  color: #F5EDD8;
   font-family: "rubik";
   font-weight: bold;
   padding-left: 20px;
 }
 
 .nouvelles__cards {
-  background-color: #f5edd8;
-  color-scheme: #354E38;
+  background-color: #F5EDD8;
+  color-scheme: #354e38;
   font-family: "rubik";
   padding-left: 20px;
 }
 .nouvelles__cards:hover {
-  background-color: #e5d01b;
+  background-color: #E7C762;
 }
 
 .cards__title {
   font-weight: bolder;
 }
 
-.nouvelles__plus {
-  color: #e5d01b;
-}
-
 /* ----------------- SECTION PAGE SERVICE ----------------------- */
-.services__container {
-  background-color: #354E38;
-  color: #f5edd8;
-  font-family: "rubik";
+.section__services {
+  width: 100%;
+  background-color: #354e38;
 }
 
+.services {
+  text-align: center;
+  background: linear-gradient(to bottom, #8D3126 70px, transparent 0%);
+  border-radius: 50px 50px 0% 0%;
+}
+.services____container {
+  color: #000;
+  font-family: "rubik";
+  width: 90%;
+  width: 100%;
+  height: 100%;
+}
 .services__logo {
-  color: #e5d01b;
+  background-color: #E7C762;
+  width: 80px;
+  padding: 15px;
+  border-radius: 40%;
+}
+.services__titre {
+  color: #F5EDD8;
+  font-weight: bolder;
+  font-size: 40px;
+  transform: translateY(-75px);
+  text-align: center;
+}
+.services__container p {
+  text-align: center;
+  color: white;
 }
 
 /* ----------------- SECTION PAGE HISTOIRE ---------------------- */
 .histoire__container {
-  background-color: #354E38;
+  background-color: #354e38;
   font-family: "rubik";
 }
 
 .histoire__titre {
-  color: #f5edd8;
+  color: #F5EDD8;
   font-family: "rubik";
   font-weight: bolder;
 }
 
 .histoire__texte {
-  color: #f5edd8;
+  color: #F5EDD8;
   font-family: "rubik";
 }
 
@@ -290,28 +317,27 @@ main {
 /* ----------------- SECTION PAGE EQUIPE ------------------------ */
 /* ----------------- SECTION PAGE PROPOS ------------------------ */
 .propos {
-  position: absolute;
+  position: relative;
 }
 .propos__section {
   background-color: #354e38;
-  border: 2px dotted #8d3126;
 }
 .propos__title {
   display: block;
   position: relative;
   top: 150px;
-  color: #f5edd8;
+  color: #F5EDD8;
   font-family: "rubik";
   font-weight: bold;
 }
 .propos__text {
-  color: #f5edd8;
+  color: #F5EDD8;
   font-family: "rubik";
 }
 
 div.accordion-item {
-  color: #fff;
-  background-color: #E7C762;
+  color: white;
+  background-color: #F5EDD8;
 }
 
 .accordion {
@@ -319,8 +345,7 @@ div.accordion-item {
   top: 200px;
 }
 .accordion-button {
-  color: #8d3126 !important;
-  background-color: #E7C762 !important;
+  color: #8D3126 !important;
   --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgb(141 49 38 / 42%);
 }
 
@@ -332,6 +357,9 @@ div.accordion-item {
   display: flex;
   justify-content: center;
   align-items: start;
+}
+.contenu.body {
+  background-image: url("../sources/medias/erreur_404/montagne_vide_erreur.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -367,14 +395,14 @@ div.accordion-item {
 
 .erreur-titre {
   display: flex;
-  color: #F5EDD8;
+  color: white;
   font-weight: bolder;
   text-transform: uppercase;
 }
 
 .erreur-description {
   display: flex;
-  color: #fff;
+  color: #F5EDD8;
   font-size: 1rem;
   text-align: center;
 }
@@ -391,12 +419,12 @@ div.accordion-item {
   width: 300px;
   height: 300px;
   margin: 15px;
-  background-color: #354E38;
+  background-color: #354e38;
   order: 0;
 }
 
 .date-block {
-  background-color: #e7c762;
+  background-color: #354e38;
   width: 300px;
   height: 300px;
   font-size: 30px;
@@ -415,8 +443,8 @@ div.accordion-item {
 .credit-block {
   width: 300px;
   height: 300px;
-  background: #8d3126;
-  background: linear-gradient(0deg, #8d3126 0%, #e7c762 0%, #8d3126 72%);
+  background: #8D3126;
+  background: linear-gradient(0deg, #354e38 0%, #E7C762 0%, #8D3126 72%);
   margin: 15px;
   font-weight: bold;
   text-align: center;
@@ -434,18 +462,18 @@ div.accordion-item {
 }
 
 footer {
-  background-color: variable.$dark;
-  border: 5px solid #e7c762;
+  border: 5px solid #E7C762;
   border-bottom: none;
   border-radius: 15px;
   bottom: 0px;
   position: relative;
   width: 100%;
   height: auto;
+  background-color: #354e38;
 }
 
 .section {
-  color: #fff;
+  color: #F5EDD8;
   font-weight: 100;
 }
 
@@ -454,7 +482,7 @@ footer {
   text-decoration: none;
 }
 .adresse:hover {
-  color: #fff;
+  color: white;
 }
 
 .telephone {
@@ -471,19 +499,19 @@ footer {
   text-decoration: none;
 }
 .reseaux_footer:hover {
-  color: #fff;
+  color: white;
 }
 
 .footer_sous_texte {
   color: #E7C762;
 }
 .footer_sous_texte:hover {
-  color: #fff;
+  color: white;
 }
 
 .credit {
   position: absolute;
-  color: #fff !important;
+  color: white !important;
   bottom: 0;
   right: 5vw;
 }
@@ -518,11 +546,11 @@ footer {
     width: 300px;
     height: 300px;
     margin: 15px;
-    background-color: #354E38;
+    background-color: #354e38;
     order: 0;
   }
   .date-block {
-    background-color: #e7c762;
+    background-color: #F5EDD8;
     width: 300px;
     height: -moz-fit-content;
     height: fit-content;
@@ -537,7 +565,7 @@ footer {
     height: -moz-fit-content;
     height: fit-content;
     background: #8d3126;
-    background: linear-gradient(0deg, #8d3126 0%, #e7c762 0%, #8d3126 72%);
+    background: linear-gradient(0deg, #8D3126 0%, #E7C762 0%, #8D3126 72%);
     margin: 15px;
     font-weight: bold;
     text-align: center;
