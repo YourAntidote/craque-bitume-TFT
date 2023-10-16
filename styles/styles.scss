@@ -311,29 +311,28 @@ h5 {
 /* ----------------- SECTION PAGE PROPOS ------------------------ */
 
 .propos {
-  position: relative;
   &__section {
     background-color: variables.$foret;
   }
 
   &__title {
     display: block;
-    position: relative;
-    top: 150px;
+    position: absolute;
+  top: 200px;
     color: variables.$creme;
     font-family: "rubik";
     font-weight: bold;
   }
 
   &__text {
-    color: variables.$creme;
+    color: variables.$red;
     font-family: "rubik";
   }
 }
 
 div.accordion-item {
-  color: variables.$white;
-  background-color: variables.$creme;
+  color: variables.$creme;
+  background-color: variables.$foret;
 }
 
 .accordion {
@@ -343,7 +342,12 @@ div.accordion-item {
   &-button {
     color: variables.$red !important;
     --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgb(141 49 38 / 42%);
+    background-color: variables.$sable;
   }
+}
+
+.accordion-button:not(.collapsed){
+  background-color: variables.$sable;
 }
 /*---------------------------PAGE ERREUR 404---------------------- */
 .contenu {
@@ -353,12 +357,6 @@ div.accordion-item {
   display: flex;
   justify-content: center;
   align-items: start;
-
-  &.body {
-    background-image: url("../sources/medias/erreur_404/montagne_vide_erreur.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
 
   .fleche {
     width: 350px;
@@ -382,6 +380,14 @@ div.accordion-item {
     }
   }
 }
+
+.erreur.body{
+    background-image: url("../sources/medias/erreur_404/montagne_vide_erreur.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 .message-erreur {
   position: absolute;
   display: flex;
@@ -394,7 +400,7 @@ div.accordion-item {
 }
 .erreur-titre {
   display: flex;
-  color: variables.$white;
+  color: variables.$sable;
   font-weight: bolder;
   text-transform: uppercase;
 }
