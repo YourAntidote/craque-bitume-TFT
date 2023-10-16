@@ -163,7 +163,7 @@ h5 {
 }
 
 .swiper-button-next {
-  color: #8D3126;
+  color: #F5EDD8;
 }
 .swiper-button-next::after {
   font-size: 50px;
@@ -171,7 +171,7 @@ h5 {
 }
 
 .swiper-button-prev {
-  color: #8D3126;
+  color: #F5EDD8;
 }
 .swiper-button-prev::after {
   font-size: 50px;
@@ -180,7 +180,7 @@ h5 {
 
 .swiper-pagination-bullet {
   scale: 2;
-  background-color: #8D3126;
+  background-color: #F5EDD8;
 }
 
 .hero-titre-2 {
