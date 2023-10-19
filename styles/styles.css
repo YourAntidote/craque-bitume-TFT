@@ -19,6 +19,7 @@ html {
   height: 2500px;
   min-width: 375px !important;
   width: 100%;
+  height: 100%;
   position: relative;
   background-color: #354e38;
 }
