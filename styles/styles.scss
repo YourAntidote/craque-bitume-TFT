@@ -28,14 +28,13 @@ html {
 }
 body {
 	background-color: variables.$foret;
-	font-family: variables.$black;
+	font-family: "rubik";
 	font-size: 15px;
 	height: 100%;
 	min-width: 375px;
 	position: relative;
 }
 main {
-	height: 100%;
 	position: relative;
 	width: 100%;
 }
@@ -356,7 +355,7 @@ div.accordion-item {
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
 
   .fleche {
     width: 350px;
@@ -412,6 +411,11 @@ div.accordion-item {
 }
 
 /*-----------------------Footer----------------------------------*/
+
+.section__footer{
+  width: 100%;
+  position: relative;
+}
 .grid {
   display: flex;
   justify-content: center;
@@ -467,11 +471,50 @@ footer {
   width: 100%;
   height: auto;
   background-color: variables.$foret;
+
+    a{
+      text-decoration: none;
+
+      &:hover{
+        color: variables.$sable;
+      }
+    }
 }
 .section {
   color: variables.$creme;
   font-weight: 100;
+
 }
+
+
+.section__icon {
+  font-size: 20px;
+}
+
+.footer__btn{
+  position: relative;
+  border: 2px solid variables.$sable;
+  background-color: variables.$sable;
+  color: variables.$white;
+  font-size: 40px;
+  aspect-ratio: 16/1;
+  border-radius: 10px;
+  font-family: 'Times New Roman', Times, serif;
+
+  &:hover {
+    border: 2px solid variables.$sable;
+    background-color: variables.$foret;
+  }
+
+  i{
+    width: 100%;
+  }
+}
+
+.sociaux {
+  width: 100%;
+}
+
 .adresse {
   color: variables.$creme;
   text-decoration: none;
@@ -482,9 +525,7 @@ footer {
 .telephone {
   color: variables.$creme;
 }
-.logo.footer {
-  width: 100px;
-}
+
 .reseaux_footer {
   color: variables.$sable;
   margin: 5px;
@@ -493,6 +534,9 @@ footer {
     color: variables.$white;
   }
 }
+.footer__logo {
+  width: 100%;
+}
 .footer_sous_texte {
   color: variables.$sable;
   &:hover {
@@ -500,10 +544,9 @@ footer {
   }
 }
 .credit {
-  position: absolute;
+  position: relative;
   color: variables.$white !important;
-  bottom: 0;
-  right: 5vw;
+
 }
 .sponsor-colonne {
   width: 100%;
@@ -522,9 +565,11 @@ footer {
   margin-right: auto;
 }
 .sponsor {
-  filter: blur(1px);
+  filter: opacity(0.8);
+  transition: 200ms linear;
   &:hover {
-    filter: blur(0px);
+    transform: scale(2);
+    filter: opacity(1);
   }
 }
 @media only screen and (max-width: 650px) {
@@ -545,6 +590,7 @@ footer {
     margin: 15px;
     order: 1;
   }
+
   .credit-block {
     width: 300px;
     height: fit-content;
