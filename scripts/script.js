@@ -1,7 +1,7 @@
 /* ----------------- SECTION BANNER X -------------------------------- */
 const isbanner = document.querySelector(".banner");
 
-localStorage.setItem("isbanner");
+/*localStorage.setItem("isbanner");*/
 
 document.querySelector(".banner__close").addEventListener("click", function() {
   this.closest(".banner").style.display = "none";
