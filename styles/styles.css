@@ -305,7 +305,7 @@ h5 {
 }
 
 .histoire__texte {
-  color: #F5EDD8;
+  color: #ffffff;
   font-family: "rubik";
 }
 
@@ -315,20 +315,21 @@ h5 {
   }
 }
 /* ----------------- SECTION PAGE EQUIPE ------------------------ */
+
+
 /* ----------------- SECTION PAGE PROPOS ------------------------ */
 .propos__section {
   background-color: #354e38;
 }
 .propos__title {
   display: block;
-  position: absolute;
-  top: 200px;
+  
   color: #F5EDD8;
   font-family: "rubik";
   font-weight: bold;
 }
 .propos__text {
-  color: #8D3126;
+  color: #ffffff; /*why would you make it red, it not readable in red--> if we need a special color then let choose a different one*/
   font-family: "rubik";
 }
 
