@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*--------------------------- FONT -------------------------------*/
 @font-face {
   font-family: "pacifico";
@@ -158,8 +159,7 @@ h5 {
   width: 100%;
   height: 100%;
   aspect-ratio: 5/4;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .swiper-button-next {
@@ -293,43 +293,63 @@ h5 {
 }
 
 /* ----------------- SECTION PAGE HISTOIRE ---------------------- */
-.histoire__container {
-  background-color: #354e38;
-  font-family: "rubik";
-}
-
-.histoire__titre {
-  color: #F5EDD8;
-  font-family: "rubik";
-  font-weight: bolder;
-}
-
-.histoire__texte {
-  color: #ffffff;
-  font-family: "rubik";
-}
-
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav {
     width: 100%;
   }
 }
+.timeline {
+  position: relative;
+  width: 2px;
+  background: #00ff00;
+  margin: 20px auto;
+  height: 100vh;
+  opacity: 0; /* La ligne est initialement invisible */
+}
+.timeline .line {
+  width: 100%;
+  height: 2px;
+  background: #00ff00;
+}
+.timeline .events {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.timeline .events .event {
+  opacity: 0; /* Les événements sont initialement invisibles */
+  padding: 10px;
+  background: #ff0000;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  width: 60vw;
+  z-index: 1;
+}
+.timeline .events .event img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* ----------------- SECTION PAGE EQUIPE ------------------------ */
-
-
 /* ----------------- SECTION PAGE PROPOS ------------------------ */
 .propos__section {
   background-color: #354e38;
 }
 .propos__title {
   display: block;
-  
+  position: absolute;
+  top: 200px;
   color: #F5EDD8;
   font-family: "rubik";
   font-weight: bold;
 }
 .propos__text {
-  color: #ffffff; /*why would you make it red, it not readable in red--> if we need a special color then let choose a different one*/
+  color: #8D3126;
   font-family: "rubik";
 }
 
@@ -466,8 +486,7 @@ div.accordion-item {
 .lelogo {
   width: 300px;
   position: absolute;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 footer {
@@ -593,7 +612,6 @@ footer a:hover {
   .date-block {
     background-color: #F5EDD8;
     width: 300px;
-    height: -moz-fit-content;
     height: fit-content;
     font-size: 30px;
     font-weight: bold;
@@ -603,7 +621,6 @@ footer a:hover {
   }
   .credit-block {
     width: 300px;
-    height: -moz-fit-content;
     height: fit-content;
     background: #8d3126;
     background: linear-gradient(0deg, #8D3126 0%, #E7C762 0%, #8D3126 72%);
@@ -620,4 +637,4 @@ footer a:hover {
     justify-content: center;
     flex-direction: column;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
