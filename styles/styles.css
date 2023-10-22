@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*--------------------------- FONT -------------------------------*/
 @font-face {
   font-family: "pacifico";
@@ -299,17 +298,14 @@ h5 {
   }
 }
 .timeline {
+  display: block;
   position: relative;
+  left: -40%;
+  top: 100px;
   width: 2px;
-  background: #00ff00;
+  background: #ffffff;
   margin: 20px auto;
   height: 100vh;
-  opacity: 0; /* La ligne est initialement invisible */
-}
-.timeline .line {
-  width: 100%;
-  height: 2px;
-  background: #00ff00;
 }
 .timeline .events {
   position: absolute;
@@ -320,19 +316,28 @@ h5 {
   flex-direction: column;
 }
 .timeline .events .event {
-  opacity: 0; /* Les événements sont initialement invisibles */
+  position: relative;
+  width: 80vw;
+  height: 60vh;
+  display: none;
   padding: 10px;
-  background: #ff0000;
-  border: 1px solid #ddd;
+  background: #354e38;
+  border: 5px solid #F5EDD8;
   border-radius: 5px;
   margin: 10px 0;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-  width: 60vw;
-  z-index: 1;
 }
-.timeline .events .event img {
-  max-width: 100%;
-  height: auto;
+.timeline .events .event_titre {
+  color: #E7C762;
+}
+.timeline .events .event_texte {
+  color: #E5A484;
+}
+.timeline .events .event_image {
+  width: 60vw;
+  position: absolute;
+  bottom: 25px;
+  right: 50px;
 }
 
 /* ----------------- SECTION PAGE EQUIPE ------------------------ */
