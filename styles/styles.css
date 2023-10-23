@@ -289,6 +289,25 @@ h5 {
   color: #F5EDD8;
 }
 
+/* ----------------- SECTION PAGE TEMOIGNAGE ---------------------- */
+.card{
+  background-color: #E7C762;
+  
+}
+
+.card-title{
+  color: #F5EDD8;
+  font-weight: bolder;
+  font-family: "rubik";
+}
+
+.card-text{
+  color: #F5EDD8;
+}
+
+
+
+
 /* ----------------- SECTION PAGE SERVICE ----------------------- */
 .section__services {
   width: 100%;
