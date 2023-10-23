@@ -13,7 +13,7 @@ const events = document.querySelectorAll(".event");
 
 events.forEach((event, index) => {
     timeline.to(event, {
-        display: "block",
+        opacity:1,
         duration: 0.1,
         scrollTrigger: {
             trigger: event,

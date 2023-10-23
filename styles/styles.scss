@@ -306,7 +306,7 @@ h5 {
   height: 100%;
 
   .events {
-      position: absolute;
+      position: relative;
       top: 0;
       left: 10px;
       width: 100%;
@@ -317,20 +317,21 @@ h5 {
         position:relative;
         width:80vw;
         height:60vh;
-          display: none;
+          display: block;
+          opacity:0;
           padding: 10px;
           background: variables.$foret;
           border: 5px solid variables.$creme;
           border-radius: 5px;
-          margin: 10px 0;
-          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+          margin: 30px 10px;
+          box-shadow: 30px 30px 6px rgba(255, 255, 255, 0.219);
 
           &_titre{
             color:variables.$sable;
           }
 
           &_texte{
-            color:variables.$tumb;
+            color:variables.$tumbleweed;
           }
 
         &_image{
@@ -342,6 +343,10 @@ h5 {
         }
       }
   }
+}
+
+.espace_event{
+  height:400px;
 }
 
 

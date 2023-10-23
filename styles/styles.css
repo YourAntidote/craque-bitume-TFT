@@ -158,7 +158,8 @@ h5 {
   width: 100%;
   height: 100%;
   aspect-ratio: 5/4;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .swiper-button-next {
@@ -305,10 +306,10 @@ h5 {
   width: 2px;
   background: #ffffff;
   margin: 20px auto;
-  height: 100vh;
+  height: 100%;
 }
 .timeline .events {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 10px;
   width: 100%;
@@ -319,13 +320,14 @@ h5 {
   position: relative;
   width: 80vw;
   height: 60vh;
-  display: none;
+  display: block;
+  opacity: 0;
   padding: 10px;
   background: #354e38;
   border: 5px solid #F5EDD8;
   border-radius: 5px;
-  margin: 10px 0;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  margin: 30px 10px;
+  box-shadow: 30px 30px 6px rgba(255, 255, 255, 0.219);
 }
 .timeline .events .event_titre {
   color: #E7C762;
@@ -338,6 +340,10 @@ h5 {
   position: absolute;
   bottom: 25px;
   right: 50px;
+}
+
+.espace_event {
+  height: 400px;
 }
 
 /* ----------------- SECTION PAGE EQUIPE ------------------------ */
@@ -491,7 +497,8 @@ div.accordion-item {
 .lelogo {
   width: 300px;
   position: absolute;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 footer {
@@ -617,6 +624,7 @@ footer a:hover {
   .date-block {
     background-color: #F5EDD8;
     width: 300px;
+    height: -moz-fit-content;
     height: fit-content;
     font-size: 30px;
     font-weight: bold;
@@ -626,6 +634,7 @@ footer a:hover {
   }
   .credit-block {
     width: 300px;
+    height: -moz-fit-content;
     height: fit-content;
     background: #8d3126;
     background: linear-gradient(0deg, #8D3126 0%, #E7C762 0%, #8D3126 72%);
@@ -642,4 +651,4 @@ footer a:hover {
     justify-content: center;
     flex-direction: column;
   }
-}
+}/*# sourceMappingURL=styles.css.map */
