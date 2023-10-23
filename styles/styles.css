@@ -353,8 +353,8 @@ h5 {
 }
 .propos__title {
   display: block;
-  position: absolute;
-  top: 200px;
+  position: relative;
+  top: 40px;
   color: #F5EDD8;
   font-family: "rubik";
   font-weight: bold;
@@ -370,8 +370,7 @@ div.accordion-item {
 }
 
 .accordion {
-  position: absolute;
-  top: 200px;
+  position: relative;
 }
 .accordion-button {
   color: #8D3126 !important;
@@ -399,17 +398,17 @@ div.accordion-item {
 .contenu .fleche.jaune {
   position: absolute;
   left: -50px;
-  top: 0px;
+  top: -100px;
 }
 .contenu .fleche.vert {
   position: absolute;
   left: -40px;
-  top: 0px;
+  top: -100px;
 }
 .contenu .fleche.rouge {
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: -30px;
+  top: -100px;
 }
 
 .erreur.body {
