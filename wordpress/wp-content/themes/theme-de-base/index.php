@@ -12,7 +12,9 @@ if ( have_posts() ) :
 	// Si oui, bouclons au travers pour tous les afficher
 	while ( have_posts() ) : the_post(); 
 ?>
-
+<?php 
+  wp_nav_menu(array('theme_location' => 'menu-jeu'));
+?>
 	<article>
 		<?php the_post_thumbnail('large'); // Vignette large du post ?>
 

@@ -360,8 +360,8 @@ h5 {
 
   &__title {
     display: block;
-    position: absolute;
-  top: 200px;
+    position: relative;
+  top: 40px;
     color: variables.$creme;
     font-family: "rubik";
     font-weight: bold;
@@ -379,8 +379,7 @@ div.accordion-item {
 }
 
 .accordion {
-  position: absolute;
-  top: 200px;
+  position: relative;
 
   &-button {
     color: variables.$red !important;
@@ -410,19 +409,19 @@ div.accordion-item {
     &.jaune {
       position: absolute;
       left: -50px;
-      top: 0px;
+      top: -100px;
     }
 
     &.vert {
       position: absolute;
       left: -40px;
-      top: 0px;
+      top: -100px;
     }
 
     &.rouge {
       position: absolute;
-      left: 0px;
-      top: 0px;
+      left: -30px;
+      top: -100px;
     }
   }
 }
