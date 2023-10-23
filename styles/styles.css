@@ -385,7 +385,8 @@ div.accordion-item {
 
 /*---------------------------PAGE ERREUR 404---------------------- */
 .contenu {
-  position: absolute;
+  display: block;
+  position: relative;
   width: 100%;
   height: 100%;
   display: flex;
@@ -407,25 +408,20 @@ div.accordion-item {
 }
 .contenu .fleche.rouge {
   position: absolute;
-  left: -60px;
+  left: 0px;
   top: 0px;
 }
 
 .erreur.body {
+  height: 100%;
   background-image: url("../sources/medias/erreur_404/montagne_vide_erreur.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .message-erreur {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  height: 50%;
-  width: 50%;
-  flex-direction: column;
+  width: 100vw;
+  position: relative;
 }
 
 .erreur-titre {
