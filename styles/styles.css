@@ -261,6 +261,14 @@ h5 {
   color: #354e38;
 }
 
+.cards__title:hover{
+  color:#F5EDD8;
+  font-weight: bolder;
+}
+
+.cards__text:hover{
+  color: #F5EDD8;
+}
 
 
 
