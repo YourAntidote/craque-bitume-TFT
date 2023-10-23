@@ -233,20 +233,29 @@ h5 {
 .nouvelles__container {
   background-color: #354e38;
   font-family: "rubik";
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
 }
 
 .nouvelles__titre {
   color: #F5EDD8;
   font-family: "rubik";
   font-weight: bold;
-  padding-left: 20px;
+  
 }
 
 .nouvelles__cards {
   background-color: #F5EDD8;
   color-scheme: #354e38;
   font-family: "rubik";
-  padding-left: 20px;
+  
+
+  padding: 20px;
+  margin: 20px;
+
+  border-radius: 10%;
 }
 .nouvelles__cards:hover {
   background-color: #E7C762;
@@ -270,6 +279,9 @@ h5 {
   color: #F5EDD8;
 }
 
+.gg-trees{
+  color: #E7C762;
+}
 
 
 /* ----------------- SECTION PAGE SERVICE ----------------------- */
