@@ -13,12 +13,8 @@ add_theme_support( 'post-thumbnails' );
 Déclare le menu principal */
 register_nav_menus( 
 	array(
-		/* 
-			1. 'main-menu' = Nom dans le code
-			2. 'Menu principal' = Nom dans l'admin
-			3. 'Menu principal du site' = Description dans l'admin */
 		'main-menu' => __( 'Menu principal', 'Menu principal du site' ), 
-		/* Dupliquer cette ligne si vous désirez déclarer d'autres menus */
+		"menu-jeu" => __( "menu des jeu", "menu de tout les jeux"),
 	)
 );
 

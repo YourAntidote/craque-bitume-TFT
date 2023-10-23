@@ -252,9 +252,25 @@ h5 {
   background-color: #E7C762;
 }
 
-.cards__title {
+.nouvelles__cards .cards__title{
+  color: #354e38;
   font-weight: bolder;
 }
+
+.cards__text{
+  color: #354e38;
+}
+
+.cards__title:hover{
+  color:#F5EDD8;
+  font-weight: bolder;
+}
+
+.cards__text:hover{
+  color: #F5EDD8;
+}
+
+
 
 /* ----------------- SECTION PAGE SERVICE ----------------------- */
 .section__services {
