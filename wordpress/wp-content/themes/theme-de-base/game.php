@@ -1,7 +1,7 @@
 <?php 
 /**
- * 	Template Name: allo
- * 	Identique à page, mais avec une barre latérale
+ * 	Template Name: jeu
+ * 	Template Post Type: post, page, jeu
  */
 
 get_header(); // Affiche header.php
