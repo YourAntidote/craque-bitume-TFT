@@ -292,7 +292,6 @@ h5 {
 /* ----------------- SECTION PAGE TEMOIGNAGE ---------------------- */
 .card{
   background-color: #E7C762;
-  
 }
 
 .card-title{
@@ -305,6 +304,14 @@ h5 {
   color: #F5EDD8;
 }
 
+.list-group{
+  background-color: #E7C762;
+}
+
+.list-group-item{
+  background-color: #E7C762;
+  color: #F5EDD8;
+}
 
 
 
@@ -403,14 +410,13 @@ h5 {
 .propos__section {
   background-color: #354e38;
 }
+
 .propos__title {
-  display: block;
-  position: relative;
-  top: 40px;
   color: #F5EDD8;
   font-family: "rubik";
   font-weight: bold;
 }
+
 .propos__text {
   color: #8D3126;
   font-family: "rubik";
