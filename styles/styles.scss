@@ -264,6 +264,14 @@ h5 {
 .nouvelles__hero-img {
   width: 100%;
 }
+.nouvelles__card__container {
+  display: flex;
+}
+.nouvelles__card-frame {
+  width: 150px;
+  height: 150px;
+  background-color: #8d3126;
+}
 /* ----------------- SECTION PAGE SERVICE ----------------------- */
 .section__services {
   width: 100%;
@@ -309,23 +317,23 @@ h5 {
   object-fit: fill;
 }
 
-.service__card{
+.service__card {
   background-color: $tumbleweed;
 }
 
-.service__card__body{
+.service__card__body {
   background-color: $tumbleweed;
 }
 
-.service__card__title{
+.service__card__title {
   color: $creme;
 }
 
-.service__card__text{
+.service__card__text {
   color: $white;
 }
 
-.service__btn{
+.service__btn {
   background-color: $red;
 }
 /* ----------------- SECTION PAGE HISTOIRE ---------------------- */
