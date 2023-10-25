@@ -313,16 +313,23 @@ h5 {
   }
 }
 
+.section__services{
+  display: grid;
+  gap: 12px;
+}
+
+
 .service__card__img {
   object-fit: fill;
 }
 
 .service__card{
-  background-color: $sable;
+  background-color: $black;
+  margin: 10%;
 }
 
 .service__card__body{
-  background-color: $sable;
+  background-color: $black;
 }
 
 .service__card__title {
