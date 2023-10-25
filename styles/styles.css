@@ -255,55 +255,6 @@ h5 {
   font-weight: bolder;
 }
 
-.cards__text{
-  color: #354e38;
-}
-
-.cards__title:hover{
-  color:#F5EDD8;
-  font-weight: bolder;
-}
-
-.cards__text:hover{
-  color: #F5EDD8;
-}
-
-.gg-trees{
-  color: #E7C762;
-
-  
-}
-
-.plus-nouvelles{
-  color: #F5EDD8;
-}
-
-/* ----------------- SECTION PAGE TEMOIGNAGE ---------------------- */
-.nouvelles__cards{
-  background-color: #E7C762;
-}
-
-.nouvelles__cards__title{
-  color: #F5EDD8;
-  font-weight: bolder;
-  font-family: "rubik";
-}
-
-.nouvelles__cards__text{
-  color: #F5EDD8;
-}
-
-.list-group{
-  background-color: #E7C762;
-}
-
-.list-group-item{
-  background-color: #E7C762;
-  color: #F5EDD8;
-}
-
-
-
 /* ----------------- SECTION PAGE SERVICE ----------------------- */
 .section__services {
   width: 100%;
@@ -475,6 +426,7 @@ div.accordion-item {
 .message-erreur {
   width: 100vw;
   position: relative;
+  top: 100px;
 }
 
 .erreur-titre {
