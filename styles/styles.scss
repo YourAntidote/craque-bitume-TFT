@@ -248,13 +248,29 @@ h5 {
 .cards__title {
   font-weight: bolder;
 }
+.nouvelles__hero {
+  width: 100vw;
+  height: 40vh;
+}
 .nouvelles__hero-title {
   font-family: "rubik";
   color: #f5edd8;
   font-size: calc(15px + 3vh);
   font-weight: bold;
+  position: absolute;
+  top: 200px;
+  padding-left: 10vw;
 }
 .nouvelles__hero-img {
+  width: 100%;
+}
+.nouvelles__card__container {
+  display: flex;
+}
+.nouvelles__card-frame {
+  width: 150px;
+  height: 150px;
+  background-color: #8d3126;
 }
 /* ----------------- SECTION PAGE SERVICE ----------------------- */
 .section__services {
@@ -309,12 +325,12 @@ h5 {
   background-color: $sable;
 }
 
-.service__card__title{
+.service__card__title {
   color: $creme;
   font-family: $titre;
 }
 
-.service__card__text{
+.service__card__text {
   color: $white;
   font-family: $texte;
 }
@@ -324,7 +340,7 @@ h5 {
   background-color: $red;
 }
 
-.service__btn{
+.service__btn {
   background-color: $red;
 }
 /* ----------------- SECTION PAGE HISTOIRE ---------------------- */
