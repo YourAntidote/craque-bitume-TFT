@@ -302,19 +302,26 @@ h5 {
 }
 
 .service__card{
-  background-color: $tumbleweed;
+  background-color: $sable;
 }
 
 .service__card__body{
-  background-color: $tumbleweed;
+  background-color: $sable;
 }
 
 .service__card__title{
   color: $creme;
+  font-family: $titre;
 }
 
 .service__card__text{
   color: $white;
+  font-family: $texte;
+}
+
+.btn
+{
+  background-color: $red;
 }
 
 .service__btn{
