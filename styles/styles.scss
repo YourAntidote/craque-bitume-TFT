@@ -289,23 +289,23 @@ h5 {
 }
 
 .service__card{
-  background-color: variables.$tumbleweed;
+  background-color: $tumbleweed;
 }
 
 .service__card__body{
-  background-color: variables.$tumbleweed;
+  background-color: $tumbleweed;
 }
 
 .service__card__title{
-  color: variables.$creme;
+  color: $creme;
 }
 
 .service__card__text{
-  color: variables.$white;
+  color: $white;
 }
 
 .service__btn{
-  color: variables.$red;
+  color: $red;
 }
 /* ----------------- SECTION PAGE HISTOIRE ---------------------- */
 @media (min-width: 992px) {
