@@ -2,42 +2,51 @@
 
 /*--------------------------- FONT -------------------------------*/
 @font-face {
-	font-family: "pacifico";
-	src: url("https://use.typekit.net/af/5f850c/00000000000000003b9b136f/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/5f850c/00000000000000003b9b136f/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/5f850c/00000000000000003b9b136f/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
-	font-display: auto;
-	font-style: normal;
-	font-weight: 400;
-	font-stretch: normal;
+  font-family: "pacifico";
+  src: url("https://use.typekit.net/af/5f850c/00000000000000003b9b136f/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/5f850c/00000000000000003b9b136f/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/5f850c/00000000000000003b9b136f/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
 }
 @font-face {
-	font-family: "rubik";
-	src: url("https://use.typekit.net/af/8e7336/0000000000000000774ed06c/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/8e7336/0000000000000000774ed06c/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/8e7336/0000000000000000774ed06c/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
-	font-display: auto;
-	font-style: normal;
-	font-weight: 400;
-	font-stretch: normal;
+  font-family: "rubik";
+  src: url("https://use.typekit.net/af/8e7336/0000000000000000774ed06c/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/8e7336/0000000000000000774ed06c/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/8e7336/0000000000000000774ed06c/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
 }
-
 
 html {
-	height: 2500px;
-	min-width: 375px !important;
-	width: 100%;
+  height: 2500px;
+  min-width: 375px !important;
+  width: 100%;
   height: 100%;
-	position: relative;
-	background-color: variables.$foret;
+  position: relative;
+  background-color: variables.$foret;
 }
 body {
-	background-color: variables.$foret;
-	font-family: "rubik";
-	font-size: 15px;
-	height: 100%;
-	min-width: 375px;
-	position: relative;
+  background-color: variables.$foret;
+  font-family: "rubik";
+  font-size: 15px;
+  height: 100%;
+  min-width: 375px;
+  position: relative;
 }
 main {
-	position: relative;
-	width: 100%;
+  position: relative;
+  width: 100%;
 }
 h5 {
   color: variables.$creme;
@@ -47,198 +56,203 @@ h5 {
 /* ----------------- SECTION PAGE ACCUEIL ----------------------- */
 
 .ignorez {
-	position: relative;
-	top: 0px;
-	left: 0px;
-	width: 100%;
-	height: 88px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 88px;
 }
 .navbar {
-	border-bottom: 1px solid #e7c762;
-	background-color: variables.$foret;
+  border-bottom: 1px solid #e7c762;
+  background-color: variables.$foret;
 }
 .logo {
-	max-width: 80px;
+  max-width: 80px;
 }
 .container-fluid {
-	padding: 12px !important;
+  padding: 12px !important;
 }
 .navbar-toggler {
-	background-color: variables.$sable !important;
+  background-color: variables.$sable !important;
 }
 #btn-don {
-	right: 0px;
-	position: relative;
-	padding: 5px 10px;
-	border: none;
-	background-color: variables.$sable;
-	color: variables.$white;
-	font-size: 16px;
-	&:hover {
-		border: 2px solid variables.$sable;
-		background-color: variables.$foret;
-	}
+  right: 0px;
+  position: relative;
+  padding: 5px 10px;
+  border: none;
+  background-color: variables.$sable;
+  color: variables.$white;
+  font-size: 16px;
+  &:hover {
+    border: 2px solid variables.$sable;
+    background-color: variables.$foret;
+  }
 }
 .navbar-nav {
-	text-align: end;
+  text-align: end;
 }
 .navbar-dark {
-	.navbar-nav {
-		.nav-link {
-			color: variables.$creme;
-			&:hover {
-				color: variables.$sable;
-				text-decoration: underline;
-			}
-		}
-	}
+  .navbar-nav {
+    .nav-link {
+      color: variables.$creme;
+      &:hover {
+        color: variables.$sable;
+        text-decoration: underline;
+      }
+    }
+  }
 }
 /* ----------------- SECTION BANNER X ------------------------ */
 .banner {
-	background-color: variables.$red;
-	z-index: 2;
-	position: fixed;
-	width: 100%;
-	z-index: 1029;
+  background-color: variables.$red;
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  z-index: 1029;
 }
 .banner__content {
-	padding: 10px;
-	margin: 0 auto;
-	display: flex;
-	align-items: center;
-	width: 100%;
+  padding: 10px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 .banner__text {
-	color: variables.$creme;
-	flex-grow: 1;
-	text-align: center;
+  color: variables.$creme;
+  flex-grow: 1;
+  text-align: center;
 }
 .banner__close {
-	background: none;
-	border: none;
-	cursor: pointer;
-	display: flex;
-	align-items: center;
-	.material-icons {
-		color: variables.$sable;
-		font-weight: 900;
-	}
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  .material-icons {
+    color: variables.$sable;
+    font-weight: 900;
+  }
 }
 
 /* ----------------- SECTION HERO ----------------------- */
 
-
 #hero {
-	padding: 0px;
-	margin: 0px;
-	width: 100%;
-	height: 100vh;
-	position: relative;
-	background-color: variables.$foret;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: variables.$foret;
 }
 .collectif {
-	background: variables.$sable;
-	border-radius: 10px;
+  background: variables.$sable;
+  border-radius: 10px;
 }
 .swiper-container {
-	width: 100%;
-	position: relative;
-	overflow: hidden;
-	border-radius: 10px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
   box-shadow: 2px 2px 10px 1px variables.$black;
 }
 .swiper-slide {
-	img {
-		width: 100%;
-		height: 100%;
-		aspect-ratio: 5/4;
-		object-fit: cover;
-	}
+  img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 5/4;
+    object-fit: cover;
+  }
 }
 .swiper-button-next {
-	&::after {
-		font-size: 50px;
-		font-weight: bold;
-	}
-	color: variables.$creme;
+  &::after {
+    font-size: 50px;
+    font-weight: bold;
+  }
+  color: variables.$creme;
 }
 .swiper-button-prev {
-	&::after {
-		font-size: 50px;
-		font-weight: bold;
-	}
-	color: variables.$creme;
+  &::after {
+    font-size: 50px;
+    font-weight: bold;
+  }
+  color: variables.$creme;
 }
 .swiper-pagination-bullet {
-	scale: 2;
-	background-color: variables.$creme;
+  scale: 2;
+  background-color: variables.$creme;
 }
 .hero-titre-2 {
-	font-family: "pacifico";
-	color: variables.$sable;
-	font-size: calc(20px + 5vh);
-	padding: 0px;
-	margin: 0px;
+  font-family: "pacifico";
+  color: variables.$sable;
+  font-size: calc(20px + 5vh);
+  padding: 0px;
+  margin: 0px;
 }
 .hero-titre-1 {
-	font-family: "rubik";
-	color: variables.$creme;
-	font-size: calc(15px + 3vh);
-	font-weight: bold;
-	padding: 0px;
-	margin: 0px;
+  font-family: "rubik";
+  color: variables.$creme;
+  font-size: calc(15px + 3vh);
+  font-weight: bold;
+  padding: 0px;
+  margin: 0px;
 }
 .hero-titre-3 {
-	font-family: "rubik";
-	color: variables.$creme;
-	font-size: calc(15px + 3vh);
-	font-weight: bold;
-	padding: 0px;
-	margin: 0px;
+  font-family: "rubik";
+  color: variables.$creme;
+  font-size: calc(15px + 3vh);
+  font-weight: bold;
+  padding: 0px;
+  margin: 0px;
 }
 .hero-titre-4 {
-	font-family: "rubik";
-	color: variables.$creme;
-	font-weight: normal;
-	font-size: calc(5px + 1vh);
+  font-family: "rubik";
+  color: variables.$creme;
+  font-weight: normal;
+  font-size: calc(5px + 1vh);
 }
 .hero-btn {
-	background-color: variables.$foret;
-	border: 2px solid variables.$sable;
-	box-shadow: 5px 5px 10px 2px variables.$black;
-	font-family: "rubik";
-	color: variables.$creme;
-	max-width: 230px;
-	&:hover {
-		background-color: variables.$sable;
-		color: variables.$black;
-	}
+  background-color: variables.$foret;
+  border: 2px solid variables.$sable;
+  box-shadow: 5px 5px 10px 2px variables.$black;
+  font-family: "rubik";
+  color: variables.$creme;
+  max-width: 230px;
+  &:hover {
+    background-color: variables.$sable;
+    color: variables.$black;
+  }
 }
 
 /* ----------------- SECTION PAGE NOUVELLE ---------------------- */
 
 .nouvelles__container {
-	background-color: variables.$foret;
-	font-family: "rubik";
+  background-color: variables.$foret;
+  font-family: "rubik";
 }
 .nouvelles__titre {
-	color: variables.$creme;
-	font-family: "rubik";
-	font-weight: bold;
-	padding-left: 20px;
+  color: variables.$creme;
+  font-family: "rubik";
+  font-weight: bold;
+  padding-left: 20px;
 }
 .nouvelles__cards {
-	background-color: variables.$creme;
-	color-scheme: variables.$foret;
-	font-family: "rubik";
-	padding-left: 20px;
-	&:hover {
-		background-color: variables.$sable;
-	}
+  background-color: variables.$creme;
+  color-scheme: variables.$foret;
+  font-family: "rubik";
+  padding-left: 20px;
+  &:hover {
+    background-color: variables.$sable;
+  }
   border-radius: 30%;
 }
 .cards__title {
-	font-weight: bolder;
+  font-weight: bolder;
+}
+.nouvelles_hero-title {
+  font-family: "rubik";
+  color: #f5edd8;
+  font-size: calc(15px + 3vh);
+  font-weight: bold;
 }
 /* ----------------- SECTION PAGE SERVICE ----------------------- */
 .section__services {
@@ -252,20 +266,17 @@ h5 {
   border-radius: 50px 50px 0% 0%;
 
   &____container {
-
     color: variables.$black;
     font-family: "rubik";
     width: 90%;
     width: 100%;
     height: 100%;
-
   }
   &__logo {
     background-color: variables.$sable;
     width: 80px;
     padding: 15px;
     border-radius: 40%;
-
   }
 
   &__titre {
@@ -284,85 +295,84 @@ h5 {
   }
 }
 
-.service__card__img{
+.service__card__img {
   object-fit: fill;
 }
 
-.service__card{
+.service__card {
   background-color: variables.$tumbleweed;
 }
 
-.service__card__body{
+.service__card__body {
   background-color: variables.$tumbleweed;
 }
 
-.service__card__title{
+.service__card__title {
   color: variables.$creme;
 }
 
-.service__card__text{
+.service__card__text {
   color: variables.$white;
 }
 
-.service__btn{
+.service__btn {
   color: variables.$red;
 }
 /* ----------------- SECTION PAGE HISTOIRE ---------------------- */
 @media (min-width: 992px) {
-	.navbar-expand-lg {
-		.navbar-nav {
-			width: 100%;
-		}
-	}
+  .navbar-expand-lg {
+    .navbar-nav {
+      width: 100%;
+    }
+  }
 }
 
 .timeline {
   display: block;
   position: relative;
-  left:-40%;
-  top:100px;
+  left: -40%;
+  top: 100px;
   width: 2px;
   background: #ffffff00;
   margin: 20px auto;
   height: 100%;
 
   .events {
+    position: relative;
+    top: 0;
+    left: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .event {
       position: relative;
-      top: 0;
-      left: 10px;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
+      width: 80vw;
+      height: 60vh;
+      display: block;
+      opacity: 0;
+      padding: 10px;
+      background: variables.$foret;
+      border: 5px solid variables.$creme;
+      border-radius: 5px;
+      margin: 30px 10px;
+      box-shadow: 30px 30px 6px rgba(255, 255, 255, 0.219);
 
-      .event {
-        position:relative;
-        width:80vw;
-        height:60vh;
-          display: block;
-          opacity:0;
-          padding: 10px;
-          background: variables.$foret;
-          border: 5px solid variables.$creme;
-          border-radius: 5px;
-          margin: 30px 10px;
-          box-shadow: 30px 30px 6px rgba(255, 255, 255, 0.219);
-
-          &_titre{
-            color:variables.$sable;
-          }
-
-          &_texte{
-            color:variables.$tumbleweed;
-          }
-
-        &_image{
-          
-          width:60vw;
-          position: absolute;
-          bottom:25px;
-          right:50px;
-        }
+      &_titre {
+        color: variables.$sable;
       }
+
+      &_texte {
+        color: variables.$tumbleweed;
+      }
+
+      &_image {
+        width: 60vw;
+        position: absolute;
+        bottom: 25px;
+        right: 50px;
+      }
+    }
   }
 }
 
@@ -376,7 +386,6 @@ h5 {
   transition: height 0.3s;
 }
 
-
 /* ----------------- SECTION PAGE EQUIPE ------------------------ */
 /* ----------------- SECTION PAGE PROPOS ------------------------ */
 
@@ -388,7 +397,7 @@ h5 {
   &__title {
     display: block;
     position: relative;
-  top: 40px;
+    top: 40px;
     color: variables.$creme;
     font-family: "rubik";
     font-weight: bold;
@@ -415,7 +424,7 @@ div.accordion-item {
   }
 }
 
-.accordion-button:not(.collapsed){
+.accordion-button:not(.collapsed) {
   background-color: variables.$sable;
 }
 /*---------------------------PAGE ERREUR 404---------------------- */
@@ -428,10 +437,8 @@ div.accordion-item {
   justify-content: center;
   align-items: flex-start;
 
-
   .fleche {
     width: 350px;
-    
 
     &.jaune {
       position: absolute;
@@ -453,20 +460,17 @@ div.accordion-item {
   }
 }
 
-.erreur.body{
-  
-height:100%;
-    background-image: url("../sources/medias/erreur_404/montagne_vide_erreur.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+.erreur.body {
+  height: 100%;
+  background-image: url("../sources/medias/erreur_404/montagne_vide_erreur.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-
 .message-erreur {
-  width:100vw;
+  width: 100vw;
   position: relative;
-  top:100px;
- 
+  top: 100px;
 }
 .erreur-titre {
   display: flex;
@@ -483,7 +487,7 @@ height:100%;
 
 /*-----------------------Footer----------------------------------*/
 
-.section__footer{
+.section__footer {
   width: 100%;
   position: relative;
 }
@@ -519,7 +523,12 @@ height:100%;
   width: 300px;
   height: 300px;
   background: variables.$red;
-  background: linear-gradient(0deg, variables.$foret 0%, variables.$sable 0%, variables.$red 72%);
+  background: linear-gradient(
+    0deg,
+    variables.$foret 0%,
+    variables.$sable 0%,
+    variables.$red 72%
+  );
   margin: 15px;
   font-weight: bold;
   text-align: center;
@@ -543,26 +552,24 @@ footer {
   height: auto;
   background-color: variables.$foret;
 
-    a{
-      text-decoration: none;
+  a {
+    text-decoration: none;
 
-      &:hover{
-        color: variables.$sable;
-      }
+    &:hover {
+      color: variables.$sable;
     }
+  }
 }
 .section {
   color: variables.$creme;
   font-weight: 100;
-
 }
-
 
 .section__icon {
   font-size: 20px;
 }
 
-.footer__btn{
+.footer__btn {
   position: relative;
   border: 2px solid variables.$sable;
   background-color: variables.$sable;
@@ -570,14 +577,14 @@ footer {
   font-size: 40px;
   aspect-ratio: 16/1;
   border-radius: 10px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 
   &:hover {
     border: 2px solid variables.$sable;
     background-color: variables.$foret;
   }
 
-  i{
+  i {
     width: 100%;
   }
 }
@@ -617,7 +624,6 @@ footer {
 .credit {
   position: relative;
   color: variables.$white !important;
-
 }
 .sponsor-colonne {
   width: 100%;
@@ -666,7 +672,12 @@ footer {
     width: 300px;
     height: fit-content;
     background: #8d3126;
-    background: linear-gradient(0deg, variables.$red 0%, variables.$sable 0%, variables.$red 72%);
+    background: linear-gradient(
+      0deg,
+      variables.$red 0%,
+      variables.$sable 0%,
+      variables.$red 72%
+    );
     margin: 15px;
     font-weight: bold;
     text-align: center;
