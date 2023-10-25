@@ -289,17 +289,17 @@ h5 {
 }
 
 /* ----------------- SECTION PAGE TEMOIGNAGE ---------------------- */
-.card{
+.nouvelles__cards{
   background-color: #E7C762;
 }
 
-.card-title{
+.nouvelles__cards__title{
   color: #F5EDD8;
   font-weight: bolder;
   font-family: "rubik";
 }
 
-.card-text{
+.nouvelles__cards__text{
   color: #F5EDD8;
 }
 
