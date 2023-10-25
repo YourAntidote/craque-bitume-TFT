@@ -235,6 +235,7 @@ h5 {
 	&:hover {
 		background-color: variables.$sable;
 	}
+  border-radius: 30%;
 }
 .cards__title {
 	font-weight: bolder;
@@ -283,8 +284,9 @@ h5 {
   }
 }
 
-
-
+.service__card__img{
+  object-fit: fill;
+}
 
 /* ----------------- SECTION PAGE HISTOIRE ---------------------- */
 @media (min-width: 992px) {

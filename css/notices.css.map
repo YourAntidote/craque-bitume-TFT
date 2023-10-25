@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,YAAY,CAAC;EACZ,QAAQ,EAAE,QAAQ;CAClB;;AAED,AAAA,kBAAkB,CAAC;EAClB,eAAe,EAAE,IAAI;CACrB",
+    "sources": [
+        "../wordpress/wp-content/plugins/wp-multilang/assets/styles/notices.scss",
+        "../wordpress/wp-content/plugins/wp-multilang/assets/styles/common/_variables.scss",
+        "../wordpress/wp-content/plugins/wp-multilang/assets/styles/notices/_core.scss"
+    ],
+    "names": [],
+    "file": "notices.css"
+}
