@@ -294,6 +294,10 @@ h5 {
 .service__card__img{
   object-fit: fill;
 }
+
+.service__btn{
+  color: rgb(92, 11, 11);
+}
 /* ----------------- SECTION PAGE HISTOIRE ---------------------- */
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav {
