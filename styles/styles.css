@@ -158,7 +158,8 @@ h5 {
   width: 100%;
   height: 100%;
   aspect-ratio: 5/4;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .swiper-button-next {
@@ -246,6 +247,7 @@ h5 {
   color-scheme: #354e38;
   font-family: "rubik";
   padding-left: 20px;
+  border-radius: 30%;
 }
 .nouvelles__cards:hover {
   background-color: #E7C762;
@@ -253,6 +255,13 @@ h5 {
 
 .cards__title {
   font-weight: bolder;
+}
+
+.nouvelles__hero-title {
+  font-family: "rubik";
+  color: #f5edd8;
+  font-size: calc(15px + 3vh);
+  font-weight: bold;
 }
 
 /* ----------------- SECTION PAGE SERVICE ----------------------- */
@@ -291,13 +300,31 @@ h5 {
   color: white;
 }
 
-.service__card__img{
-  object-fit: fill;
+.service__card__img {
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
-.service__btn{
-  color: rgb(92, 11, 11);
+.service__card {
+  background-color: #E5A484;
 }
+
+.service__card__body {
+  background-color: #E5A484;
+}
+
+.service__card__title {
+  color: #F5EDD8;
+}
+
+.service__card__text {
+  color: white;
+}
+
+.service__btn {
+  color: #8D3126;
+}
+
 /* ----------------- SECTION PAGE HISTOIRE ---------------------- */
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav {
@@ -505,7 +532,8 @@ div.accordion-item {
 .lelogo {
   width: 300px;
   position: absolute;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 footer {
@@ -631,6 +659,7 @@ footer a:hover {
   .date-block {
     background-color: #F5EDD8;
     width: 300px;
+    height: -moz-fit-content;
     height: fit-content;
     font-size: 30px;
     font-weight: bold;
@@ -640,6 +669,7 @@ footer a:hover {
   }
   .credit-block {
     width: 300px;
+    height: -moz-fit-content;
     height: fit-content;
     background: #8d3126;
     background: linear-gradient(0deg, #8D3126 0%, #E7C762 0%, #8D3126 72%);
@@ -656,4 +686,4 @@ footer a:hover {
     justify-content: center;
     flex-direction: column;
   }
-}
+}/*# sourceMappingURL=styles.css.map */
