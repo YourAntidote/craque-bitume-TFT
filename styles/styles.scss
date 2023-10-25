@@ -301,7 +301,7 @@ h5 {
   left:-40%;
   top:100px;
   width: 2px;
-  background: #ffffff;
+  background: #ffffff00;
   margin: 20px auto;
   height: 100%;
 
@@ -345,8 +345,14 @@ h5 {
   }
 }
 
-.espace_event{
-  height:400px;
+.line {
+  width: 5px;
+  height: 0;
+  background-color: variables.$creme;
+  position: fixed;
+  top: 100px;
+  left: 5%;
+  transition: height 0.3s;
 }
 
 

@@ -24,6 +24,19 @@ events.forEach((event, index) => {
     });
 });
 
+gsap.to(".line", {
+    height: "50vh",
+    scrollTrigger: {
+        trigger: ".events",
+        start: "top center", 
+        end: "bottom center", 
+        scrub: true,   
+    },
+});
+
+
+
+
 
 
 

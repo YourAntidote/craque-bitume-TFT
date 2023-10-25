@@ -158,8 +158,7 @@ h5 {
   width: 100%;
   height: 100%;
   aspect-ratio: 5/4;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .swiper-button-next {
@@ -233,86 +232,28 @@ h5 {
 .nouvelles__container {
   background-color: #354e38;
   font-family: "rubik";
-  
-  
-  
 }
 
 .nouvelles__titre {
   color: #F5EDD8;
   font-family: "rubik";
   font-weight: bold;
-  
+  padding-left: 20px;
 }
 
 .nouvelles__cards {
   background-color: #F5EDD8;
   color-scheme: #354e38;
   font-family: "rubik";
-  
-
-  padding: 20px;
-  margin: 20px;
-
-  border-radius: 10%;
+  padding-left: 20px;
 }
 .nouvelles__cards:hover {
   background-color: #E7C762;
 }
 
-.nouvelles__cards .cards__title{
-  color: #354e38;
+.cards__title {
   font-weight: bolder;
 }
-
-.cards__text{
-  color: #354e38;
-}
-
-.cards__title:hover{
-  color:#F5EDD8;
-  font-weight: bolder;
-}
-
-.cards__text:hover{
-  color: #F5EDD8;
-}
-
-.gg-trees{
-  color: #E7C762;
-
-  
-}
-
-.plus-nouvelles{
-  color: #F5EDD8;
-}
-
-/* ----------------- SECTION PAGE TEMOIGNAGE ---------------------- */
-.card{
-  background-color: #E7C762;
-}
-
-.card-title{
-  color: #F5EDD8;
-  font-weight: bolder;
-  font-family: "rubik";
-}
-
-.card-text{
-  color: #F5EDD8;
-}
-
-.list-group{
-  background-color: #E7C762;
-}
-
-.list-group-item{
-  background-color: #E7C762;
-  color: #F5EDD8;
-}
-
-
 
 /* ----------------- SECTION PAGE SERVICE ----------------------- */
 .section__services {
@@ -351,13 +292,6 @@ h5 {
 }
 
 /* ----------------- SECTION PAGE HISTOIRE ---------------------- */
-.histoire__titre{
-  color: #F5EDD8;
-  font-weight: bolder;
-  font-family: "rubik";
-}
-
-
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav {
     width: 100%;
@@ -369,7 +303,7 @@ h5 {
   left: -40%;
   top: 100px;
   width: 2px;
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0);
   margin: 20px auto;
   height: 100%;
 }
@@ -407,25 +341,29 @@ h5 {
   right: 50px;
 }
 
-.espace_event {
-  height: 400px;
+.line {
+  width: 5px;
+  height: 0;
+  background-color: #F5EDD8;
+  position: fixed;
+  top: 100px;
+  left: 5%;
+  transition: height 0.3s;
 }
 
 /* ----------------- SECTION PAGE EQUIPE ------------------------ */
-
-
-
 /* ----------------- SECTION PAGE PROPOS ------------------------ */
 .propos__section {
   background-color: #354e38;
 }
-
 .propos__title {
+  display: block;
+  position: relative;
+  top: 40px;
   color: #F5EDD8;
   font-family: "rubik";
   font-weight: bold;
 }
-
 .propos__text {
   color: #8D3126;
   font-family: "rubik";
@@ -559,8 +497,7 @@ div.accordion-item {
 .lelogo {
   width: 300px;
   position: absolute;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 footer {
@@ -686,7 +623,6 @@ footer a:hover {
   .date-block {
     background-color: #F5EDD8;
     width: 300px;
-    height: -moz-fit-content;
     height: fit-content;
     font-size: 30px;
     font-weight: bold;
@@ -696,7 +632,6 @@ footer a:hover {
   }
   .credit-block {
     width: 300px;
-    height: -moz-fit-content;
     height: fit-content;
     background: #8d3126;
     background: linear-gradient(0deg, #8D3126 0%, #E7C762 0%, #8D3126 72%);
@@ -713,4 +648,4 @@ footer a:hover {
     justify-content: center;
     flex-direction: column;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
