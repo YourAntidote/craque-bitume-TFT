@@ -291,6 +291,9 @@ h5 {
   color: white;
 }
 
+.service__card__img{
+  object-fit: fill;
+}
 /* ----------------- SECTION PAGE HISTOIRE ---------------------- */
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav {
