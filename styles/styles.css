@@ -158,8 +158,7 @@ h5 {
   width: 100%;
   height: 100%;
   aspect-ratio: 5/4;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .swiper-button-next {
@@ -451,35 +450,44 @@ h5 {
 .timeline .events {
   position: relative;
   top: 0;
-  left: 10px;
+  left: 0px;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 .timeline .events .event {
   position: relative;
+  left: -80px;
   width: 80vw;
   height: 60vh;
   display: block;
   opacity: 0;
   padding: 10px;
-  background: #354e38;
+  background-image: linear-gradient(to bottom right, #F5EDD8, #354e38, #354e38, #354e38, #354e38);
   border: 5px solid #F5EDD8;
   border-radius: 5px;
   margin: 30px 10px;
   box-shadow: 30px 30px 6px rgba(255, 255, 255, 0.219);
 }
 .timeline .events .event_titre {
-  color: #E7C762;
+  color: #354e38;
 }
 .timeline .events .event_texte {
-  color: #E5A484;
+  color: #F5EDD8;
+  width: 60vw;
 }
 .timeline .events .event_image {
   width: 60vw;
   position: absolute;
   bottom: 25px;
   right: 50px;
+}
+
+.parent_texte {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .line {
@@ -565,23 +573,22 @@ div.accordion-item {
 }
 
 .message-erreur {
-  width: 100vw;
+  width: 77vw;
   position: relative;
   top: 100px;
+  display: flex-wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .erreur-titre {
-  display: flex;
   color: #E7C762;
   font-weight: bolder;
   text-transform: uppercase;
 }
 
 .erreur-description {
-  display: flex;
   color: #F5EDD8;
-  font-size: 1rem;
-  text-align: center;
 }
 
 /*-----------------------Footer----------------------------------*/
@@ -639,8 +646,7 @@ div.accordion-item {
 .lelogo {
   width: 300px;
   position: absolute;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 footer {
@@ -766,7 +772,6 @@ footer a:hover {
   .date-block {
     background-color: #F5EDD8;
     width: 300px;
-    height: -moz-fit-content;
     height: fit-content;
     font-size: 30px;
     font-weight: bold;
@@ -776,7 +781,6 @@ footer a:hover {
   }
   .credit-block {
     width: 300px;
-    height: -moz-fit-content;
     height: fit-content;
     background: #8d3126;
     background: linear-gradient(0deg, #8D3126 0%, #E7C762 0%, #8D3126 72%);
@@ -793,4 +797,4 @@ footer a:hover {
     justify-content: center;
     flex-direction: column;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
