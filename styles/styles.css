@@ -260,6 +260,10 @@ h5 {
 .nouvelles__hero {
   width: 100vw;
   height: 40vh;
+  background-image: url(../sources/medias/hub_nouvelles_articles/hero-groupe.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .nouvelles__hero-title {
@@ -276,67 +280,158 @@ h5 {
   width: 100%;
 }
 
-/* ----------------- SECTION PAGE SERVICE ----------------------- */
+.nouvelles__card__container {
+  display: flex;
+}
+
+.nouvelles__card-frame {
+  width: 150px;
+  height: 150px;
+  background-color: #8d3126;
+}
+
+/*------------------styles pour les cartes de nouvelles---------*/
+.nouvelle__card-list {
+  margin: 25px auto;
+  width: 45vw;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 15px;
+}
+
+.nouvelle_card {
+  width: 45vw;
+  min-width: 263px;
+  max-width: 304px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #f5edd8;
+  border-radius: 18px;
+  justify-content: space-between;
+  color: #354e38;
+  transition: background-color 200ms ease-in-out;
+  font-family: "rubik";
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.5em;
+}
+
+.middle-up-row {
+  font-size: 1em;
+}
+
+.middle-down-row {
+  font-size: 0.7em;
+}
+
+.bottom-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.5em;
+}
+
+.icone {
+  width: 1.5em;
+  position: relative;
+  top: 5px;
+}
+
+.un:hover {
+  background-color: #e7c762;
+}
+
+.deux:hover {
+  background-color: #e7c762;
+}
+
+.trois:hover {
+  background-color: #e7c762;
+}
+
+.quattre:hover {
+  background-color: #e7c762;
+}
+
+/* ----------------- SECTION PAGE SERVICE ----------------------- 
 .section__services {
   width: 100%;
-  background-color: #354e38;
+  background-color: variables.$foret;
 }
 
 .services {
   text-align: center;
-  background: linear-gradient(to bottom, #8D3126 70px, transparent 0%);
+  background: linear-gradient(to bottom, variables.$red 70px, transparent 0%);
   border-radius: 50px 50px 0% 0%;
+
+  &____container {
+    color: variables.$black;
+    font-family: "rubik";
+    width: 90%;
+    width: 100%;
+    height: 100%;
+  }
+  &__logo {
+    background-color: variables.$sable;
+    width: 80px;
+    padding: 15px;
+    border-radius: 40%;
+  }
+
+  &__titre {
+    color: variables.$creme;
+    font-weight: bolder;
+    font-size: 40px;
+    transform: translateY(-75px);
+    text-align: center;
+  }
+
+  &__container {
+    p {
+      text-align: center;
+      color: variables.$white;
+    }
+  }
 }
-.services____container {
-  color: #000;
-  font-family: "rubik";
-  width: 90%;
-  width: 100%;
-  height: 100%;
-}
-.services__logo {
-  background-color: #E7C762;
-  width: 80px;
-  padding: 15px;
-  border-radius: 40%;
-}
-.services__titre {
-  color: #F5EDD8;
-  font-weight: bolder;
-  font-size: 40px;
-  transform: translateY(-75px);
-  text-align: center;
-}
-.services__container p {
-  text-align: center;
-  color: white;
+
+.section__services {
+  display: grid;
+  gap: 12px;
 }
 
 .service__card__img {
-  -o-object-fit: fill;
-     object-fit: fill;
+  object-fit: fill;
 }
 
 .service__card {
-  background-color: #E5A484;
+  background-color: $black;
+  margin: 10%;
 }
 
 .service__card__body {
-  background-color: #E5A484;
+  background-color: $black;
 }
 
 .service__card__title {
-  color: #F5EDD8;
+   color: $creme;
+  font-family: $titre;
 }
 
 .service__card__text {
-  color: white;
+  color: $white;
+  font-family: $texte;
+}
+
+.btn {
+  background-color: $red;
 }
 
 .service__btn {
-  color: #8D3126;
-}
-
+  background-color: $red;
+}*/
 /* ----------------- SECTION PAGE HISTOIRE ---------------------- */
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav {
