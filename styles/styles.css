@@ -459,7 +459,6 @@ h5 {
   position: relative;
   left: -80px;
   width: 80vw;
-  height: 60vh;
   display: block;
   opacity: 0;
   padding: 10px;
@@ -474,20 +473,12 @@ h5 {
 }
 .timeline .events .event_texte {
   color: #F5EDD8;
-  width: 60vw;
 }
 .timeline .events .event_image {
   width: 60vw;
   position: absolute;
   bottom: 25px;
   right: 50px;
-}
-
-.parent_texte {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
 }
 
 .line {

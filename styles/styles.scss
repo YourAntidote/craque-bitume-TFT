@@ -448,7 +448,6 @@ h5 {
       position: relative;
       left:-80px;
       width: 80vw;
-      height: 60vh;
       display: block;
       opacity: 0;
       padding: 10px;
@@ -465,7 +464,6 @@ h5 {
 
       &_texte {
         color: variables.$creme;
-        width:60vw;
       }
 
       &_image {
@@ -477,14 +475,6 @@ h5 {
     }
   }
 }
-
-.parent_texte{
-  display : flex ;
-  align-items : center ;
-  justify-content : center ;
-  position: relative;
-}
-
 
 .line {
   width: 5px;
