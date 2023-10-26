@@ -6,11 +6,13 @@ const isbanner = document.querySelector(".banner");
 document.querySelector(".banner__close").addEventListener("click", function() {
   this.closest(".banner").style.display = "none";
   localStorage.clear("isbanner");
+  console.log("etape1 clear");
 });
 
 
 if (localStorage.clear("isbanner") == true)  {
   delete("isbanner");
+  console.log("etape2 clear");
 }
 
 
