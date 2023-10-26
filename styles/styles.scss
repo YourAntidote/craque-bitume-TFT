@@ -53,6 +53,13 @@ h5 {
   font-size: 30px;
   text-align: center;
 }
+
+h6 {
+  color: variables.$foret;
+  font-size: 20px;
+
+  font-weight: 600;
+}
 /* ----------------- SECTION PAGE ACCUEIL ----------------------- */
 
 .ignorez {
@@ -101,6 +108,15 @@ h5 {
       }
     }
   }
+}
+
+
+.section__titre {
+  color: variables.$creme;
+  font-weight: bolder;
+  font-size: 40px;
+  transform: translateY(-75px);
+  text-align: center;
 }
 /* ----------------- SECTION BANNER X ------------------------ */
 .banner {
@@ -222,6 +238,73 @@ h5 {
     color: variables.$black;
   }
 }
+/* ----------------- SECTION index NOUVELLE ---------------------- */
+
+.nouvelle {
+
+  &__logo {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    
+
+
+  }
+  &__carte{
+
+    background-color: variables.$creme;
+    border-radius:  15px;
+    height: 150px;
+    max-width: 600px;
+
+    @media (min-width: 1199px) {
+      max-width: 300px;
+    }
+    @media (min-width: 1600px) {
+      max-width: 400px;
+    }
+    @media (min-width: 1800px) {
+      max-width: 500px;
+    }
+    @media (min-width: 2100px) {
+      max-width: 600px;
+    }
+
+
+  &:hover{
+    background-color: variables.$sable;
+    div {
+      h6{
+        color: variables.$creme
+      }
+      p{
+        color: variables.$creme
+      }
+      i{
+        color: variables.$creme;
+      }
+    }
+  }
+  i{
+    color: variables.$foret;
+
+  }
+  div{
+    p {
+      color: variables.$foret;
+      margin-bottom: 0px;
+    }
+
+  }
+}
+}
+
+
+
+
 
 /* ----------------- SECTION PAGE NOUVELLE ---------------------- */
 
@@ -229,12 +312,7 @@ h5 {
   background-color: variables.$foret;
   font-family: "rubik";
 }
-.nouvelles__titre {
-  color: variables.$creme;
-  font-family: "rubik";
-  font-weight: bold;
-  padding-left: 20px;
-}
+
 .nouvelles__cards {
   background-color: variables.$creme;
   color-scheme: variables.$foret;
@@ -243,7 +321,7 @@ h5 {
   &:hover {
     background-color: variables.$sable;
   }
-  border-radius: 30%;
+  border-radius: 15px;
 }
 .cards__title {
   font-weight: bolder;
@@ -277,80 +355,21 @@ h5 {
   background-color: #8d3126;
 }
 /*------------------styles pour les cartes de nouvelles---------*/
-.nouvelle__card-list {
-  margin: 25px auto;
-  width: 45vw;
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 15px;
-}
 
-.nouvelle_card {
-  width: 45vw;
-  min-width: 263px;
-  max-width: 304px;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  background-color: #f5edd8;
-  border-radius: 18px;
-  justify-content: space-between;
-  color: #354e38;
-  transition: background-color 200ms ease-in-out;
-  font-family: "rubik";
-}
 
-.top-row {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.5em;
-}
 
-.middle-up-row {
-  font-size: 1em;
-}
-
-.middle-down-row {
-  font-size: 0.7em;
-}
-
-.bottom-row {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.5em;
-}
-
-.icone {
-  width: 1.5em;
-  position: relative;
-  top: 5px;
-}
-
-.un:hover {
-  background-color: #e7c762;
-}
-
-.deux:hover {
-  background-color: #e7c762;
-}
-
-.trois:hover {
-  background-color: #e7c762;
-}
-
-.quattre:hover {
-  background-color: #e7c762;
-}
-/* ----------------- SECTION PAGE SERVICE ----------------------- 
+/* ----------------- SECTION PAGE SERVICE ----------------------- */
 .section__services {
   width: 100%;
   background-color: variables.$foret;
+  margin-bottom: 10vh;
 }
 
 .services {
   text-align: center;
   background: linear-gradient(to bottom, variables.$red 70px, transparent 0%);
   border-radius: 50px 50px 0% 0%;
+  
 
   &____container {
     color: variables.$black;
@@ -365,15 +384,6 @@ h5 {
     padding: 15px;
     border-radius: 40%;
   }
-
-  &__titre {
-    color: variables.$creme;
-    font-weight: bolder;
-    font-size: 40px;
-    transform: translateY(-75px);
-    text-align: center;
-  }
-
   &__container {
     p {
       text-align: center;
@@ -381,8 +391,8 @@ h5 {
     }
   }
 }
-
-.section__services {
+/*Changer la classe ici pour autre chose*/
+.section__services2 {
   display: grid;
   gap: 12px;
 }
@@ -392,31 +402,32 @@ h5 {
 }
 
 .service__card {
-  background-color: $black;
+  background-color: variables.$black;
   margin: 10%;
 }
 
 .service__card__body {
-  background-color: $black;
+  background-color: variables.$black;
 }
 
 .service__card__title {
-   color: $creme;
-  font-family: $titre;
+   color:  variables.$creme;
+  font-family: "rubik";
 }
 
 .service__card__text {
-  color: $white;
-  font-family: $texte;
+  color:  variables.$white;
+  font-family: "rubik";
 }
 
 .btn {
-  background-color: $red;
+  background-color:  variables.$red;
 }
 
 .service__btn {
-  background-color: $red;
-}*/
+  background-color:  variables.$red;
+}
+
 /* ----------------- SECTION PAGE HISTOIRE ---------------------- */
 @media (min-width: 992px) {
   .navbar-expand-lg {

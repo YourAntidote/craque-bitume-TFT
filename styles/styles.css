@@ -44,6 +44,12 @@ h5 {
   text-align: center;
 }
 
+h6 {
+  color: #354e38;
+  font-size: 20px;
+  font-weight: 600;
+}
+
 /* ----------------- SECTION PAGE ACCUEIL ----------------------- */
 .ignorez {
   position: relative;
@@ -94,6 +100,14 @@ h5 {
 .navbar-dark .navbar-nav .nav-link:hover {
   color: #E7C762;
   text-decoration: underline;
+}
+
+.section__titre {
+  color: #F5EDD8;
+  font-weight: bolder;
+  font-size: 40px;
+  transform: translateY(-75px);
+  text-align: center;
 }
 
 /* ----------------- SECTION BANNER X ------------------------ */
@@ -158,7 +172,8 @@ h5 {
   width: 100%;
   height: 100%;
   aspect-ratio: 5/4;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .swiper-button-next {
@@ -228,17 +243,64 @@ h5 {
   color: #000;
 }
 
+/* ----------------- SECTION index NOUVELLE ---------------------- */
+.nouvelle__logo {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.nouvelle__carte {
+  background-color: #F5EDD8;
+  border-radius: 15px;
+  height: 150px;
+  max-width: 600px;
+}
+@media (min-width: 1199px) {
+  .nouvelle__carte {
+    max-width: 300px;
+  }
+}
+@media (min-width: 1600px) {
+  .nouvelle__carte {
+    max-width: 400px;
+  }
+}
+@media (min-width: 1800px) {
+  .nouvelle__carte {
+    max-width: 500px;
+  }
+}
+@media (min-width: 2100px) {
+  .nouvelle__carte {
+    max-width: 600px;
+  }
+}
+.nouvelle__carte:hover {
+  background-color: #E7C762;
+}
+.nouvelle__carte:hover div h6 {
+  color: #F5EDD8;
+}
+.nouvelle__carte:hover div p {
+  color: #F5EDD8;
+}
+.nouvelle__carte:hover div i {
+  color: #F5EDD8;
+}
+.nouvelle__carte i {
+  color: #354e38;
+}
+.nouvelle__carte div p {
+  color: #354e38;
+  margin-bottom: 0px;
+}
+
 /* ----------------- SECTION PAGE NOUVELLE ---------------------- */
 .nouvelles__container {
   background-color: #354e38;
   font-family: "rubik";
-}
-
-.nouvelles__titre {
-  color: #F5EDD8;
-  font-family: "rubik";
-  font-weight: bold;
-  padding-left: 20px;
 }
 
 .nouvelles__cards {
@@ -246,7 +308,7 @@ h5 {
   color-scheme: #354e38;
   font-family: "rubik";
   padding-left: 20px;
-  border-radius: 30%;
+  border-radius: 15px;
 }
 .nouvelles__cards:hover {
   background-color: #E7C762;
@@ -290,147 +352,74 @@ h5 {
 }
 
 /*------------------styles pour les cartes de nouvelles---------*/
-.nouvelle__card-list {
-  margin: 25px auto;
-  width: 45vw;
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 15px;
-}
-
-.nouvelle_card {
-  width: 45vw;
-  min-width: 263px;
-  max-width: 304px;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  background-color: #f5edd8;
-  border-radius: 18px;
-  justify-content: space-between;
-  color: #354e38;
-  transition: background-color 200ms ease-in-out;
-  font-family: "rubik";
-}
-
-.top-row {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.5em;
-}
-
-.middle-up-row {
-  font-size: 1em;
-}
-
-.middle-down-row {
-  font-size: 0.7em;
-}
-
-.bottom-row {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.5em;
-}
-
-.icone {
-  width: 1.5em;
-  position: relative;
-  top: 5px;
-}
-
-.un:hover {
-  background-color: #e7c762;
-}
-
-.deux:hover {
-  background-color: #e7c762;
-}
-
-.trois:hover {
-  background-color: #e7c762;
-}
-
-.quattre:hover {
-  background-color: #e7c762;
-}
-
-/* ----------------- SECTION PAGE SERVICE ----------------------- 
+/* ----------------- SECTION PAGE SERVICE ----------------------- */
 .section__services {
   width: 100%;
-  background-color: variables.$foret;
+  background-color: #354e38;
+  margin-bottom: 10vh;
 }
 
 .services {
   text-align: center;
-  background: linear-gradient(to bottom, variables.$red 70px, transparent 0%);
+  background: linear-gradient(to bottom, #8D3126 70px, transparent 0%);
   border-radius: 50px 50px 0% 0%;
-
-  &____container {
-    color: variables.$black;
-    font-family: "rubik";
-    width: 90%;
-    width: 100%;
-    height: 100%;
-  }
-  &__logo {
-    background-color: variables.$sable;
-    width: 80px;
-    padding: 15px;
-    border-radius: 40%;
-  }
-
-  &__titre {
-    color: variables.$creme;
-    font-weight: bolder;
-    font-size: 40px;
-    transform: translateY(-75px);
-    text-align: center;
-  }
-
-  &__container {
-    p {
-      text-align: center;
-      color: variables.$white;
-    }
-  }
+}
+.services____container {
+  color: #000;
+  font-family: "rubik";
+  width: 90%;
+  width: 100%;
+  height: 100%;
+}
+.services__logo {
+  background-color: #E7C762;
+  width: 80px;
+  padding: 15px;
+  border-radius: 40%;
+}
+.services__container p {
+  text-align: center;
+  color: white;
 }
 
-.section__services {
+/*Changer la classe ici pour autre chose*/
+.section__services2 {
   display: grid;
   gap: 12px;
 }
 
 .service__card__img {
-  object-fit: fill;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .service__card {
-  background-color: $black;
+  background-color: #000;
   margin: 10%;
 }
 
 .service__card__body {
-  background-color: $black;
+  background-color: #000;
 }
 
 .service__card__title {
-   color: $creme;
-  font-family: $titre;
+  color: #F5EDD8;
+  font-family: "rubik";
 }
 
 .service__card__text {
-  color: $white;
-  font-family: $texte;
+  color: white;
+  font-family: "rubik";
 }
 
 .btn {
-  background-color: $red;
+  background-color: #8D3126;
 }
 
 .service__btn {
-  background-color: $red;
-}*/
+  background-color: #8D3126;
+}
+
 /* ----------------- SECTION PAGE HISTOIRE ---------------------- */
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav {
@@ -637,7 +626,8 @@ div.accordion-item {
 .lelogo {
   width: 300px;
   position: absolute;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 footer {
@@ -763,6 +753,7 @@ footer a:hover {
   .date-block {
     background-color: #F5EDD8;
     width: 300px;
+    height: -moz-fit-content;
     height: fit-content;
     font-size: 30px;
     font-weight: bold;
@@ -772,6 +763,7 @@ footer a:hover {
   }
   .credit-block {
     width: 300px;
+    height: -moz-fit-content;
     height: fit-content;
     background: #8d3126;
     background: linear-gradient(0deg, #8D3126 0%, #E7C762 0%, #8D3126 72%);
@@ -788,4 +780,4 @@ footer a:hover {
     justify-content: center;
     flex-direction: column;
   }
-}
+}/*# sourceMappingURL=styles.css.map */
