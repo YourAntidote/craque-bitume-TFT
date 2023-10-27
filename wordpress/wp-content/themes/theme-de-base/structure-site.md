@@ -53,6 +53,7 @@
 ### Poste
 ### Image
 ## Modale (CPT)
+### Titre
 ### Image
 ### Paragraphe d'informations
 ## Héros

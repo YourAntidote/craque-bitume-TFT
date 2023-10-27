@@ -521,6 +521,7 @@ h6 {
 
 &_card{
   background-color: variables.$creme;
+  padding:5px;
 
   &:hover{
    background-color: variables.$sable;
@@ -543,6 +544,41 @@ a.equipe_href{
 
 }
 
+.equipe_modal{
+  background-color: variables.$foret;
+
+  &_img_div{
+    display : flex ;
+    align-items : center ;
+    justify-content : center ;
+  }
+
+&_img{
+  width:100%;
+  max-width: 50vw;
+  border-radius: 40%;
+}
+
+&_titre{
+  color:variables.$sable;
+}
+
+&_texte{
+  color:variables.$sable;
+}
+
+&_bouton{
+  color:variables.$creme;
+  background-color: variables.$tumbleweed;
+
+  &:hover{
+    color:variables.$tumbleweed;
+  background-color: variables.$creme;;
+  }
+}
+
+
+}
 /* ----------------- SECTION PAGE PROPOS ------------------------ */
 
 .propos {

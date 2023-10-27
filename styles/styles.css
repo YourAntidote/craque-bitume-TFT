@@ -498,6 +498,7 @@ h6 {
 
 .equipe_card {
   background-color: #F5EDD8;
+  padding: 5px;
 }
 .equipe_card:hover {
   background-color: #E7C762;
@@ -512,6 +513,34 @@ a.equipe_href {
   text-decoration: none;
   border-radius: 15px;
   color: #354e38;
+}
+
+.equipe_modal {
+  background-color: #354e38;
+}
+.equipe_modal_img_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.equipe_modal_img {
+  width: 100%;
+  max-width: 50vw;
+  border-radius: 40%;
+}
+.equipe_modal_titre {
+  color: #E7C762;
+}
+.equipe_modal_texte {
+  color: #E7C762;
+}
+.equipe_modal_bouton {
+  color: #F5EDD8;
+  background-color: #E5A484;
+}
+.equipe_modal_bouton:hover {
+  color: #E5A484;
+  background-color: #F5EDD8;
 }
 
 /* ----------------- SECTION PAGE PROPOS ------------------------ */
