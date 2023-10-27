@@ -517,7 +517,31 @@ h6 {
   background-size: cover;
 }
 
+.equipe{
 
+&_card{
+  background-color: variables.$creme;
+
+  &:hover{
+   background-color: variables.$sable;
+  }
+}
+
+&_img{
+  border: 10px solid variables.$foret;
+  border-radius: 0%;
+  padding:10px;
+
+}
+
+}
+
+a.equipe_href{
+  text-decoration: none;
+  border-radius: 15px;
+  color:variables.$foret;
+
+}
 
 /* ----------------- SECTION PAGE PROPOS ------------------------ */
 

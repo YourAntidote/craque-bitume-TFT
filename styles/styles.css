@@ -496,6 +496,24 @@ h6 {
   background-size: cover;
 }
 
+.equipe_card {
+  background-color: #F5EDD8;
+}
+.equipe_card:hover {
+  background-color: #E7C762;
+}
+.equipe_img {
+  border: 10px solid #354e38;
+  border-radius: 0%;
+  padding: 10px;
+}
+
+a.equipe_href {
+  text-decoration: none;
+  border-radius: 15px;
+  color: #354e38;
+}
+
 /* ----------------- SECTION PAGE PROPOS ------------------------ */
 .propos__section {
   background-color: #354e38;
