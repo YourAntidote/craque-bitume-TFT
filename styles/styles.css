@@ -172,8 +172,7 @@ h6 {
   width: 100%;
   height: 100%;
   aspect-ratio: 5/4;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .swiper-button-next {
@@ -389,8 +388,7 @@ h6 {
 }
 
 .service__card__img {
-  -o-object-fit: fill;
-     object-fit: fill;
+  object-fit: fill;
 }
 
 .service__card {
@@ -446,7 +444,6 @@ h6 {
 }
 .timeline .events .event {
   position: relative;
-  left: -80px;
   width: 80vw;
   display: block;
   opacity: 0;
@@ -480,7 +477,25 @@ h6 {
   transition: height 0.3s;
 }
 
+.histoire__hero {
+  width: 100vw;
+  height: 40vh;
+  background-image: url(../sources/medias/histoire/paysage_histoire.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
 /* ----------------- SECTION PAGE EQUIPE ------------------------ */
+.equipe__hero {
+  width: 100vw;
+  height: 40vh;
+  background-image: url(../sources/medias/equipe/hero_equipe.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 /* ----------------- SECTION PAGE PROPOS ------------------------ */
 .propos__section {
   background-color: #354e38;
@@ -514,6 +529,15 @@ div.accordion-item {
 
 .accordion-button:not(.collapsed) {
   background-color: #E7C762;
+}
+
+.propos__hero {
+  width: 100vw;
+  height: 40vh;
+  background-image: url(../sources/medias/a_propos/hero_fleurs.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /*---------------------------PAGE ERREUR 404---------------------- */
@@ -626,8 +650,7 @@ div.accordion-item {
 .lelogo {
   width: 300px;
   position: absolute;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 footer {
@@ -753,7 +776,6 @@ footer a:hover {
   .date-block {
     background-color: #F5EDD8;
     width: 300px;
-    height: -moz-fit-content;
     height: fit-content;
     font-size: 30px;
     font-weight: bold;
@@ -763,7 +785,6 @@ footer a:hover {
   }
   .credit-block {
     width: 300px;
-    height: -moz-fit-content;
     height: fit-content;
     background: #8d3126;
     background: linear-gradient(0deg, #8D3126 0%, #E7C762 0%, #8D3126 72%);
@@ -780,4 +801,4 @@ footer a:hover {
     justify-content: center;
     flex-direction: column;
   }
-}/*# sourceMappingURL=styles.css.map */
+}

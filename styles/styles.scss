@@ -334,6 +334,7 @@ h6 {
   background-position: center;
   background-size: cover;
 }
+
 .nouvelles__hero-title {
   font-family: "rubik";
   color: #f5edd8;
@@ -457,7 +458,6 @@ h6 {
 
     .event {
       position: relative;
-      left:-80px;
       width: 80vw;
       display: block;
       opacity: 0;
@@ -497,7 +497,28 @@ h6 {
   transition: height 0.3s;
 }
 
+.histoire__hero {
+  width: 100vw;
+  height: 40vh;
+  background-image: url(../sources/medias/histoire/paysage_histoire.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
 /* ----------------- SECTION PAGE EQUIPE ------------------------ */
+
+.equipe__hero {
+  width: 100vw;
+  height: 40vh;
+  background-image: url(../sources/medias/equipe/hero_equipe.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
 /* ----------------- SECTION PAGE PROPOS ------------------------ */
 
 .propos {
@@ -538,6 +559,15 @@ div.accordion-item {
 
 .accordion-button:not(.collapsed) {
   background-color: variables.$sable;
+}
+
+.propos__hero {
+  width: 100vw;
+  height: 40vh;
+  background-image: url(../sources/medias/a_propos/hero_fleurs.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 /*---------------------------PAGE ERREUR 404---------------------- */
 .contenu {
