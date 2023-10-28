@@ -77,6 +77,14 @@ h6 {
 .none {
   display: none !important;
 }
+
+.description_generique {
+  width: 100vw;
+  background-color: variables.$red;
+  border: 1px solid variables.$sable;
+  color: variables.$creme;
+  font-size: 15px;
+}
 /* ----------------- SECTION PAGE ACCUEIL ----------------------- */
 
 .ignorez {
@@ -429,7 +437,7 @@ h6 {
   box-shadow: 5px 5px 5px 0px #484848;
 }
 
-.card-body{
+.card-body-temoignage-index{
   color: variables.$red;
   font-family: "rubik-light";
   max-width: 800px;
