@@ -568,6 +568,19 @@ h6 {
   background-color:  variables.$sable;
 }
 
+.service_acueil {
+  background-image: url(../assets/img/couverturesitewebalt_2800x.png);
+  font-family: "rubik";
+  font-weight: bold;
+
+  position: relative;
+  display: block;
+  top: 40px;
+
+  
+}
+
+
 /* ----------------- SECTION PAGE HISTOIRE ---------------------- */
 @media (min-width: 992px) {
   .navbar-expand-lg {
