@@ -666,6 +666,15 @@ h6 {
 
 .equipe{
 
+  &__title {
+    display: block;
+    position: relative;
+    top: 20px;
+    color: variables.$creme;
+    font-family: "rubik";
+    font-weight: bold;
+  }
+
 &_card{
   background-color: variables.$creme;
   padding:5px;
