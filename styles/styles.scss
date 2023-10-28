@@ -530,27 +530,24 @@ h6 {
     }
   }
 }
-/*Changer la classe ici pour autre chose*/
+/*Changer la classe ici pour autre chose*/ 
 .section__services2 {
   display: grid;
-  gap: 12px;
+  gap: 10px;
+  
 }
 
 .service__card__img {
   object-fit: fill;
 }
 
-.service__card {
-  background-color: variables.$black;
-  margin: 10%;
-}
-
-.service__card__body {
-  background-color: variables.$black;
+.service__all_cards{
+  text-align: center;
+  border-radius: 10%;
 }
 
 .service__card__title {
-   color:  variables.$creme;
+  color:  variables.$creme;
   font-family: "rubik";
 }
 
@@ -565,6 +562,10 @@ h6 {
 
 .service__btn {
   background-color:  variables.$red;
+}
+
+.service__btn:hover {
+  background-color:  variables.$sable;
 }
 
 /* ----------------- SECTION PAGE HISTOIRE ---------------------- */
