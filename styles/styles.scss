@@ -27,6 +27,19 @@
   font-weight: 400;
   font-stretch: normal;
 }
+@font-face {
+  font-family: "rubik-light";
+  src: url("https://use.typekit.net/af/8e7336/0000000000000000774ed06c/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/8e7336/0000000000000000774ed06c/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/8e7336/0000000000000000774ed06c/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 100;
+  font-stretch: normal;
+}
 
 html {
   height: 2500px;
@@ -59,6 +72,10 @@ h6 {
   font-size: 20px;
 
   font-weight: 600;
+}
+
+.none {
+  display: none !important;
 }
 /* ----------------- SECTION PAGE ACCUEIL ----------------------- */
 
@@ -97,6 +114,14 @@ h6 {
 }
 .navbar-nav {
   text-align: end;
+  .nav-item {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    .nav-link {
+      text-align: center;
+    }
+  }
 }
 .navbar-dark {
   .navbar-nav {
@@ -109,6 +134,7 @@ h6 {
     }
   }
 }
+
 
 
 .section__titre {
@@ -355,6 +381,117 @@ h6 {
   height: 150px;
   background-color: #8d3126;
 }
+
+/* ----------------- SECTION index TÉMOIGNAGE ---------------------- */
+.testimonials {
+  border-radius: 50px 50px 50px 50px;
+  box-shadow: 2px 2px 7px 0px #182c1a;
+  background: linear-gradient(to bottom, #8D3126 70px, transparent 0%);
+}
+
+
+.temoignage {
+    text-align: center;
+    
+    box-sizing: border-box;
+
+    &__personne{
+      margin: 0px;
+
+      &:hover {
+        .card{
+          background-color: variables.$sable;
+          transform: scale(1.02);
+          transition: 0.3s;
+        }
+      }
+    }
+  
+   div{
+     div{
+       div{
+         div{
+           .card-text {
+             font-weight: 200;
+           }
+         }
+       }
+     }
+   }
+
+  }
+
+
+
+
+.people {
+  width: 30rem;
+  box-shadow: 5px 5px 5px 0px #484848;
+}
+
+.card-body{
+  color: variables.$red;
+  font-family: "rubik-light";
+  max-width: 800px;
+
+  .card-text{
+    font-size: 20px;
+
+  }
+  .description{
+    font-size: 20px;
+    color: variables.$black;
+    font-weight: 200;
+    text-align: left;
+  }
+  .card-title{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    font-family: "rubik";
+  }
+}
+
+.carte{
+  border: none;
+}
+
+.quote{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 50px;
+  color: variables.$sable;
+
+}
+
+.card {
+  background-color: variables.$red;
+  box-shadow: 5px 5px 10px 0px #383838;
+}
+
+.section-testimonials .card { 
+  background-color: variables.$creme;
+  border-radius: 20px;  
+  transition: 0.3s;
+}
+.card-img-top {
+  border-radius: 20px 20px 0px 0px;
+  aspect-ratio: 1/1;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
 /*------------------styles pour les cartes de nouvelles---------*/
 
 
@@ -363,13 +500,14 @@ h6 {
 .section__services {
   width: 100%;
   background-color: variables.$foret;
-  margin-bottom: 10vh;
+  margin-bottom: 30vh;
 }
 
 .services {
   text-align: center;
   background: linear-gradient(to bottom, variables.$red 70px, transparent 0%);
-  border-radius: 50px 50px 0% 0%;
+  border-radius: 50px 50px 50px 50px;
+  box-shadow: 2px 2px 7px 0px #182c1a;
   
 
   &____container {
