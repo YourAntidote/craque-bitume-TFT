@@ -63,6 +63,14 @@ h6 {
   display: none !important;
 }
 
+.description_generique {
+  width: 100vw;
+  background-color: #8D3126;
+  border: 1px solid #E7C762;
+  color: #F5EDD8;
+  font-size: 15px;
+}
+
 /* ----------------- SECTION PAGE ACCUEIL ----------------------- */
 .ignorez {
   position: relative;
@@ -193,8 +201,7 @@ h6 {
   width: 100%;
   height: 100%;
   aspect-ratio: 5/4;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .swiper-button-next {
@@ -400,21 +407,21 @@ h6 {
   box-shadow: 5px 5px 5px 0px #484848;
 }
 
-.card-body {
+.card-body-temoignage-index {
   color: #8D3126;
   font-family: "rubik-light";
   max-width: 800px;
 }
-.card-body .card-text {
+.card-body-temoignage-index .card-text {
   font-size: 20px;
 }
-.card-body .description {
+.card-body-temoignage-index .description {
   font-size: 20px;
   color: #000;
   font-weight: 200;
   text-align: left;
 }
-.card-body .card-title {
+.card-body-temoignage-index .card-title {
   font-size: 20px;
   font-weight: 400;
   text-align: left;
@@ -448,8 +455,7 @@ h6 {
   border-radius: 20px 20px 0px 0px;
   aspect-ratio: 1/1;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 /*------------------styles pour les cartes de nouvelles---------*/
@@ -487,21 +493,16 @@ h6 {
 /*Changer la classe ici pour autre chose*/
 .section__services2 {
   display: grid;
-  gap: 12px;
+  gap: 10px;
 }
 
 .service__card__img {
-  -o-object-fit: fill;
-     object-fit: fill;
+  object-fit: fill;
 }
 
-.service__card {
-  background-color: #000;
-  margin: 10%;
-}
-
-.service__card__body {
-  background-color: #000;
+.service__all_cards {
+  text-align: center;
+  border-radius: 10%;
 }
 
 .service__card__title {
@@ -520,6 +521,10 @@ h6 {
 
 .service__btn {
   background-color: #8D3126;
+}
+
+.service__btn:hover {
+  background-color: #E7C762;
 }
 
 /* ----------------- SECTION PAGE HISTOIRE ---------------------- */
@@ -851,8 +856,7 @@ div.accordion-item {
 .lelogo {
   width: 300px;
   position: absolute;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 footer {
@@ -978,7 +982,6 @@ footer a:hover {
   .date-block {
     background-color: #F5EDD8;
     width: 300px;
-    height: -moz-fit-content;
     height: fit-content;
     font-size: 30px;
     font-weight: bold;
@@ -988,7 +991,6 @@ footer a:hover {
   }
   .credit-block {
     width: 300px;
-    height: -moz-fit-content;
     height: fit-content;
     background: #8d3126;
     background: linear-gradient(0deg, #8D3126 0%, #E7C762 0%, #8D3126 72%);
@@ -1005,4 +1007,4 @@ footer a:hover {
     justify-content: center;
     flex-direction: column;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
