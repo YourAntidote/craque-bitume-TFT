@@ -552,6 +552,8 @@ h6 {
 .service__all_cards{
   text-align: center;
   border-radius: 10%;
+
+  background-color: #182c1a;
 }
 
 .service__card__title {
@@ -564,16 +566,12 @@ h6 {
   font-family: "rubik";
 }
 
-.btn {
-  background-color:  variables.$red;
-}
-
 .service__btn {
-  background-color:  variables.$red;
+  color:  variables.$red;
 }
 
 .service__btn:hover {
-  background-color:  variables.$sable;
+  color:  variables.$sable;
 }
 
 .service_acueil {
@@ -585,7 +583,7 @@ h6 {
   display: block;
   top: 40px;
 
-  
+
 }
 
 
