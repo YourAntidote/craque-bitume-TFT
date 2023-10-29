@@ -376,10 +376,13 @@ h6 {
 }
 
 .nouvelle__card-list {
-  width: 45vw;
+  max-width: 960px; /* Adjust the max-width as needed */
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: auto auto;
-  gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(263px, 1fr));
+  row-gap: 10px;
+  column-gap: 25px;
+  padding: 15px;
 }
 
 .nouvelle_card {
@@ -394,6 +397,13 @@ h6 {
   justify-content: space-between;
   color: #354e38;
   transition: background-color 200ms ease-in-out;
+}
+
+@media screen and (max-width: 600px) {
+  .nouvelle__card-list {
+    grid-template-columns: 1fr;
+    transform: translateX(10%);
+  }
 }
 
 .top-row {
@@ -438,6 +448,31 @@ h6 {
   background-color: #e7c762;
 }
 
+.nouvelle__afficher-plus {
+  p {
+    margin: 5px auto;
+    text-align: center;
+    color: variables.$creme;
+    text-decoration: underline;
+    &:hover {
+      color: variables.$sable;
+    }
+  }
+}
+/* filter bar styles */
+.nouvelles__filter-bar {
+  background-color: variables.$foret;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  margin-left: 25vw;
+  margin-right: 25vw;
+}
+
+.filter-dropdown {
+  margin-right: 10px;
+}
 /* ----------------- SECTION index TÉMOIGNAGE ---------------------- */
 .testimonials {
   border-radius: 50px 50px 50px 50px;
