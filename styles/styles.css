@@ -379,11 +379,71 @@ h6 {
   background-color: #8d3126;
 }
 
+  grid-template-columns: auto auto;
+  gap: 15px;
+}
+
+.nouvelle_card {
+  width: 45vw;
+  min-width: 263px;
+  max-width: 304px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #f5edd8;
+  border-radius: 18px;
+  justify-content: space-between;
+  color: #354e38;
+  transition: background-color 200ms ease-in-out;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.5em;
+}
+
+.middle-up-row {
+  font-size: 1em;
+}
+
+.middle-down-row {
+  font-size: 0.7em;
+}
+
+.bottom-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.5em;
+}
+
+.icone {
+  width: 1.5em;
+  position: relative;
+  top: 5px;
+}
+
+.un:hover {
+  background-color: #e7c762;
+}
+
+.deux:hover {
+  background-color: #e7c762;
+}
+
+.trois:hover {
+  background-color: #e7c762;
+}
+
+.quattre:hover {
+  background-color: #e7c762;
+}
+
 /* ----------------- SECTION index TÉMOIGNAGE ---------------------- */
 .testimonials {
   border-radius: 50px 50px 50px 50px;
   box-shadow: 2px 2px 7px 0px #182c1a;
-  background: linear-gradient(to bottom, #8D3126 70px, transparent 0%);
+  background: linear-gradient(to bottom, #8d3126 70px, transparent 0%);
 }
 
 .temoignage {
@@ -455,10 +515,10 @@ h6 {
   border-radius: 20px 20px 0px 0px;
   aspect-ratio: 1/1;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-/*------------------styles pour les cartes de nouvelles---------*/
 /* ----------------- SECTION PAGE SERVICE ----------------------- */
 .section__services {
   width: 100%;
@@ -497,12 +557,14 @@ h6 {
 }
 
 .service__card__img {
-  object-fit: fill;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .service__all_cards {
   text-align: center;
   border-radius: 10%;
+  background-color: #182c1a;
 }
 
 .service__card__title {
@@ -515,16 +577,21 @@ h6 {
   font-family: "rubik";
 }
 
-.btn {
-  background-color: #8D3126;
-}
-
 .service__btn {
-  background-color: #8D3126;
+  color: #8D3126;
 }
 
 .service__btn:hover {
-  background-color: #E7C762;
+  color: #E7C762;
+}
+
+.service_acueil {
+  background-image: url(../assets/img/couverturesitewebalt_2800x.png);
+  font-family: "rubik";
+  font-weight: bold;
+  position: relative;
+  display: block;
+  top: 40px;
 }
 
 /* ----------------- SECTION PAGE HISTOIRE ---------------------- */
@@ -864,7 +931,8 @@ div.accordion-item {
 .lelogo {
   width: 300px;
   position: absolute;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 footer {
@@ -990,6 +1058,7 @@ footer a:hover {
   .date-block {
     background-color: #F5EDD8;
     width: 300px;
+    height: -moz-fit-content;
     height: fit-content;
     font-size: 30px;
     font-weight: bold;
@@ -999,6 +1068,7 @@ footer a:hover {
   }
   .credit-block {
     width: 300px;
+    height: -moz-fit-content;
     height: fit-content;
     background: #8d3126;
     background: linear-gradient(0deg, #8D3126 0%, #E7C762 0%, #8D3126 72%);
@@ -1015,4 +1085,4 @@ footer a:hover {
     justify-content: center;
     flex-direction: column;
   }
-}
+}/*# sourceMappingURL=styles.css.map */

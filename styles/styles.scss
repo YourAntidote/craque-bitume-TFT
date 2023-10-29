@@ -143,8 +143,6 @@ h6 {
   }
 }
 
-
-
 .section__titre {
   color: variables.$creme;
   font-weight: bolder;
@@ -275,22 +273,16 @@ h6 {
 /* ----------------- SECTION index NOUVELLE ---------------------- */
 
 .nouvelle {
-
   &__logo {
     font-size: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-
-    
-
-
   }
-  &__carte{
-
+  &__carte {
     background-color: variables.$creme;
-    border-radius:  15px;
+    border-radius: 15px;
     height: 150px;
     max-width: 600px;
 
@@ -307,38 +299,31 @@ h6 {
       max-width: 600px;
     }
 
-
-  &:hover{
-    background-color: variables.$sable;
-    div {
-      h6{
-        color: variables.$creme
-      }
-      p{
-        color: variables.$creme
-      }
-      i{
-        color: variables.$creme;
+    &:hover {
+      background-color: variables.$sable;
+      div {
+        h6 {
+          color: variables.$creme;
+        }
+        p {
+          color: variables.$creme;
+        }
+        i {
+          color: variables.$creme;
+        }
       }
     }
-  }
-  i{
-    color: variables.$foret;
-
-  }
-  div{
-    p {
+    i {
       color: variables.$foret;
-      margin-bottom: 0px;
     }
-
+    div {
+      p {
+        color: variables.$foret;
+        margin-bottom: 0px;
+      }
+    }
   }
 }
-}
-
-
-
-
 
 /* ----------------- SECTION PAGE NOUVELLE ---------------------- */
 
@@ -390,69 +375,126 @@ h6 {
   background-color: #8d3126;
 }
 
+.nouvelle__card-list {
+  width: 45vw;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 15px;
+}
+
+.nouvelle_card {
+  width: 45vw;
+  min-width: 263px;
+  max-width: 304px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #f5edd8;
+  border-radius: 18px;
+  justify-content: space-between;
+  color: #354e38;
+  transition: background-color 200ms ease-in-out;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.5em;
+}
+
+.middle-up-row {
+  font-size: 1em;
+}
+
+.middle-down-row {
+  font-size: 0.7em;
+}
+
+.bottom-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.5em;
+}
+
+.icone {
+  width: 1.5em;
+  position: relative;
+  top: 5px;
+}
+
+.un:hover {
+  background-color: #e7c762;
+}
+
+.deux:hover {
+  background-color: #e7c762;
+}
+
+.trois:hover {
+  background-color: #e7c762;
+}
+
+.quattre:hover {
+  background-color: #e7c762;
+}
+
 /* ----------------- SECTION index TÉMOIGNAGE ---------------------- */
 .testimonials {
   border-radius: 50px 50px 50px 50px;
   box-shadow: 2px 2px 7px 0px #182c1a;
-  background: linear-gradient(to bottom, #8D3126 70px, transparent 0%);
+  background: linear-gradient(to bottom, #8d3126 70px, transparent 0%);
 }
 
-
 .temoignage {
-    text-align: center;
-    
-    box-sizing: border-box;
+  text-align: center;
 
-    &__personne{
-      margin: 0px;
+  box-sizing: border-box;
 
-      &:hover {
-        .card{
-          background-color: variables.$sable;
-          transform: scale(1.02);
-          transition: 0.3s;
+  &__personne {
+    margin: 0px;
+
+    &:hover {
+      .card {
+        background-color: variables.$sable;
+        transform: scale(1.02);
+        transition: 0.3s;
+      }
+    }
+  }
+
+  div {
+    div {
+      div {
+        div {
+          .card-text {
+            font-weight: 200;
+          }
         }
       }
     }
-  
-   div{
-     div{
-       div{
-         div{
-           .card-text {
-             font-weight: 200;
-           }
-         }
-       }
-     }
-   }
-
   }
-
-
-
+}
 
 .people {
   width: 30rem;
   box-shadow: 5px 5px 5px 0px #484848;
 }
 
-.card-body-temoignage-index{
+.card-body-temoignage-index {
   color: variables.$red;
   font-family: "rubik-light";
   max-width: 800px;
 
-  .card-text{
+  .card-text {
     font-size: 20px;
-
   }
-  .description{
+  .description {
     font-size: 20px;
     color: variables.$black;
     font-weight: 200;
     text-align: left;
   }
-  .card-title{
+  .card-title {
     font-size: 20px;
     font-weight: 400;
     text-align: left;
@@ -460,17 +502,16 @@ h6 {
   }
 }
 
-.carte{
+.carte {
   border: none;
 }
 
-.quote{
+.quote {
   position: absolute;
   top: 10px;
   left: 10px;
   font-size: 50px;
   color: variables.$sable;
-
 }
 
 .card {
@@ -478,9 +519,9 @@ h6 {
   box-shadow: 5px 5px 10px 0px #383838;
 }
 
-.section-testimonials .card { 
+.section-testimonials .card {
   background-color: variables.$creme;
-  border-radius: 20px;  
+  border-radius: 20px;
   transition: 0.3s;
 }
 .card-img-top {
@@ -489,20 +530,6 @@ h6 {
   width: 100%;
   object-fit: cover;
 }
-
-
-
-
-
-
-
-
-
-
-
-/*------------------styles pour les cartes de nouvelles---------*/
-
-
 
 /* ----------------- SECTION PAGE SERVICE ----------------------- */
 .section__services {
@@ -516,7 +543,6 @@ h6 {
   background: linear-gradient(to bottom, variables.$red 70px, transparent 0%);
   border-radius: 50px 50px 50px 50px;
   box-shadow: 2px 2px 7px 0px #182c1a;
-  
 
   &____container {
     color: variables.$black;
@@ -538,18 +564,17 @@ h6 {
     }
   }
 }
-/*Changer la classe ici pour autre chose*/ 
+/*Changer la classe ici pour autre chose*/
 .section__services2 {
   display: grid;
   gap: 10px;
-  
 }
 
 .service__card__img {
   object-fit: fill;
 }
 
-.service__all_cards{
+.service__all_cards {
   text-align: center;
   border-radius: 10%;
 
@@ -557,21 +582,21 @@ h6 {
 }
 
 .service__card__title {
-  color:  variables.$creme;
+  color: variables.$creme;
   font-family: "rubik";
 }
 
 .service__card__text {
-  color:  variables.$white;
+  color: variables.$white;
   font-family: "rubik";
 }
 
 .service__btn {
-  color:  variables.$red;
+  color: variables.$red;
 }
 
 .service__btn:hover {
-  color:  variables.$sable;
+  color: variables.$sable;
 }
 
 .service_acueil {
@@ -582,10 +607,7 @@ h6 {
   position: relative;
   display: block;
   top: 40px;
-
-
 }
-
 
 /* ----------------- SECTION PAGE HISTOIRE ---------------------- */
 @media (min-width: 992px) {
@@ -620,12 +642,18 @@ h6 {
       display: block;
       opacity: 0;
       padding: 10px;
-      background-image: linear-gradient(to bottom right, variables.$creme, variables.$foret,variables.$foret,variables.$foret,variables.$foret);
+      background-image: linear-gradient(
+        to bottom right,
+        variables.$creme,
+        variables.$foret,
+        variables.$foret,
+        variables.$foret,
+        variables.$foret
+      );
       border: 5px solid variables.$creme;
       border-radius: 5px;
       margin: 30px 10px;
       box-shadow: 30px 30px 6px rgba(255, 255, 255, 0.219);
-      
 
       &_titre {
         color: variables.$foret;
@@ -675,8 +703,7 @@ h6 {
   background-size: cover;
 }
 
-.equipe{
-
+.equipe {
   &__title {
     display: block;
     position: relative;
@@ -686,72 +713,66 @@ h6 {
     font-weight: bold;
   }
 
-&_card{
-  background-color: variables.$creme;
-  padding:5px;
+  &_card {
+    background-color: variables.$creme;
+    padding: 5px;
 
-  &:hover{
-   background-color: variables.$sable;
+    &:hover {
+      background-color: variables.$sable;
+    }
+  }
+
+  &_img {
+    border: 10px solid variables.$foret;
+    border-radius: 0%;
+    padding: 10px;
   }
 }
 
-&_img{
-  border: 10px solid variables.$foret;
-  border-radius: 0%;
-  padding:10px;
-
-}
-
-}
-
-a.equipe_href{
+a.equipe_href {
   text-decoration: none;
   border-radius: 15px;
-  color:variables.$foret;
-
+  color: variables.$foret;
 }
 
-.equipe_modal{
+.equipe_modal {
   background-color: variables.$foret;
 
-  &_img_div{
-    display : flex ;
-    align-items : center ;
-    justify-content : center ;
+  &_img_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-&_img{
-  width:100%;
-  max-width: 50vw;
-  border-radius: 40%;
-}
-
-&_titre{
-  color:variables.$sable;
-}
-
-&_texte{
-  color:variables.$sable;
-}
-
-&_bouton{
-  color:variables.$creme;
-  background-color: variables.$tumbleweed;
-
-  &:hover{
-    color:variables.$tumbleweed;
-  background-color: variables.$creme;;
+  &_img {
+    width: 100%;
+    max-width: 50vw;
+    border-radius: 40%;
   }
-}
 
+  &_titre {
+    color: variables.$sable;
+  }
 
+  &_texte {
+    color: variables.$sable;
+  }
+
+  &_bouton {
+    color: variables.$creme;
+    background-color: variables.$tumbleweed;
+
+    &:hover {
+      color: variables.$tumbleweed;
+      background-color: variables.$creme;
+    }
+  }
 }
 /* ----------------- SECTION PAGE PROPOS ------------------------ */
 
 .propos {
   &__section {
     background-color: variables.$foret;
-    
   }
 
   &__title {
@@ -804,8 +825,6 @@ div.accordion-item {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-
-  
 }
 
 .erreur__hero {
@@ -825,9 +844,9 @@ div.accordion-item {
   width: 77vw;
   position: relative;
   top: 100px;
-  display : flex-wrap ;
-  align-items : center ;
-  justify-content : center ;
+  display: flex-wrap;
+  align-items: center;
+  justify-content: center;
 }
 .erreur-titre {
   color: variables.$sable;
@@ -835,82 +854,79 @@ div.accordion-item {
   text-transform: uppercase;
 }
 .erreur-description {
-
   color: variables.$creme;
-  
-
 }
-@media screen and (max-width: 375px) { 
-  .fleche{
-    width:300px;
-    z-index:1;
-  
-    &.rouge{
+@media screen and (max-width: 375px) {
+  .fleche {
+    width: 300px;
+    z-index: 1;
+
+    &.rouge {
       position: absolute;
       top: 3vh;
-    left:-8vw;
+      left: -8vw;
     }
-  
-    &.jaune{
-      position: absolute;
-    top: 3vh;
-    left:-10vw;
-    }
-  
-    &.vert{
+
+    &.jaune {
       position: absolute;
       top: 3vh;
-    left:-12vw;
+      left: -10vw;
+    }
+
+    &.vert {
+      position: absolute;
+      top: 3vh;
+      left: -12vw;
     }
   }
 }
 
-@media screen and (min-width: 376px) { 
-  .fleche{
-    width:300px;
-    z-index:1;
-  
-    &.rouge{
+@media screen and (min-width: 376px) {
+  .fleche {
+    width: 300px;
+    z-index: 1;
+
+    &.rouge {
       position: absolute;
       top: 2vh;
-    left:-6vw;
+      left: -6vw;
     }
-  
-    &.jaune{
-      position: absolute;
-    top: 2vh;
-    left:-5vw;
-    }
-  
-    &.vert{
+
+    &.jaune {
       position: absolute;
       top: 2vh;
-    left:-7vw;
+      left: -5vw;
+    }
+
+    &.vert {
+      position: absolute;
+      top: 2vh;
+      left: -7vw;
     }
   }
 }
 
-@media screen and (min-width: 1200px) { 
-  .fleche{
-    width:300px;
-    z-index:1;
-  
-    &.rouge{
+@media screen and (min-width: 1200px) {
+  .fleche {
+    width: 300px;
+    z-index: 1;
+
+    &.rouge {
       position: absolute;
       top: 0vh;
-    left:-4vw;
+      left: -4vw;
     }
-  
-    &.jaune{
-      position: absolute;
-    top: 0vh;
-    left:-3vw;
-    }
-  
-    &.vert{
+
+    &.jaune {
       position: absolute;
       top: 0vh;
-    left:-2vw;
+      left: -3vw;
+    }
+
+    &.vert {
+      position: absolute;
+      top: 0vh;
+      left: -2vw;
     }
   }
 }
