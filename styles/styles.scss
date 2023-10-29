@@ -380,6 +380,7 @@ h6 {
   display: grid;
   grid-template-columns: auto auto;
   gap: 15px;
+  margin: 15px auto;
 }
 
 .nouvelle_card {
@@ -436,6 +437,18 @@ h6 {
 
 .quattre:hover {
   background-color: #e7c762;
+}
+
+.nouvelle__afficher-plus {
+  p {
+    margin: 5px auto;
+    text-align: center;
+    color: variables.$creme;
+    text-decoration: underline;
+    &:hover {
+      color: variables.$sable;
+    }
+  }
 }
 
 /* ----------------- SECTION index TÉMOIGNAGE ---------------------- */
