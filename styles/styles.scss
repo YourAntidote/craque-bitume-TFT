@@ -817,6 +817,28 @@ div.accordion-item {
   background-position: center;
   background-size: cover;
 }
+
+.propos_card{
+  background-color: variables.$sable;
+  width:40vw;
+}
+
+.apropos_section{
+  background-color: variables.$foret;
+  border: 5px solid variables.$sable;
+  border-radius: 15px;
+
+  &_titre{
+  color: variables.$sable;
+  }
+
+  &_texte{
+    color: variables.$creme;
+    }
+  
+}
+
+
 /*---------------------------PAGE ERREUR 404---------------------- */
 .contenu_erreur {
   position: relative;

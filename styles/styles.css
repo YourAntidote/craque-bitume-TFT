@@ -379,6 +379,9 @@ h6 {
   background-color: #8d3126;
 }
 
+.nouvelle__card-list {
+  width: 45vw;
+  display: grid;
   grid-template-columns: auto auto;
   gap: 15px;
 }
@@ -515,8 +518,7 @@ h6 {
   border-radius: 20px 20px 0px 0px;
   aspect-ratio: 1/1;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 /* ----------------- SECTION PAGE SERVICE ----------------------- */
@@ -557,8 +559,7 @@ h6 {
 }
 
 .service__card__img {
-  -o-object-fit: fill;
-     object-fit: fill;
+  object-fit: fill;
 }
 
 .service__all_cards {
@@ -771,6 +772,23 @@ div.accordion-item {
   background-size: cover;
 }
 
+.propos_card {
+  background-color: #E7C762;
+  width: 40vw;
+}
+
+.apropos_section {
+  background-color: #354e38;
+  border: 5px solid #E7C762;
+  border-radius: 15px;
+}
+.apropos_section_titre {
+  color: #E7C762;
+}
+.apropos_section_texte {
+  color: #F5EDD8;
+}
+
 /*---------------------------PAGE ERREUR 404---------------------- */
 .contenu_erreur {
   position: relative;
@@ -931,8 +949,7 @@ div.accordion-item {
 .lelogo {
   width: 300px;
   position: absolute;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 footer {
@@ -1058,7 +1075,6 @@ footer a:hover {
   .date-block {
     background-color: #F5EDD8;
     width: 300px;
-    height: -moz-fit-content;
     height: fit-content;
     font-size: 30px;
     font-weight: bold;
@@ -1068,7 +1084,6 @@ footer a:hover {
   }
   .credit-block {
     width: 300px;
-    height: -moz-fit-content;
     height: fit-content;
     background: #8d3126;
     background: linear-gradient(0deg, #8D3126 0%, #E7C762 0%, #8D3126 72%);
@@ -1085,4 +1100,4 @@ footer a:hover {
     justify-content: center;
     flex-direction: column;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
