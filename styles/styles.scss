@@ -376,7 +376,7 @@ h6 {
 }
 
 .nouvelle__card-list {
-  max-width: 960px; /* Adjust the max-width as needed */
+  max-width: 960px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(263px, 1fr));
@@ -449,6 +449,14 @@ h6 {
 }
 
 .nouvelle__afficher-plus {
+  display: flex;
+  justify-content: center;
+  margin: 15px auto;
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   p {
     margin: 5px auto;
     text-align: center;
@@ -468,6 +476,7 @@ h6 {
   position: relative;
   margin-left: 25vw;
   margin-right: 25vw;
+  margin-top: 15px;
 }
 
 .filter-dropdown {
@@ -853,26 +862,24 @@ div.accordion-item {
   background-size: cover;
 }
 
-.propos_card{
+.propos_card {
   background-color: variables.$sable;
-  width:40vw;
+  width: 40vw;
 }
 
-.apropos_section{
+.apropos_section {
   background-color: variables.$foret;
   border: 5px solid variables.$sable;
   border-radius: 15px;
 
-  &_titre{
-  color: variables.$sable;
+  &_titre {
+    color: variables.$sable;
   }
 
-  &_texte{
+  &_texte {
     color: variables.$creme;
-    }
-  
+  }
 }
-
 
 /*---------------------------PAGE ERREUR 404---------------------- */
 .contenu_erreur {
