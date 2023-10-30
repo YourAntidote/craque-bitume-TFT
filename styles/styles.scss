@@ -48,6 +48,7 @@ html {
   height: 100%;
   position: relative;
   background-color: variables.$foret;
+  overflow-x: hidden;
 }
 body {
   background-color: variables.$foret;
@@ -135,6 +136,7 @@ h6 {
 .navbar-dark {
   .navbar-nav {
     .nav-link {
+       color: variables.$creme;
       &:hover {
         color: variables.$sable;
         text-decoration: underline;
@@ -597,6 +599,7 @@ h6 {
     h2{
       font-family: "rubik";
       color: variables.$foret;
+      font-weight: 600;
     }
     p{
       font-family: "rubik";
