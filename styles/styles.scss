@@ -355,6 +355,10 @@ h6 {
 }
 /* ----------------- SECTION PAGE NOUVELLE ---------------------- */
 
+a.nouvelle_link {
+  text-decoration: none;
+}
+
 .nouvelles__container {
   background-color: variables.$foret;
   font-family: "rubik";

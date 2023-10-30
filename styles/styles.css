@@ -349,6 +349,10 @@ h6 {
 }
 
 /* ----------------- SECTION PAGE NOUVELLE ---------------------- */
+a.nouvelle_link {
+  text-decoration: none;
+}
+
 .nouvelles__container {
   background-color: #354e38;
   font-family: "rubik";
