@@ -648,6 +648,12 @@ a.nouvelle_link {
 .section__services2 {
   display: grid;
   gap: 10px;
+  border-color: #e7c762;
+  border-width: 10px;
+  border-style: double;
+  border-radius: 2%;
+  background: rgb(35, 49, 14);
+  background: linear-gradient(90deg, rgb(35, 49, 14) 0%, rgba(0, 66, 15, 0.3393558107) 100%);
 }
 
 .service__card__img {
@@ -657,10 +663,6 @@ a.nouvelle_link {
 .service__all_cards {
   text-align: center;
   border-radius: 10%;
-  color: #001a03;
-  border-style: dotted;
-  border-color: #e7c762;
-  border-width: 2px;
 }
 
 .service__card__body {
@@ -671,6 +673,7 @@ a.nouvelle_link {
 
 .service__card {
   text-align: center;
+  box-shadow: 20px #383838;
 }
 
 .service__card__title {
@@ -689,12 +692,28 @@ a.nouvelle_link {
 }
 
 .service_acueil {
-  background-image: url(../assets/img/couverturesitewebalt_2800x.png);
+  color: #E7C762;
+  background: rgb(121, 9, 9);
+  background: radial-gradient(circle, rgba(121, 9, 9, 0.3085434858) 0%, rgba(0, 66, 15, 0.3393558107) 100%);
+  border-radius: 20%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   font-family: "rubik";
   font-weight: bold;
+  padding: 60px;
   position: relative;
   display: block;
   top: 40px;
+  width: 100vw;
+  height: 40hv;
+}
+
+.service_acueil h1 {
+  font-family: "rubik";
+  font-weight: bold;
+  color: #F5EDD8;
+  font-size: 40px;
 }
 
 /* ----------------- SECTION PAGE HISTOIRE ---------------------- */
