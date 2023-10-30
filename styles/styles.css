@@ -541,7 +541,7 @@ body {
   border-radius: 18px;
   padding: 10px 25px;
   color: #354E38;
-  background-image: url(https://craquebitume.org/cdn/shop/files/26_juillet_dominique_Papin_5_375x.jpg?v=1691430593);
+  background-image: url(/assets/img/hero_picturedetail_nouvelle.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -586,6 +586,9 @@ body {
   width: 80%;
   min-width: 523px;
 }
+.nouvelle-individuel__info-title h2 {
+  font-weight: bold;
+}
 
 .nouvelle-individuel__info-description {
   font-size: 15px;
@@ -593,13 +596,16 @@ body {
 
 /* style pour le side bar d'info des detail de nouvelles*/
 .nouvelle-individuel__side-info {
-  /*transform: translateX(-15%);*/
+  transform: translateX(-15%);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   color: #354E38;
   margin-left: 20px;
   min-width: 250px;
+}
+.nouvelle-individuel__side-info h3 {
+  font-weight: bold;
 }
 
 .nouvelles-individuel__top-card {
@@ -625,7 +631,7 @@ body {
   border-radius: 18px;
   background-color: #F5EDD8;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -779,7 +785,6 @@ body {
 /*Changer la classe ici pour autre chose*/
 .section__services2 {
   display: grid;
-  gap: 10px;
   border-color: #e7c762;
   border-width: 10px;
   border-style: double;
@@ -790,8 +795,26 @@ body {
 
 .service__card__img {
   object-fit: fill;
+  background: rgb(53, 78, 56);
+  background: linear-gradient(0deg, rgb(53, 78, 56) 3%, rgba(53, 78, 56, 0) 100%);
 }
 
+.fade-in-image {
+  animation: fadeIn 3s;
+}
+
+.fade-in-title {
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .service__all_cards {
   text-align: center;
   border-radius: 10%;
@@ -799,18 +822,15 @@ body {
 
 .service__card__body {
   text-align: center;
-  color: #001a03;
   background-color: #182c1a;
 }
 
 .service__card {
   text-align: center;
-  box-shadow: 20px #383838;
 }
 
 .service__card__title {
   color: #E7C762;
-  border-color: #001a03;
   font-family: "rubik";
 }
 
@@ -834,16 +854,16 @@ body {
   color: #E7C762;
   background: rgb(121, 9, 9);
   background: radial-gradient(circle, rgba(121, 9, 9, 0.3085434858) 0%, rgba(0, 66, 15, 0.3393558107) 100%);
-  border-radius: 20%;
+  border-radius: 2%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   font-family: "rubik";
   font-weight: bold;
-  padding: 60px;
+  padding: 40px;
   position: relative;
   display: block;
-  top: 40px;
+  top: 10px;
   width: 100vw;
   height: 40hv;
 }
