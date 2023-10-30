@@ -670,8 +670,7 @@ a.nouvelle_link {
 /*Changer la classe ici pour autre chose*/
 .section__services2 {
   display: grid;
-  gap: 10px;
-
+  
   border-color:#e7c762;
   border-width: 10px;
   border-style: double;
@@ -684,6 +683,21 @@ a.nouvelle_link {
 
 .service__card__img {
   object-fit: fill;
+
+  background: rgb(53,78,56);
+  background: linear-gradient(0deg, rgba(53,78,56,1) 3%, rgba(53,78,56,0) 100%); 
+
+}
+
+.fade-in-image { animation: fadeIn 3s; }
+
+.fade-in-title{
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .service__all_cards {
@@ -693,19 +707,16 @@ a.nouvelle_link {
 
 .service__card__body{
   text-align: center;
-  color:#001a03;
+
   background-color: #182c1a;
 }
 
 .service__card{
   text-align: center;
-  box-shadow:20px #383838;
 }
 
 .service__card__title {
   color: variables.$sable;
-  
-  border-color: #001a03;
   font-family: "rubik";
 }
 
@@ -716,7 +727,6 @@ a.nouvelle_link {
 
 .service__btn {
   color: variables.$sable;
-
   background-color:  variables.$foret;
   border:none;
 }
@@ -732,7 +742,7 @@ a.nouvelle_link {
 
   background: rgb(121,9,9);
   background: radial-gradient(circle, rgba(121,9,9,0.3085434857536765) 0%, rgba(0,66,15,0.3393558106836485) 100%); 
-  border-radius: 20%;
+  border-radius: 2%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -741,12 +751,12 @@ a.nouvelle_link {
   font-family: "rubik";
   font-weight: bold;
 
-  padding: 60px;
+  padding: 40px;
 
 
   position: relative;
   display: block;
-  top: 40px;
+  top: 10px;
 
 
   width:100vw;
