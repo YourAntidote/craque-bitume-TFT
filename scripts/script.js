@@ -42,6 +42,21 @@ function loadLocalStorage (){
 loadLocalStorage();
 /* ----------------- SECTION NAV -------------------------------- */
 
+const nav_hamburger = gsap.timeline({
+	defaults: {
+		ease: "expo.inOut",
+		stagger: 0.12,
+		duration: 3,
+	},
+	repeat: -1,
+})
+
+tl.to("span.navbar-toggler-icon", { rotateY: 360 }, 0)
+tl.from(".span.navbar-toggler-icon", {filter: "contrast(100%)" }, 0)
+
+
+
+
 /* ----------------- SECTION PAGE ACCUEIL ----------------------- */
 
 document.addEventListener("DOMContentLoaded", function () {
