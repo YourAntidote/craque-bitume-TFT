@@ -124,9 +124,6 @@ h6 {
   text-align: center;
 }
 
-.navbar-dark .navbar-nav .nav-link {
-  color: #F5EDD8;
-}
 .navbar-dark .navbar-nav .nav-link:hover {
   color: #E7C762;
   text-decoration: underline;
@@ -475,6 +472,16 @@ h6 {
   background-color: #e7c762;
 }
 
+.nouvelle__afficher-plus {
+  display: flex;
+  justify-content: center;
+  margin: 15px auto;
+}
+.nouvelle__afficher-plus a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .nouvelle__afficher-plus p {
   margin: 5px auto;
   text-align: center;
@@ -494,6 +501,7 @@ h6 {
   position: relative;
   margin-left: 25vw;
   margin-right: 25vw;
+  margin-top: 15px;
 }
 
 .filter-dropdown {
@@ -568,12 +576,35 @@ h6 {
   transition: 0.3s;
 }
 
-.card-img-top {
-  border-radius: 20px 20px 0px 0px;
-  aspect-ratio: 1/1;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+/* ---------------------- SECTION DON --------------------------- */
+.section_donation {
+  position: relative;
+}
+
+.donation {
+  margin-bottom: 40vh;
+  border-radius: 50px 50px 50px 50px;
+  box-shadow: 2px 2px 7px 0px #182c1a;
+  background: linear-gradient(to bottom, #8d3126 70px, #F5EDD8 0%);
+}
+.donation__column h2 {
+  font-family: "rubik";
+  color: #354e38;
+}
+.donation__column p {
+  font-family: "rubik";
+  color: #8D3126 !important;
+}
+.donation__button a {
+  background-color: #E7C762;
+  color: #F5EDD8;
+  text-align: center;
+  display: flex;
+  justify-content: center !important;
+  align-self: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  max-width: 120px;
 }
 
 /* ----------------- SECTION PAGE SERVICE ----------------------- */
