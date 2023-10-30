@@ -17,28 +17,45 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.typekit.net/fch5wdf.css">
   <link rel="stylesheet" href="./styles/styles.css" type="text/css">
-  <!--icon link-->
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/trees.css' rel='stylesheet'>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+ <!--icon link-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <!--BODY-->
 
 <body>
   <!--BODY-->
+
   <main>
+    <div class="ignorez"></div>
+
+
+    <!--BARRE TOP BANNER-->
+    <div class="banner">
+      <div class="banner__content">
+        <div class="banner__text">
+          <strong>Projet scolaire dans le cadre du cours : Projet Web - Site original : <a href="https://craquebitume.org/">https://craquebitume.org/</a></strong>
+        </div>
+        <button class="banner__close" type="button">
+          <span class="material-icons">
+            close
+          </span>
+        </button>
+      </div>
+    </div>
+
     <!-- NAVBAR -->
-    <nav class="navbar navbar-dark navbar-expand-lg justify-content-end align-items-center fixed-top  ">
+    <nav class="navbar navbar-dark navbar-expand-lg justify-content-end align-items-center fixed-top py-0">
       <div class="container-fluid justify-content-space-between align-items-center">
         <a class="navbar-brand " href="index.html">
           <img src="./sources/logo.png" class="logo">
         </a>
-        <button class="navbar-toggler" type="button" width="20%" data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-          aria-label="Affichage/masquage de la navigation">
-          <span class="navbar-toggler-icon "></span>
+        <button class="navbar-toggler menu" type="button" width="20%" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Affichage/masquage de la navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
@@ -49,13 +66,15 @@
             <li class="nav-item"><a class="nav-link" aria-current="page" href="./5histoire.html">Histoire</a></li>
             <li class="nav-item"><a class="nav-link" aria-current="page" href="./6propos.html">À propos</a></li>
           </ul>
+          <div class="donnation d-flex justify-content-center">
+            <a href="https://craquebitume.org/products/faites-un-don-a-craque-bitume" type="button" id="btn-don" class="d-flex justify-content-end btn btn-outline-warning btn-lg ml-lg-2 mt-2 mt-lg-0">Donation</a>
+          </div>
         </div>
       </div>
     </nav>
 
     <!------------------------------------ HERO ----------------------------------------------------->
     <div class="contenu-news">
-      <div class="ignorez"></div>
       <div class="histoire__hero">
 
         <h1 class="nouvelles__hero-title">HISTOIRE</h1>
@@ -341,6 +360,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="./scripts/scripthistoire.js"></script>
+  <script src="./scripts/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
