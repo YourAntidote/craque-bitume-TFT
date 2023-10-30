@@ -714,8 +714,16 @@ a.nouvelle_link {
   font-family: "rubik";
 }
 
+.service__btn {
+  color: variables.$sable;
+
+  background-color:  variables.$foret;
+  border:none;
+}
+
 .service__btn:hover {
   color: variables.$foret;
+  background-color:  variables.$sable;
 }
 
 .service_acueil {

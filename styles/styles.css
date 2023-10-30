@@ -687,8 +687,15 @@ a.nouvelle_link {
   font-family: "rubik";
 }
 
+.service__btn {
+  color: #E7C762;
+  background-color: #354e38;
+  border: none;
+}
+
 .service__btn:hover {
   color: #354e38;
+  background-color: #E7C762;
 }
 
 .service_acueil {
@@ -1221,4 +1228,4 @@ footer a:hover {
     justify-content: center;
     flex-direction: column;
   }
-}
+}/*# sourceMappingURL=styles.css.map */
