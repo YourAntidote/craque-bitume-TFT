@@ -135,15 +135,14 @@ h6 {
 .navbar-dark {
   .navbar-nav {
     .nav-link {
-      color: variables.$creme;
       &:hover {
         color: variables.$sable;
         text-decoration: underline;
-
       }
     }
   }
 }
+
 .menu{
   &:hover {
     background-color: variables.$foret !important;
@@ -151,7 +150,6 @@ h6 {
   }
 }
   
-
 .section__titre {
   color: variables.$creme;
   font-weight: bolder;
