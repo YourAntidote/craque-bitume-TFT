@@ -514,6 +514,142 @@ a.nouvelle_link {
 .filter-dropdown {
   margin-right: 10px;
 }
+/* ----------------- SECTION detail de nouvelle ---------------------- */
+*{box-sizing: border-box;}
+body {
+  background-color: #354E38;
+}
+
+.nouvelle-individuel__container {
+  margin: 15px auto;
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  max-width: 1311px;
+}
+
+/* style pour le hero de details de nouvelles*/ 
+.nouvelle-individuel__hero {
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  background-image:url();
+  background-color: #E7C762;
+  border-radius: 18px;
+  padding: 10px 25px;
+  color: #354E38;
+  background-image: url(/assets/img/hero_picturedetail_nouvelle.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center center;
+}
+
+.nouvelle-individuel__hero-top {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.nouvelle-individuel__hero-middle {
+  display: flex;
+  width: 100%;
+}
+
+.nouvelle-individuel__title {
+  font-weight: bold;
+  font-size: 65px;
+}
+
+.nouvelle-individuel__hero-bottom {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/*styles pour la section info de details de nouvelles */
+
+.nouvelles-individuel__info {
+  display: flex;
+  margin-top: 15px;
+  width: 100%;
+  align-self: center;
+}
+
+.nouvelle-individuel__info-title {
+  font-size: 25px;
+  background-color: #E7C762;
+  border-radius: 18px;
+  color: #354E38 ;
+  padding: 10px 55px 10px 25px;
+  width: 80%;
+  min-width: 523px;
+  h2{
+    font-weight : bold;
+  }
+}
+
+.nouvelle-individuel__info-description {
+  font-size: 15px;
+}
+
+/* style pour le side bar d'info des detail de nouvelles*/
+
+.nouvelle-individuel__side-info {
+  transform: translateX(-15%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #354E38;
+  margin-left: 20px;
+  min-width: 250px;
+  h3 {
+    font-weight: bold;
+  }
+}
+
+.nouvelles-individuel__top-card {
+  padding: 15px;
+  border-radius: 18px;
+  background-color: #F5EDD8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nouvelles-individuel__middle-card {
+  padding: 15px;
+  border-radius: 18px;
+  background-color: #F5EDD8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nouvelles-individuel__bottom-card {
+  padding: 15px;
+  border-radius: 18px;
+  background-color: #F5EDD8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nouvelles-individuel__info-card-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.svg__clock {
+  width: 50px;
+}
+
+.svg__position {
+  width: 50px;
+}
+
+.svg__formateur {
+  width: 50px;
+}
 /* ----------------- SECTION index TÉMOIGNAGE ---------------------- */
 .testimonials {
   margin-bottom: 40vh;
