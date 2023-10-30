@@ -9,5 +9,5 @@ const tl = gsap.timeline({
 })
 
 tl.to(".donation__h2", { rotateY: 360 }, 0)
-tl.to(".donation__h2 .donation__h2__text_front", { backgroundPosition: "0% 50%" }, 0)
-tl.to(".donation__h2 .donation__h2__text_right", { backgroundPosition: "0% 50%" }, 0.15)
+tl.from(".donation__h2 .donation__h2__text_front", {filter: "contrast(100%)" }, 0)
+
