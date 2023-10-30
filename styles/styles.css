@@ -118,6 +118,7 @@ h6 {
   display: flex;
   align-items: center;
   text-align: center;
+  justify-content: center;
 }
 .navbar-nav .nav-item .nav-link {
   text-align: center;
@@ -129,6 +130,11 @@ h6 {
 .navbar-dark .navbar-nav .nav-link:hover {
   color: #E7C762;
   text-decoration: underline;
+}
+
+.menu:hover {
+  background-color: #354e38 !important;
+  border: 1px solid #E7C762;
 }
 
 .section__titre {
@@ -326,6 +332,22 @@ h6 {
   margin-bottom: 0px;
 }
 
+.services__container #voirPlusButton {
+  border-radius: 20px;
+  color: #F5EDD8;
+  background-color: #8D3126;
+  height: 40px;
+  padding: 0px;
+  font-size: 18px !important;
+}
+.services__container #voirPlusButton:hover {
+  background-color: #E7C762;
+}
+
+.disabled {
+  background-color: transparent !important;
+}
+
 /* ----------------- SECTION PAGE NOUVELLE ---------------------- */
 .nouvelles__container {
   background-color: #354e38;
@@ -453,16 +475,6 @@ h6 {
   background-color: #e7c762;
 }
 
-.nouvelle__afficher-plus {
-  display: flex;
-  justify-content: center;
-  margin: 15px auto;
-}
-.nouvelle__afficher-plus a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .nouvelle__afficher-plus p {
   margin: 5px auto;
   text-align: center;
@@ -482,7 +494,6 @@ h6 {
   position: relative;
   margin-left: 25vw;
   margin-right: 25vw;
-  margin-top: 15px;
 }
 
 .filter-dropdown {
@@ -491,6 +502,7 @@ h6 {
 
 /* ----------------- SECTION index TÉMOIGNAGE ---------------------- */
 .testimonials {
+  margin-bottom: 40vh;
   border-radius: 50px 50px 50px 50px;
   box-shadow: 2px 2px 7px 0px #182c1a;
   background: linear-gradient(to bottom, #8d3126 70px, transparent 0%);
@@ -500,59 +512,54 @@ h6 {
   text-align: center;
   box-sizing: border-box;
 }
-.temoignage__personne {
-  margin: 0px;
+.temoignage__card {
+  position: relative;
+  width: 100%;
+  background-color: #F5EDD8;
+  box-shadow: 5px 5px 10px 0px #383838;
+  border-radius: 20px;
+  transition: 0.3s;
+  border: 1px solid #F5EDD8;
 }
-.temoignage__personne:hover .card {
+.temoignage__card:hover {
   background-color: #E7C762;
   transform: scale(1.02);
   transition: 0.3s;
 }
-.temoignage div div div div .card-text {
+.temoignage__texte {
   font-weight: 200;
-}
-
-.people {
-  width: 30rem;
-  box-shadow: 5px 5px 5px 0px #484848;
-}
-
-.card-body-temoignage-index {
-  color: #8D3126;
-  font-family: "rubik-light";
-  max-width: 800px;
-}
-.card-body-temoignage-index .card-text {
-  font-size: 20px;
-}
-.card-body-temoignage-index .description {
   font-size: 20px;
   color: #000;
+}
+.temoignage__description {
+  font-size: 20px;
+  color: #8D3126 !important;
   font-weight: 200;
   text-align: left;
 }
-.card-body-temoignage-index .card-title {
-  font-size: 20px;
-  font-weight: 400;
+.temoignage__nom {
   text-align: left;
   font-family: "rubik";
+  color: #8D3126;
 }
-
-.carte {
-  border: none;
-}
-
-.quote {
+.temoignage__quote {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 20px;
+  left: 20px;
   font-size: 50px;
   color: #E7C762;
 }
-
-.card {
-  background-color: #8D3126;
-  box-shadow: 5px 5px 10px 0px #383838;
+.temoignage__personne {
+  margin: 0px;
+  border-radius: 20px;
+}
+.temoignage__image {
+  border-radius: 20px 20px 0px 0px;
+  aspect-ratio: 1/1;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
 }
 
 .section-testimonials .card {
@@ -573,7 +580,7 @@ h6 {
 .section__services {
   width: 100%;
   background-color: #354e38;
-  margin-bottom: 30vh;
+  margin-bottom: 40vh;
 }
 
 .services {

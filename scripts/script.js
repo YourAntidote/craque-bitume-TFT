@@ -50,7 +50,26 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /* ----------------- SECTION PAGE NOUVELLE ---------------------- */
+document.addEventListener("DOMContentLoaded", function() {
+  var voirPlusButton = document.getElementById("voirPlusButton");
+  var elementsAReveler = document.querySelectorAll(".nouvelle__carte.none");
+  var x = 0;
 
+  voirPlusButton.addEventListener("click", function() {
+    for (var i = 0; i < 3; i++) {
+      if (x < elementsAReveler.length) {
+        elementsAReveler[x].classList.remove("none");
+        x++;
+      }
+    }
+
+    if (x >= elementsAReveler.length) {
+      voirPlusButton.innerHTML = "Fin de la liste";
+      voirPlusButton.classList.add("disabled");
+      voirPlusButton.disabled = true; // Optionnel : désactiver le bouton après la fin de la liste
+    }
+  });
+});
 /* ----------------- SECTION PAGE SERVICE ----------------------- */
 
 /* ----------------- SECTION PAGE EQUIPE ------------------------ */
@@ -60,3 +79,4 @@ document.addEventListener("DOMContentLoaded", function () {
 /* ----------------- SECTION PAGE PROPOS ------------------------ */
 
 /* ----------------- SECTION PAGE 404 --------------------------- */
+

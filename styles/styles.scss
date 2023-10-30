@@ -126,6 +126,7 @@ h6 {
     display: flex;
     align-items: center;
     text-align: center;
+    justify-content: center;
     .nav-link {
       text-align: center;
     }
@@ -138,10 +139,18 @@ h6 {
       &:hover {
         color: variables.$sable;
         text-decoration: underline;
+
       }
     }
   }
 }
+.menu{
+  &:hover {
+    background-color: variables.$foret !important;
+    border: 1px solid variables.$sable;
+  }
+}
+  
 
 .section__titre {
   color: variables.$creme;
@@ -325,6 +334,25 @@ h6 {
   }
 }
 
+.services__container {
+  #voirPlusButton{
+    border-radius: 20px;
+    color: variables.$creme;
+    background-color: variables.$red;
+    height: 40px;
+    padding: 0px;
+    font-size: 18px !important;
+    
+    &:hover{
+      background-color: variables.$sable;
+    }
+  }
+}
+
+.disabled {
+  background-color: transparent !important;
+  
+}
 /* ----------------- SECTION PAGE NOUVELLE ---------------------- */
 
 .nouvelles__container {
@@ -484,6 +512,7 @@ h6 {
 }
 /* ----------------- SECTION index TÉMOIGNAGE ---------------------- */
 .testimonials {
+  margin-bottom: 40vh;
   border-radius: 50px 50px 50px 50px;
   box-shadow: 2px 2px 7px 0px #182c1a;
   background: linear-gradient(to bottom, #8d3126 70px, transparent 0%);
@@ -491,76 +520,64 @@ h6 {
 
 .temoignage {
   text-align: center;
-
   box-sizing: border-box;
 
-  &__personne {
-    margin: 0px;
+  &__card {
+    position: relative;
+    width: 100%;
+    background-color: variables.$creme;
+    box-shadow: 5px 5px 10px 0px #383838;
+    border-radius: 20px;
+    transition: 0.3s;
 
+    border: 1px solid variables.$creme;
     &:hover {
-      .card {
-        background-color: variables.$sable;
-        transform: scale(1.02);
-        transition: 0.3s;
-      }
+      background-color: variables.$sable;
+      transform: scale(1.02);
+      transition: 0.3s;
     }
   }
 
-  div {
-    div {
-      div {
-        div {
-          .card-text {
-            font-weight: 200;
-          }
-        }
-      }
-    }
-  }
-}
-
-.people {
-  width: 30rem;
-  box-shadow: 5px 5px 5px 0px #484848;
-}
-
-.card-body-temoignage-index {
-  color: variables.$red;
-  font-family: "rubik-light";
-  max-width: 800px;
-
-  .card-text {
-    font-size: 20px;
-  }
-  .description {
+  &__texte {
+    font-weight: 200;
     font-size: 20px;
     color: variables.$black;
+  }
+
+
+  &__description {
+    font-size: 20px;
+    color: variables.$red !important; 
     font-weight: 200;
     text-align: left;
   }
-  .card-title {
-    font-size: 20px;
-    font-weight: 400;
+  &__nom {
     text-align: left;
     font-family: "rubik";
+    color: variables.$red;
   }
-}
 
-.carte {
-  border: none;
-}
+  &__quote {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 50px;
+    color: variables.$sable;
+  }
 
-.quote {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 50px;
-  color: variables.$sable;
-}
+  &__personne {
+    margin: 0px;
+    border-radius: 20px;
+  }
 
-.card {
-  background-color: variables.$red;
-  box-shadow: 5px 5px 10px 0px #383838;
+  &__image{
+    border-radius: 20px 20px 0px 0px;
+    aspect-ratio: 1/1;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+
 }
 
 .section-testimonials .card {
@@ -568,18 +585,48 @@ h6 {
   border-radius: 20px;
   transition: 0.3s;
 }
-.card-img-top {
-  border-radius: 20px 20px 0px 0px;
-  aspect-ratio: 1/1;
-  width: 100%;
-  object-fit: cover;
+
+/* ---------------------- SECTION DON --------------------------- */
+.section_donation{
+  position: relative;
 }
+.donation {
+  margin-bottom: 40vh;
+  border-radius: 50px 50px 50px 50px;
+  box-shadow: 2px 2px 7px 0px #182c1a;
+  background: linear-gradient(to bottom, #8d3126 70px, variables.$creme 0%);
+  &__column{
+    h2{
+      font-family: "rubik";
+      color: variables.$foret;
+    }
+    p{
+      font-family: "rubik";
+      color: variables.$red !important;
+
+    }
+  }
+  &__button{
+    a{
+      background-color: variables.$sable;
+      color: variables.$creme;
+      text-align: center;
+      display: flex;
+      justify-content: center !important;
+      align-self: center !important;
+      align-items: center !important;
+      align-content: center !important;
+      max-width: 120px;
+
+    }
+  }
+} 
 
 /* ----------------- SECTION PAGE SERVICE ----------------------- */
 .section__services {
   width: 100%;
   background-color: variables.$foret;
-  margin-bottom: 30vh;
+  margin-bottom: 40vh;
 }
 
 .services {
