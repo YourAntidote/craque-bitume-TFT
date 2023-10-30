@@ -3,7 +3,7 @@ const tl = gsap.timeline({
 	defaults: {
 		ease: "expo.inOut",
 		stagger: 0.12,
-		duration: 2,
+		duration: 3,
 	},
 	repeat: -1,
 })
