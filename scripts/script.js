@@ -50,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /* ----------------- SECTION PAGE NOUVELLE ---------------------- */
+
 document.addEventListener("DOMContentLoaded", function() {
   var voirPlusButton = document.getElementById("voirPlusButton");
   var elementsAReveler = document.querySelectorAll(".nouvelle__carte.none");
