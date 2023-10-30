@@ -1,27 +1,45 @@
 /* ----------------- SECTION BANNER X -------------------------------- */
-const isbanner = document.querySelector(".banner");
+const banner = document.querySelector(".banner");
+const xCloseBtn = document.querySelector(".banner__close");
 
-/*localStorage.setItem("isbanner");*/
+let bannerIsActive = localStorage.getItem("banner");
 
-let isbannerdata = sessionStorage.getItem("isbanner");
+xCloseBtn.addEventListener('click', function (){
+  banner.classList.add("none");
+  localStorage.setItem("banner", false)
+})
 
+function loadLocalStorage (){
 
+  console.log("Bonjour! Ça va?")
 
-document.querySelector(".banner__close").addEventListener("click", function() {
-  this.closest(".banner").style.display = "none";
- /*localStorage.removeItem("isbanner");*/
-  sessionStorage.removeItem("isbanner");
-  console.log("etape1 clear");
-});
+  if (bannerIsActive == 'false') {
 
-if (sessionStorage.removeItem("isbanner") == true)  {
-  delete isbanner;
-  /*delete isbannerdata;*/
-  console.log("etape2 clear");
+    console.log("Banner is closed");
+    banner.classList.add("none");
+
+  } else if (bannerIsActive == 'null'){
+
+    console.log("Banner was null, now's on");
+    localStorage.setItem("banner", 'true');
+    bannerIsActive = loadLocalStorage.getItem("banner");
+
+  } else {
+
+    console.log("Banner was maybe null, now's on");
+    localStorage.setItem("banner", 'true');
+    bannerIsActive = loadLocalStorage.getItem("banner");
+
+  }
 }
 
 
 
+
+
+
+
+loadLocalStorage();
 /* ----------------- SECTION NAV -------------------------------- */
 
 /* ----------------- SECTION PAGE ACCUEIL ----------------------- */
