@@ -664,6 +664,7 @@ a.nouvelle_link {
 .section__services2 {
   display: grid;
   gap: 10px;
+  
 }
 
 .service__card__img {
@@ -674,39 +675,39 @@ a.nouvelle_link {
   text-align: center;
   border-radius: 10%;
 
-  color: variables.$red;
+  color:#001a03;
+
+
+  border-style: dotted;
+  border-color:#e7c762;
+  border-width: 2px;
 }
 
 .service__card__body{
   text-align: center;
-  
-
-  color: variables.$red;
+  color:#001a03;
+  background-color: #182c1a;
 }
 
 .service__card{
   text-align: center;
   
-
-  color: variables.$red;
 }
 
 .service__card__title {
-  color: variables.$creme;
+  color: variables.$sable;
+  
+  border-color: #001a03;
   font-family: "rubik";
 }
 
 .service__card__text {
-  color: variables.$white;
+  color: variables.$creme;
   font-family: "rubik";
 }
 
-.service__btn {
-  color: variables.$red;
-}
-
 .service__btn:hover {
-  color: variables.$sable;
+  color: variables.$foret;
 }
 
 .service_acueil {

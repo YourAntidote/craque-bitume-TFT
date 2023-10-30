@@ -657,35 +657,35 @@ a.nouvelle_link {
 .service__all_cards {
   text-align: center;
   border-radius: 10%;
-  color: #8D3126;
+  color: #001a03;
+  border-style: dotted;
+  border-color: #e7c762;
+  border-width: 2px;
 }
 
 .service__card__body {
   text-align: center;
-  color: #8D3126;
+  color: #001a03;
+  background-color: #182c1a;
 }
 
 .service__card {
   text-align: center;
-  color: #8D3126;
 }
 
 .service__card__title {
-  color: #F5EDD8;
+  color: #E7C762;
+  border-color: #001a03;
   font-family: "rubik";
 }
 
 .service__card__text {
-  color: white;
+  color: #F5EDD8;
   font-family: "rubik";
 }
 
-.service__btn {
-  color: #8D3126;
-}
-
 .service__btn:hover {
-  color: #E7C762;
+  color: #354e38;
 }
 
 .service_acueil {
