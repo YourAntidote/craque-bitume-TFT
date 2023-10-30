@@ -51,8 +51,8 @@ const nav_hamburger = gsap.timeline({
 	repeat: -1,
 })
 
-tl.to("span.navbar-toggler-icon", { rotateY: 360 }, 0)
-tl.from(".span.navbar-toggler-icon", {filter: "contrast(100%)" }, 0)
+nav_hamburger.to("span.navbar-toggler-icon", { rotateY: 360 }, 0)
+nav_hamburger.from(".span.navbar-toggler-icon", {filter: "contrast(100%)" }, 0)
 
 
 
