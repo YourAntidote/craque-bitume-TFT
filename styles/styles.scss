@@ -1229,6 +1229,15 @@ div.accordion-item {
   }
 }
 
+.faq__hero {
+  width: 100vw;
+  height: 40vh;
+  background-image: url(../sources/medias/a_propos/volet_vie_associative.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 @media screen and (min-width: 1200px) {
   .fleche {
     width: 300px;
