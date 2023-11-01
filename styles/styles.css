@@ -926,10 +926,9 @@ body {
 
 .line {
   width: 5px;
-  height: 0;
   background-color: #F5EDD8;
   position: fixed;
-  top: 100px;
+  top: 50px;
   left: 5%;
   transition: height 0.3s;
 }
@@ -989,7 +988,7 @@ a.equipe_href {
   justify-content: center;
 }
 .equipe_modal_img {
-  width: 100%;
+  width: 80%;
   max-width: 50vw;
   border-radius: 40%;
 }
@@ -1082,7 +1081,7 @@ div.accordion-item {
 .erreur__hero {
   width: 100vw;
   height: 40vh;
-  background-image: url(../sources/medias/erreur_404/montagne_vide_erreur.jpg);
+  background: linear-gradient(to left top, #8D3126, #354e38);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -1111,48 +1110,6 @@ div.accordion-item {
   color: #F5EDD8;
 }
 
-@media screen and (max-width: 375px) {
-  .fleche {
-    width: 300px;
-    z-index: 1;
-  }
-  .fleche.rouge {
-    position: absolute;
-    top: 3vh;
-    left: -8vw;
-  }
-  .fleche.jaune {
-    position: absolute;
-    top: 3vh;
-    left: -10vw;
-  }
-  .fleche.vert {
-    position: absolute;
-    top: 3vh;
-    left: -12vw;
-  }
-}
-@media screen and (min-width: 376px) {
-  .fleche {
-    width: 300px;
-    z-index: 1;
-  }
-  .fleche.rouge {
-    position: absolute;
-    top: 2vh;
-    left: -6vw;
-  }
-  .fleche.jaune {
-    position: absolute;
-    top: 2vh;
-    left: -5vw;
-  }
-  .fleche.vert {
-    position: absolute;
-    top: 2vh;
-    left: -7vw;
-  }
-}
 .faq__hero {
   width: 100vw;
   height: 40vh;
@@ -1162,25 +1119,31 @@ div.accordion-item {
   background-size: cover;
 }
 
-@media screen and (min-width: 1200px) {
-  .fleche {
-    width: 300px;
+@media screen and (max-width: 768px) {
+  .svg_plante {
+    width: 20%;
     z-index: 1;
-  }
-  .fleche.rouge {
     position: absolute;
-    top: 0vh;
-    left: -4vw;
+    right: 0px;
+    top: 32vh;
   }
-  .fleche.jaune {
+}
+@media screen and (min-width: 768px) {
+  .svg_plante {
+    width: 20%;
+    z-index: 1;
     position: absolute;
-    top: 0vh;
-    left: -3vw;
+    right: 0px;
+    top: 20vh;
   }
-  .fleche.vert {
+}
+@media screen and (min-width: 1200px) {
+  .svg_plante {
+    width: 15%;
+    z-index: 1;
     position: absolute;
-    top: 0vh;
-    left: -2vw;
+    right: 30vw;
+    top: 15vh;
   }
 }
 /*-----------------------Footer----------------------------------*/

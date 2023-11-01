@@ -45,7 +45,7 @@ let hamburger = document.querySelector(".navbar-toggler.menu");
 
 let animation = gsap.to(".navbar-toggler.menu", {
   paused: true,
-  duration:2,
+  duration:1,
   borderRadius:"70% 70%", 
   scale:1.1,
   rotation: 360,

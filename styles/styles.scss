@@ -978,10 +978,9 @@ body {
 
 .line {
   width: 5px;
-  height: 0;
   background-color: variables.$creme;
   position: fixed;
-  top: 100px;
+  top: 50px;
   left: 5%;
   transition: height 0.3s;
 }
@@ -1048,7 +1047,7 @@ a.equipe_href {
   }
 
   &_img {
-    width: 100%;
+    width: 80%;
     max-width: 50vw;
     border-radius: 40%;
   }
@@ -1153,10 +1152,11 @@ div.accordion-item {
 .erreur__hero {
   width: 100vw;
   height: 40vh;
-  background-image: url(../sources/medias/erreur_404/montagne_vide_erreur.jpg);
+  background: linear-gradient(to left top, variables.$red, variables.$foret);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+  
 }
 
 .erreur.body {
@@ -1178,55 +1178,7 @@ div.accordion-item {
 }
 .erreur-description {
   color: variables.$creme;
-}
-@media screen and (max-width: 375px) {
-  .fleche {
-    width: 300px;
-    z-index: 1;
-
-    &.rouge {
-      position: absolute;
-      top: 3vh;
-      left: -8vw;
-    }
-
-    &.jaune {
-      position: absolute;
-      top: 3vh;
-      left: -10vw;
-    }
-
-    &.vert {
-      position: absolute;
-      top: 3vh;
-      left: -12vw;
-    }
-  }
-}
-
-@media screen and (min-width: 376px) {
-  .fleche {
-    width: 300px;
-    z-index: 1;
-
-    &.rouge {
-      position: absolute;
-      top: 2vh;
-      left: -6vw;
-    }
-
-    &.jaune {
-      position: absolute;
-      top: 2vh;
-      left: -5vw;
-    }
-
-    &.vert {
-      position: absolute;
-      top: 2vh;
-      left: -7vw;
-    }
-  }
+  
 }
 
 .faq__hero {
@@ -1237,31 +1189,29 @@ div.accordion-item {
   background-position: center;
   background-size: cover;
 }
+@media screen and (max-width: 768px) { .svg_plante
+  {width: 20%;
+  z-index:1;
+  position: absolute;
+  right:0px;
+  top:32vh;
+  } }
 
-@media screen and (min-width: 1200px) {
-  .fleche {
-    width: 300px;
-    z-index: 1;
+  @media screen and (min-width: 768px) { .svg_plante
+    {width: 20%;
+    z-index:1;
+    position: absolute;
+    right:0px;
+    top:20vh;
+    } }
 
-    &.rouge {
+    @media screen and (min-width: 1200px) { .svg_plante
+      {width: 15%;
+      z-index:1;
       position: absolute;
-      top: 0vh;
-      left: -4vw;
-    }
-
-    &.jaune {
-      position: absolute;
-      top: 0vh;
-      left: -3vw;
-    }
-
-    &.vert {
-      position: absolute;
-      top: 0vh;
-      left: -2vw;
-    }
-  }
-}
+      right:30vw;
+      top:15vh;
+      } }
 /*-----------------------Footer----------------------------------*/
 
 .section__footer {
