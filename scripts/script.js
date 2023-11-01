@@ -41,19 +41,19 @@ function loadLocalStorage (){
 
 loadLocalStorage();
 /* ----------------- SECTION NAV -------------------------------- */
+let hamburger = document.querySelector(".navbar-toggler.menu");
 
-const nav_hamburger = gsap.timeline({
-	defaults: {
-		ease: "expo.inOut",
-		stagger: 0.12,
-		duration: 3,
-	},
-	repeat: -1,
-})
+let animation = gsap.to(".navbar-toggler.menu", {
+  paused: true,
+  duration:2,
+  borderRadius:"70% 70%", 
+  scale:1.1,
+  rotation: 360,
+  color:"#F5EDD8",
+});
 
-nav_hamburger.to("span.navbar-toggler-icon", { rotateY: 360 }, 0)
-nav_hamburger.from(".span.navbar-toggler-icon", {filter: "contrast(100%)" }, 0)
-
+hamburger.addEventListener("mouseenter", () => animation.play());
+hamburger.addEventListener("mouseleave", () => animation.reverse());
 
 
 
