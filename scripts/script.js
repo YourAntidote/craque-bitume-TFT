@@ -28,7 +28,7 @@ function loadLocalStorage (){
 
     console.log("Banner was maybe null, now's on");
     localStorage.setItem("banner", 'true');
-    bannerIsActive = loadLocalStorage.getItem("banner");
+
 
   }
 }
@@ -36,10 +36,9 @@ function loadLocalStorage (){
 
 
 
-
-
-
 loadLocalStorage();
+
+
 /* ----------------- SECTION NAV -------------------------------- */
 let hamburger = document.querySelector(".navbar-toggler.menu");
 

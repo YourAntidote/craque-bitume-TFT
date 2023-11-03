@@ -46,6 +46,10 @@ body {
 main {
   position: relative;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 h5 {
@@ -186,12 +190,6 @@ h6 {
 }
 
 /* ----------------- SECTION HERO ----------------------- */
-.max-width-hero {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-
 #hero {
   padding: 0px;
   margin: 0px;
