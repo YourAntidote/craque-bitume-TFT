@@ -827,6 +827,7 @@ body {
 /*Changer la classe ici pour autre chose*/
 .section__services2 {
   display: grid;
+  gap: 20px;
   
   border-color:#e7c762;
   border-width: 10px;
@@ -842,9 +843,23 @@ body {
   object-fit: fill;
 
   background: rgb(53,78,56);
-  background: linear-gradient(0deg, rgba(53,78,56,1) 3%, rgba(53,78,56,0) 100%); 
-
 }
+
+.service__hero{
+  width: 100vw;
+  height: 40vh;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  
+  font-family: "rubik";
+  font-weight: bold;
+  color: #F5EDD8;
+  font-size: 40px;
+}
+
+
 
 .fade-in-image { animation: fadeIn 3s; }
 
@@ -861,6 +876,16 @@ body {
   text-align: center;
   border-radius: 10%;
 }
+
+.service__card__all__cards__container{
+  padding: 20px;
+  border-radius: 10%;
+}
+
+.service__all_cards_master{
+  padding: 50px;
+}
+
 
 .service__card__body{
   text-align: center;
