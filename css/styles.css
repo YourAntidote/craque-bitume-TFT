@@ -826,14 +826,28 @@ body {
 .service__hero {
   width: 100vw;
   height: 40vh;
-  background-image: url();
+  background-image: url(../assets/img/service_hero_pic.jpg);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  font-family: "rubik";
   font-weight: bold;
-  color: #F5EDD8;
-  font-size: 40px;
+  font-size: 65px;
+  color: #E7C762;
+  font-family: "rubik";
+}
+
+.service__hero-title {
+  font-weight: bold;
+  font-size: 65px;
+  color: #E7C762;
+  font-family: "rubik";
+}
+
+.service__container__description {
+  font-weight: bold;
+  font-size: 65px;
+  color: #E7C762;
+  font-family: "rubik";
 }
 
 .fade-in-image {
@@ -904,6 +918,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-image: url(../assets/img/service_hero_pic.jpg);
   font-family: "rubik";
   font-weight: bold;
   padding: 40px;
