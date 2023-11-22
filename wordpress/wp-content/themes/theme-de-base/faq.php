@@ -1,6 +1,6 @@
 <?php 
 /**
- * 	Template Name: allo
+ * 	Template Name: faq
  * 	Identique à page, mais avec une barre latérale
  */
 
