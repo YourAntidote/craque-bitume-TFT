@@ -11,15 +11,22 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 	while ( have_posts() ) : the_post(); 
 ?>
 
-	<article>
-		<?php if (!is_front_page()) : // Si nous ne sommes PAS sur la page d'accueil ?>
-			<h2>
-				<?php the_title(); // Titre de la page ?>
-			</h2>
-		<?php endif; ?>
-		
-		<?php the_content(); // Contenu principal de la page ?>
-	</article>
+	    <!------------------------------------ HERO ----------------------------------------------------->
+		<div class="contenu-news">
+      <div class="histoire__hero">
+
+        <h1 class="nouvelles__hero-title"><?php the_title(); ?></h1>
+      </div>
+
+            <!------------------------------ DESCRIPTION GÉNÉRIQUE ----------------------------------------------------->
+    <div class="card description_generique d-flex justify-content-center align-content-center align-items-center">
+      <div class="card-body max-width ">
+      <p class="description_generique_texte text-justify"><?php the_content(); ?></p>
+    </div>
+</div>
+
+
+	
 <?php endwhile; // Fermeture de la boucle
 
 else : // Si aucune page n'a été trouvée
