@@ -40,7 +40,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 				  <?php the_post_thumbnail('medium', array('class' => 'card-img-top equipe_img')); ?>
                 <div class="card-body equipe_card_body">
                   <h5 class="card-title text-center equipe_titre"><?php the_title(); ?></h5>
-                  <p class="card-text text-center equipe_texte"><?php the_content(); ?></p>
+                  <div class="card-text text-center equipe_texte"><?php the_content(); ?></div>
             </div>
 				</div>
 					</a>
@@ -66,7 +66,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
           </div>
           <div class="modal-body equipe_modal_body">
             <div class="equipe_modal_img_div">
-				<?php the_post_thumbnail('medium',array('class' => 'equipe_modal_img m-3')); ?>
+				<?php the_post_thumbnail(array(350, 350 , 'class' => '  equipe_modal_img m-3')); ?>
             </div>
             <p class="text-center equipe_modal_texte">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et
