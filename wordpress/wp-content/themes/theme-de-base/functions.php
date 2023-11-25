@@ -13,8 +13,12 @@ add_theme_support( 'post-thumbnails' );
 Déclare le menu principal */
 register_nav_menus( 
 	array(
+		/* 
+			1. 'main-menu' = Nom dans le code
+			2. 'Menu principal' = Nom dans l'admin
+			3. 'Menu principal du site' = Description dans l'admin */
 		'main-menu' => __( 'Menu principal', 'Menu principal du site' ), 
-		"menu-jeu" => __( "menu des jeu", "menu de tout les jeux"),
+		/* Dupliquer cette ligne si vous désirez déclarer d'autres menus */
 	)
 );
 
@@ -42,7 +46,7 @@ function add_style_and_js()  {
 	  1. 'default' = ID de référence à donner au à la feuille de style
 		2. get_template_directory_uri() . '/style.css' = Chemin où ce trouve le fichier CSS en question
 	*/
-	wp_enqueue_style('default', get_template_directory_uri() . '/style.css');
+	wp_enqueue_style('default', get_template_directory_uri() . '/styles/styles.css');
 
 	/* Pour ajoutez une feuille de style supplémentaire, copier la ligne précédente et ajuster le chemin du fichier de façon relative vers votre nouveau fichier CSS */
 
