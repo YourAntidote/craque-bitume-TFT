@@ -875,22 +875,23 @@ body {
 
   font-weight: bold;
   font-size: 65px;
-  color: variables.$sable;
+  
   font-family: "rubik";
 }
 
 .service__hero-title {
   font-weight: bold;
   font-size: 65px;
-  background-color: variables.$sable;
+  
   font-family: "rubik";
 }
 
 .service__container__description {
-  font-weight: bold;
-  font-size: 65px;
+  max-width: 1920px;
+
   color: variables.$sable;
   font-family: "rubik";
+  background-color: #8d3126;
 }
 
 .fade-in-image {
@@ -912,11 +913,10 @@ body {
 
 .service__all_cards {
   text-align: center;
-  border-radius: 10%;
+  
 }
 
 .service__card__all__cards__container {
-  padding: 20px;
   border-radius: 10%;
 }
 

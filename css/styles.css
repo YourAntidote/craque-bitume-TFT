@@ -537,7 +537,7 @@ a.nouvelle_link {
 }
 
 body {
-  background-color: #354E38;
+  background-color: #354e38;
 }
 
 .nouvelle-individuel__container {
@@ -554,10 +554,10 @@ body {
   flex-direction: column;
   width: 100%;
   background-image: url();
-  background-color: #E7C762;
+  background-color: #e7c762;
   border-radius: 18px;
   padding: 10px 25px;
-  color: #354E38;
+  color: #354e38;
   background-image: url(/assets/img/hero_picturedetail_nouvelle.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -596,9 +596,9 @@ body {
 
 .nouvelle-individuel__info-title {
   font-size: 25px;
-  background-color: #E7C762;
+  background-color: #e7c762;
   border-radius: 18px;
-  color: #354E38;
+  color: #354e38;
   padding: 10px 55px 10px 25px;
   width: 80%;
   min-width: 523px;
@@ -616,8 +616,8 @@ body {
   transform: translateX(-15%);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  color: #354E38;
+  justify-content: space-evenly;
+  color: #354e38;
   margin-left: 20px;
   min-width: 250px;
 }
@@ -628,7 +628,7 @@ body {
 .nouvelles-individuel__top-card {
   padding: 15px;
   border-radius: 18px;
-  background-color: #F5EDD8;
+  background-color: #f5edd8;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -637,7 +637,7 @@ body {
 .nouvelles-individuel__middle-card {
   padding: 15px;
   border-radius: 18px;
-  background-color: #F5EDD8;
+  background-color: #f5edd8;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -646,7 +646,7 @@ body {
 .nouvelles-individuel__bottom-card {
   padding: 15px;
   border-radius: 18px;
-  background-color: #F5EDD8;
+  background-color: #f5edd8;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -667,6 +667,35 @@ body {
 
 .svg__formateur {
   width: 50px;
+}
+
+/* section prix de la nouvelles/achat */
+.nouvelle-individuel__prix {
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: #E7C762;
+}
+.nouvelle-individuel__prix h3 {
+  font-weight: bolder;
+  font-size: 45;
+}
+
+.prix-left__row-two {
+  color: #F5EDD8;
+}
+
+.prix-left__row-three {
+  color: #F5EDD8;
+  display: flex;
+}
+
+.nouvelle-individuel__prix-right {
+  width: 35vw;
+  border-radius: 18px;
+  background-image: url("../assets/img/service_hero_pic.jpg");
+  background-size: cover;
+  background-position: center center;
 }
 
 /* ----------------- SECTION index TÉMOIGNAGE ---------------------- */
@@ -832,22 +861,20 @@ body {
   background-size: cover;
   font-weight: bold;
   font-size: 65px;
-  color: #E7C762;
   font-family: "rubik";
 }
 
 .service__hero-title {
   font-weight: bold;
   font-size: 65px;
-  background-color: #E7C762;
   font-family: "rubik";
 }
 
 .service__container__description {
-  font-weight: bold;
-  font-size: 65px;
+  max-width: 1920px;
   color: #E7C762;
   font-family: "rubik";
+  background-color: #8d3126;
 }
 
 .fade-in-image {
@@ -868,11 +895,9 @@ body {
 }
 .service__all_cards {
   text-align: center;
-  border-radius: 10%;
 }
 
 .service__card__all__cards__container {
-  padding: 20px;
   border-radius: 10%;
 }
 
