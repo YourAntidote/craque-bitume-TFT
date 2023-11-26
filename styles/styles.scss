@@ -89,10 +89,9 @@ h6 {
   border: 1px solid variables.$sable;
   color: variables.$creme;
   font-size: 15px;
-  &_texte{
+  &_texte {
     max-width: 1920px;
   }
-
 }
 .max-width {
   max-width: 1920px;
@@ -147,7 +146,7 @@ h6 {
 .navbar-dark {
   .navbar-nav {
     .nav-link {
-       color: variables.$creme;
+      color: variables.$creme;
       &:hover {
         color: variables.$sable;
         text-decoration: underline;
@@ -156,13 +155,13 @@ h6 {
   }
 }
 
-.menu{
+.menu {
   &:hover {
     background-color: variables.$foret !important;
     border: 1px solid variables.$sable;
   }
 }
-  
+
 .section__titre {
   color: variables.$creme;
   font-weight: bolder;
@@ -203,7 +202,6 @@ h6 {
 }
 
 /* ----------------- SECTION HERO ----------------------- */
-
 
 #hero {
   padding: 0px;
@@ -350,7 +348,7 @@ h6 {
 }
 
 .services__container {
-  #voirPlusButton{
+  #voirPlusButton {
     border-radius: 20px;
     color: variables.$creme;
     background-color: variables.$red;
@@ -359,8 +357,8 @@ h6 {
     font-size: 18px !important;
     max-width: 150px;
     margin-bottom: 20px;
-    
-    &:hover{
+
+    &:hover {
       background-color: variables.$sable;
     }
   }
@@ -368,7 +366,6 @@ h6 {
 
 .disabled {
   background-color: transparent !important;
-  
 }
 /* ----------------- SECTION PAGE NOUVELLE ---------------------- */
 
@@ -532,9 +529,11 @@ a.nouvelle_link {
   margin-right: 10px;
 }
 /* ----------------- SECTION detail de nouvelle ---------------------- */
-*{box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 body {
-  background-color: #354E38;
+  background-color: #354e38;
 }
 
 .nouvelle-individuel__container {
@@ -545,19 +544,19 @@ body {
   max-width: 1311px;
 }
 
-/* style pour le hero de details de nouvelles*/ 
+/* style pour le hero de details de nouvelles*/
 .nouvelle-individuel__hero {
-  display:flex;
+  display: flex;
   flex-direction: column;
   width: 100%;
-  background-image:url();
-  background-color: #E7C762;
+  background-image: url();
+  background-color: #e7c762;
   border-radius: 18px;
   padding: 10px 25px;
-  color: #354E38;
+  color: #354e38;
   background-image: url(/assets/img/hero_picturedetail_nouvelle.png);
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   background-position: center center;
 }
 
@@ -594,14 +593,14 @@ body {
 
 .nouvelle-individuel__info-title {
   font-size: 25px;
-  background-color: #E7C762;
+  background-color: #e7c762;
   border-radius: 18px;
-  color: #354E38 ;
+  color: #354e38;
   padding: 10px 55px 10px 25px;
   width: 80%;
   min-width: 523px;
-  h2{
-    font-weight : bold;
+  h2 {
+    font-weight: bold;
   }
 }
 
@@ -615,8 +614,8 @@ body {
   transform: translateX(-15%);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  color: #354E38;
+  justify-content: space-evenly;
+  color: #354e38;
   margin-left: 20px;
   min-width: 250px;
   h3 {
@@ -627,7 +626,7 @@ body {
 .nouvelles-individuel__top-card {
   padding: 15px;
   border-radius: 18px;
-  background-color: #F5EDD8;
+  background-color: #f5edd8;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -636,7 +635,7 @@ body {
 .nouvelles-individuel__middle-card {
   padding: 15px;
   border-radius: 18px;
-  background-color: #F5EDD8;
+  background-color: #f5edd8;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -645,7 +644,7 @@ body {
 .nouvelles-individuel__bottom-card {
   padding: 15px;
   border-radius: 18px;
-  background-color: #F5EDD8;
+  background-color: #f5edd8;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -666,6 +665,35 @@ body {
 
 .svg__formateur {
   width: 50px;
+}
+/* section prix de la nouvelles/achat */
+
+.nouvelle-individuel__prix {
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: variables.$sable;
+  h3 {
+    font-weight: bolder;
+    font-size: 45;
+  }
+}
+
+.prix-left__row-two {
+  color: variables.$creme;
+}
+
+.prix-left__row-three {
+  color: variables.$creme;
+  display: flex;
+}
+
+.nouvelle-individuel__prix-right {
+  width: 35vw;
+  border-radius: 18px;
+  background-image: url("../assets/img/service_hero_pic.jpg");
+  background-size: cover;
+  background-position: center center;
 }
 /* ----------------- SECTION index TÉMOIGNAGE ---------------------- */
 .testimonials {
@@ -701,10 +729,9 @@ body {
     color: variables.$black;
   }
 
-
   &__description {
     font-size: 20px;
-    color: variables.$red !important; 
+    color: variables.$red !important;
     font-weight: 200;
     text-align: left;
   }
@@ -728,14 +755,13 @@ body {
     max-width: 330px;
   }
 
-  &__image{
+  &__image {
     border-radius: 20px 20px 0px 0px;
     aspect-ratio: 1/1;
     width: 100%;
     object-fit: cover;
     position: relative;
   }
-
 }
 
 .section-testimonials .card {
@@ -745,10 +771,10 @@ body {
 }
 
 /* ---------------------- SECTION DON --------------------------- */
-.section_donation{
+.section_donation {
   position: relative;
 }
-.max-width-donation{
+.max-width-donation {
   max-width: 1920px;
 }
 .donation {
@@ -756,20 +782,19 @@ body {
   border-radius: 50px 50px 50px 50px;
   box-shadow: 2px 2px 7px 0px #182c1a;
   background: linear-gradient(to bottom, #8d3126 70px, variables.$creme 0%);
-  &__column{
-    h2{
+  &__column {
+    h2 {
       font-family: "rubik";
       color: variables.$foret;
       font-weight: 600;
     }
-    p{
+    p {
       font-family: "rubik";
       color: variables.$red !important;
-
     }
   }
-  &__button{
-    a{
+  &__button {
+    a {
       background-color: variables.$sable;
       color: variables.$creme;
       text-align: center;
@@ -779,13 +804,9 @@ body {
       align-items: center !important;
       align-content: center !important;
       max-width: 120px;
-
     }
   }
-} 
-
-
-
+}
 
 /* ----------------- SECTION PAGE SERVICE ----------------------- */
 .section__services {
@@ -824,24 +845,27 @@ body {
 .section__services2 {
   display: grid;
   gap: 20px;
-  
-  border-color:#e7c762;
+
+  border-color: #e7c762;
   border-width: 10px;
   border-style: double;
   border-radius: 2%;
 
-  background: rgb(35,49,14);
-  background: linear-gradient(90deg, rgba(35,49,14,1) 0%, rgba(0,66,15,0.3393558106836485) 100%); 
-
+  background: rgb(35, 49, 14);
+  background: linear-gradient(
+    90deg,
+    rgba(35, 49, 14, 1) 0%,
+    rgba(0, 66, 15, 0.3393558106836485) 100%
+  );
 }
 
 .service__card__img {
   object-fit: fill;
 
-  background: rgb(53,78,56);
+  background: rgb(53, 78, 56);
 }
 
-.service__hero{
+.service__hero {
   width: 100vw;
   height: 40vh;
   background-image: url(../assets/img/service_hero_pic.jpg);
@@ -855,30 +879,35 @@ body {
   font-family: "rubik";
 }
 
-.service__hero-title{
+.service__hero-title {
   font-weight: bold;
   font-size: 65px;
   background-color: variables.$sable;
   font-family: "rubik";
 }
 
-.service__container__description{
+.service__container__description {
   font-weight: bold;
   font-size: 65px;
   color: variables.$sable;
   font-family: "rubik";
 }
 
+.fade-in-image {
+  animation: fadeIn 3s;
+}
 
-.fade-in-image { animation: fadeIn 3s; }
-
-.fade-in-title{
+.fade-in-title {
   animation: fadeIn 1s;
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .service__all_cards {
@@ -886,23 +915,22 @@ body {
   border-radius: 10%;
 }
 
-.service__card__all__cards__container{
+.service__card__all__cards__container {
   padding: 20px;
   border-radius: 10%;
 }
 
-.service__all_cards_master{
+.service__all_cards_master {
   padding: 50px;
 }
 
-
-.service__card__body{
+.service__card__body {
   text-align: center;
 
   background-color: #182c1a;
 }
 
-.service__card{
+.service__card {
   text-align: center;
 }
 
@@ -918,21 +946,24 @@ body {
 
 .service__btn {
   color: variables.$sable;
-  background-color:  variables.$foret;
-  border:none;
+  background-color: variables.$foret;
+  border: none;
 }
 
 .service__btn:hover {
   color: variables.$foret;
-  background-color:  variables.$sable;
+  background-color: variables.$sable;
 }
 
 .service_acueil {
-  
   color: variables.$sable;
 
-  background: rgb(121,9,9);
-  background: radial-gradient(circle, rgba(121,9,9,0.3085434857536765) 0%, rgba(0,66,15,0.3393558106836485) 100%); 
+  background: rgb(121, 9, 9);
+  background: radial-gradient(
+    circle,
+    rgba(121, 9, 9, 0.3085434857536765) 0%,
+    rgba(0, 66, 15, 0.3393558106836485) 100%
+  );
   border-radius: 2%;
   background-repeat: no-repeat;
   background-position: center;
@@ -944,27 +975,21 @@ body {
 
   padding: 40px;
 
-
   position: relative;
   display: block;
   top: 10px;
 
-
-  width:100vw;
-  height:40hv;
-  
+  width: 100vw;
+  height: 40hv;
 }
 
 .service_acueil h1 {
-  
   font-family: "rubik";
   font-weight: bold;
 
   color: variables.$creme;
 
   font-size: 40px;
-  
-
 }
 
 /* ----------------- SECTION PAGE HISTOIRE ---------------------- */
@@ -1212,7 +1237,6 @@ div.accordion-item {
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  
 }
 
 .erreur.body {
@@ -1234,7 +1258,6 @@ div.accordion-item {
 }
 .erreur-description {
   color: variables.$creme;
-  
 }
 
 .faq__hero {
@@ -1245,29 +1268,35 @@ div.accordion-item {
   background-position: center;
   background-size: cover;
 }
-@media screen and (max-width: 768px) { .svg_plante
-  {width: 20%;
-  z-index:1;
-  position: absolute;
-  right:0px;
-  top:32vh;
-  } }
-
-  @media screen and (min-width: 768px) { .svg_plante
-    {width: 20%;
-    z-index:1;
+@media screen and (max-width: 768px) {
+  .svg_plante {
+    width: 20%;
+    z-index: 1;
     position: absolute;
-    right:0px;
-    top:20vh;
-    } }
+    right: 0px;
+    top: 32vh;
+  }
+}
 
-    @media screen and (min-width: 1200px) { .svg_plante
-      {width: 15%;
-      z-index:1;
-      position: absolute;
-      right:30vw;
-      top:15vh;
-      } }
+@media screen and (min-width: 768px) {
+  .svg_plante {
+    width: 20%;
+    z-index: 1;
+    position: absolute;
+    right: 0px;
+    top: 20vh;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .svg_plante {
+    width: 15%;
+    z-index: 1;
+    position: absolute;
+    right: 30vw;
+    top: 15vh;
+  }
+}
 /*-----------------------Footer----------------------------------*/
 
 .section__footer {
@@ -1341,7 +1370,6 @@ footer {
   border-bottom: none;
 
   background-color: variables.$red;
-  
 
   a {
     text-decoration: none;
@@ -1406,7 +1434,7 @@ footer {
     color: variables.$white;
   }
 }
-.footer-nav{
+.footer-nav {
   min-width: 180px;
 }
 .footer__logo {
