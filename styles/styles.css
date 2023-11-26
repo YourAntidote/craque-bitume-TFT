@@ -541,7 +541,7 @@ body {
 }
 
 .nouvelle-individuel__container {
-  margin: 15px auto;
+  margin: 25px auto;
   display: flex;
   flex-direction: column;
   width: 90vw;
@@ -589,7 +589,7 @@ body {
 /*styles pour la section info de details de nouvelles */
 .nouvelles-individuel__info {
   display: flex;
-  margin-top: 15px;
+  margin-top: 25px;
   width: 100%;
   align-self: center;
 }
@@ -632,6 +632,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition-property: transform, color, background-color;
+  transition-duration: 130ms;
+  transition-timing-function: ease-in-out;
+}
+
+.nouvelles-individuel__top-card:hover {
+  transform: scale(1.2);
+  color: #F5EDD8;
+  background-color: #E7C762;
+  fill: #F5EDD8;
 }
 
 .nouvelles-individuel__middle-card {
@@ -641,6 +651,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition-property: transform, color, background-color;
+  transition-duration: 130ms;
+  transition-timing-function: ease-in-out;
+}
+
+.nouvelles-individuel__middle-card:hover {
+  transform: scale(1.2);
+  color: #F5EDD8;
+  background-color: #E7C762;
+  fill: #F5EDD8;
 }
 
 .nouvelles-individuel__bottom-card {
@@ -650,6 +670,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition-property: transform, color, background-color;
+  transition-duration: 130ms;
+  transition-timing-function: ease-in-out;
+}
+
+.nouvelles-individuel__bottom-card:hover {
+  transform: scale(1.2);
+  color: #F5EDD8;
+  background-color: #E7C762;
+  fill: #F5EDD8;
 }
 
 .nouvelles-individuel__info-card-left {
@@ -675,6 +705,7 @@ body {
   margin-top: 25px;
   margin-bottom: 25px;
   color: #E7C762;
+  font-weight: bold;
 }
 .nouvelle-individuel__prix h3 {
   font-weight: bolder;
@@ -688,6 +719,52 @@ body {
 .prix-left__row-three {
   color: #F5EDD8;
   display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+.prix-left__row-three .nouvelle-individuel__qte {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 35%;
+}
+.prix-left__row-three .nouvelle-individuel__stock {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 25%;
+}
+.prix-left__row-three .nouvelle-individuel__stock .nbr-stock-restant {
+  background-color: #E7C762;
+  width: 20%;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.prix-left__row-four {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #354e38;
+  background-color: #F5EDD8;
+  border-radius: 15px;
+  width: 95%;
+  padding: 11px 15px 10px 15px;
+  transition: background-color 100ms ease-in-out;
+}
+.prix-left__row-four p {
+  margin-bottom: 0;
+}
+
+.prix-left__row-four:hover {
+  background-color: #E7C762;
+}
+.prix-left__row-four:hover p {
+  color: #F5EDD8;
+}
+.prix-left__row-four:hover .panier-achat {
+  stroke: #F5EDD8;
+  fill: #F5EDD8;
 }
 
 .nouvelle-individuel__prix-right {
