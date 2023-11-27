@@ -13,7 +13,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
 	<!------------------------------------ HERO ----------------------------------------------------->
 		<div class="contenu-news">
-      <div class="histoire__hero">
+      <div class="histoire__hero" style="background-image: url(<?php the_post_thumbnail_url(); ?>)">
         <h1 class="nouvelles__hero-title"><?php the_title(); ?></h1>
       </div>
 
@@ -23,38 +23,46 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
       <p class="description_generique_texte text-justify"><?php the_content(); ?></p>
     </div>
 </div>
-			
+</div>
 		
 			
+		
+<!------------------------------ MEMBRES ----------------------------------------------------->
 			<h2 class="equipe__title my-4 max-width text-center">Notre équipe</h2>
       <div class="container">
-        <div class="row justify-content-evenly">
-			
-			<?php
-  $projects = new WP_Query('post_type=membre');
+		  <div class="row justify-content-evenly">
+			  
+		 <?php
+  $projects = new WP_Query(array(
+    'post_type'      => 'membre',
+    'posts_per_page' => -1, // Affiche tous les posts
+  ));
   while ($projects->have_posts()) : $projects->the_post(); 
-?>
+?> 	
           <div class="col-12 col-md-6 col-xl-4">
-            <a href="#Modalplus" data-bs-toggle="modal" data-bs-target="#Modalplus<?php the_ID(); ?>" class="equipe_href">
+            <a href="#Modalplus<?php the_ID(); ?>" data-bs-toggle="modal" data-bs-target="#Modalplus<?php the_ID(); ?>" class="equipe_href">
               <div class="card equipe_card m-3">
-				  <?php the_post_thumbnail('medium', array('class' => 'card-img-top equipe_img')); ?>
+				  <?php the_post_thumbnail('medium', array('class' => ' card-img-top equipe_img' , 'style' => ' width: 100%; height: auto;')); ?>
                 <div class="card-body equipe_card_body">
                   <h5 class="card-title text-center equipe_titre"><?php the_title(); ?></h5>
                   <div class="card-text text-center equipe_texte"><?php the_content(); ?></div>
             </div>
 				</div>
 					</a>
-			</div>
-			<?php
+			</div>	
+	<?php
   endwhile; 
   wp_reset_postdata(); 
-?>
-	</div>
+?>	  
+		  </div>
 </div>
 			
 			<!------------------------------------ MODALE DE L'ÉQUIPE ----------------------------------------------------->
 			<?php
-  $projects = new WP_Query('post_type=membre');
+  $projects = new WP_Query(array(
+    'post_type'      => 'membre',
+    'posts_per_page' => -1, // Affiche tous les posts
+  ));
   while ($projects->have_posts()) : $projects->the_post(); 
 ?>
     <div class="modal fade" id="Modalplus<?php the_ID(); ?>" tabindex="-1">
@@ -66,7 +74,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
           </div>
           <div class="modal-body equipe_modal_body">
             <div class="equipe_modal_img_div">
-				<?php the_post_thumbnail(array(350, 350 , 'class' => '  equipe_modal_img m-3')); ?>
+				<?php the_post_thumbnail('thumbnail', array('class' => ' equipe_modal_img m-3' , 'style' => ' width: 80%; height: auto;')); ?>
             </div>
             <p class="text-center equipe_modal_texte">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et
@@ -89,6 +97,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
   endwhile; 
   wp_reset_postdata(); 
 ?>
+			
 		
 			
 			
