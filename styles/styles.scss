@@ -1072,6 +1072,20 @@ body {
   font-size: 40px;
 }
 
+/* ----------------- SECTION PAGE DETAIL SERVICE ----------------------- */
+
+.titre_detail_service{
+  color:variables.$sable;
+}
+
+.titre_case_service{
+  color:variables.$creme !important; 
+}
+
+.p_case_service{
+  color:variables.$tumbleweed !important; 
+}
+
 /* ----------------- SECTION PAGE HISTOIRE ---------------------- */
 @media (min-width: 992px) {
   .navbar-expand-lg {
@@ -1596,3 +1610,5 @@ footer {
     flex-direction: column;
   }
 }
+
+

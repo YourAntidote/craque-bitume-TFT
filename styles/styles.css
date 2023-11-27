@@ -219,8 +219,7 @@ h6 {
   width: 100%;
   height: 100%;
   aspect-ratio: 5/4;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .swiper-button-next {
@@ -428,8 +427,7 @@ a.nouvelle_link {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(263px, 1fr));
   row-gap: 10px;
-  -moz-column-gap: 25px;
-       column-gap: 25px;
+  column-gap: 25px;
   padding: 15px;
 }
 
@@ -833,8 +831,7 @@ body {
   border-radius: 20px 20px 0px 0px;
   aspect-ratio: 1/1;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   position: relative;
 }
 
@@ -924,8 +921,7 @@ body {
 }
 
 .service__card__img {
-  -o-object-fit: fill;
-     object-fit: fill;
+  object-fit: fill;
   background: rgb(53, 78, 56);
 }
 
@@ -938,22 +934,20 @@ body {
   background-size: cover;
   font-weight: bold;
   font-size: 65px;
-  color: #E7C762;
   font-family: "rubik";
 }
 
 .service__hero-title {
   font-weight: bold;
   font-size: 65px;
-  background-color: #E7C762;
   font-family: "rubik";
 }
 
 .service__container__description {
-  font-weight: bold;
-  font-size: 65px;
+  max-width: 1920px;
   color: #E7C762;
   font-family: "rubik";
+  background-color: #8d3126;
 }
 
 .fade-in-image {
@@ -972,18 +966,17 @@ body {
     opacity: 1;
   }
 }
-.service__all_cards {
+.service__all__cards {
   text-align: center;
-  border-radius: 10%;
+}
+
+.service__all__cards:hover {
+  text-align: center;
+  background-color: #569e5d;
 }
 
 .service__card__all__cards__container {
-  padding: 20px;
   border-radius: 10%;
-}
-
-.service__all_cards_master {
-  padding: 50px;
 }
 
 .service__card__body {
@@ -1040,6 +1033,19 @@ body {
   font-weight: bold;
   color: #F5EDD8;
   font-size: 40px;
+}
+
+/* ----------------- SECTION PAGE DETAIL SERVICE ----------------------- */
+.titre_detail_service {
+  color: #E7C762;
+}
+
+.titre_case_service {
+  color: #F5EDD8 !important;
+}
+
+.p_case_service {
+  color: #E5A484 !important;
 }
 
 /* ----------------- SECTION PAGE HISTOIRE ---------------------- */
@@ -1370,8 +1376,7 @@ div.accordion-item {
 .lelogo {
   width: 300px;
   position: absolute;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 footer {
@@ -1507,7 +1512,6 @@ footer a:hover {
   .date-block {
     background-color: #F5EDD8;
     width: 300px;
-    height: -moz-fit-content;
     height: fit-content;
     font-size: 30px;
     font-weight: bold;
@@ -1517,7 +1521,6 @@ footer a:hover {
   }
   .credit-block {
     width: 300px;
-    height: -moz-fit-content;
     height: fit-content;
     background: #8d3126;
     background: linear-gradient(0deg, #8D3126 0%, #E7C762 0%, #8D3126 72%);
@@ -1534,4 +1537,4 @@ footer a:hover {
     justify-content: center;
     flex-direction: column;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
