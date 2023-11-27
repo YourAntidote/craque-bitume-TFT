@@ -990,17 +990,18 @@ body {
   }
 }
 
-.service__all_cards {
+.service__all__cards {
   text-align: center;
   
 }
 
-.service__card__all__cards__container {
-  border-radius: 10%;
+.service__all__cards:hover {
+  text-align: center;
+  background-color: #569e5d;
 }
 
-.service__all_cards_master {
-  padding: 50px;
+.service__card__all__cards__container {
+  border-radius: 10%;
 }
 
 .service__card__body {
