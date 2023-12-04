@@ -50,7 +50,7 @@
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-dark navbar-expand-lg justify-content-end align-items-center fixed-top py-0">
-      <div class="container-fluid justify-content-space-between align-items-center">
+      <div class="container-fluid justify-content-space-between align-items-center max-width">
         <a class="navbar-brand " href="index.html">
           <img src="./sources/logo.png" class="logo">
         </a>
@@ -126,7 +126,7 @@
                   </p>
                 </div>
                 <div class="nouvelle-individuel__info-card-right">
-                    <svg  class="svg__clock" width="81" height="81" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg  class="svg__clock" width="81" height="81" viewBox="0 0 81 81"  xmlns="http://www.w3.org/2000/svg">
         <path d="M40.3318 0C18.1493 0 0 18.1493 0 40.3318C0 62.5143 18.1493 80.6637 40.3318 80.6637C62.5143 80.6637 80.6637 62.5143 80.6637 40.3318C80.6637 18.1493 62.5143 0 40.3318 0ZM40.3318 10.083C57.0695 10.083 70.5807 23.5941 70.5807 40.3318C70.5807 57.0695 57.0695 70.5807 40.3318 70.5807C23.5941 70.5807 10.083 57.0695 10.083 40.3318C10.083 23.5941 23.5941 10.083 40.3318 10.083ZM35.2904 20.1659V42.5501L36.9036 43.8609L41.9451 48.9023L45.3733 52.7339L52.633 45.4741L48.8015 42.0459L45.3733 38.6177V20.3676H35.2904V20.1659Z" fill="#354E38"/>
         </svg>
         
@@ -167,7 +167,36 @@
               </div>
             </div>
           <div class="nouvelle-individuel__prix">
-          </div>
+            <div class="nouvelles-individuel__prix-left">         
+                <h3 class="prix-left__row-one">Groupe de discussion: comment dépasser son éco-anxiété?</h3>
+                <p class="prix-left__row-two">25.00$</p>
+                <div class="prix-left__row-three">
+                  <div class="nouvelle-individuel__qte">
+                    <p class="qte">Nombre de participants:</p>
+                    <select name="qte-select" id="qte-select" class="qte-select">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </div>
+                  <div class="nouvelle-individuel__stock">
+                    <p class="stock">place restante</p>
+                    <p class="nbr-stock-restant">5</p>
+                  </div>  
+                </div>
+                <div class="prix-left__row-four">
+                  <p class="ajouter-panier">Ajouter Au Panier</p>
+                  <svg class="panier-achat" width="56" height="42" viewBox="0 0 56 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.98508 0.014199C2.05665 0.16267 1.22526 0.673684 0.673802 1.43482C0.122344 2.19596 -0.104009 3.14488 0.0445401 4.07283C0.193089 5.00077 0.70437 5.83173 1.46591 6.3829C2.22745 6.93407 3.17686 7.1603 4.10529 7.01183H14.6072L15.2373 8.76124L18.1079 17.5083L20.9784 26.2553C21.2584 27.165 22.4487 28.0047 23.3588 28.0047H47.8633C48.8435 28.0047 49.9637 27.165 50.2438 26.2553L55.9148 8.76124C56.1949 7.85155 55.7748 7.01183 54.7946 7.01183H23.7089L21.0484 1.97354C20.765 1.39525 20.3275 0.906331 19.784 0.560627C19.2404 0.214923 18.612 0.0258397 17.9678 0.014199L3.96526 0.014199C3.75565 -0.004733 3.54476 -0.00473301 3.33515 0.014199C3.19525 0.00579429 3.05497 0.00579429 2.91507 0.014199L2.98508 0.014199ZM25.1092 35.0024C23.1488 35.0024 21.6085 36.5418 21.6085 38.5012C21.6085 40.4605 23.1488 42 25.1092 42C27.0695 42 28.6098 40.4605 28.6098 38.5012C28.6098 36.5418 27.0695 35.0024 25.1092 35.0024ZM46.113 35.0024C44.1527 35.0024 42.6124 36.5418 42.6124 38.5012C42.6124 40.4605 44.1527 42 46.113 42C48.0734 42 49.6137 40.4605 49.6137 38.5012C49.6137 36.5418 48.0734 35.0024 46.113 35.0024Z" fill="#354E38"/>
+                    </svg>
+                    
+                </div>
+            </div>
+            <div class="nouvelle-individuel__prix-right">
+              <span> </span>
+              </div>
           </div>
         </div>
 
@@ -175,242 +204,92 @@
 
     <!------------------------------------ FOOTER ----------------------------------------------------->
     <footer>
+
       <section class="section__footer container-fluid d-flex flex-column">
-        <div
-          class="row colonne--haut d-flex justify-content-evenly align-items-start"
-        >
-          <div
-            class="col-12 col-xl-1 mb-2 mt-5 d-flex flex-column align-items-center"
-          >
-            <a
-              href="index.html"
-              class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
-              ><img class="footer__logo" src="./sources/logo.png" alt="Logo"
-            /></a>
-          </div>
 
-          <div
-            class="col-12 col-sm-4 col-md-3 col-xl-1 mb-2 pt-4 d-flex flex-column align-items-center align-content-start"
-          >
-            <a href="./2nouvelles.html"> <h5 class="section">Nouvelles</h5></a>
-            <a
-              href="./2nouvelles.html"
-              class="nav-link p-0 text-body-secondary sous-section"
-              ><p class="footer_sous_texte">Actualités</p></a
-            >
-          </div>
+        <div class="row flex-xl-row colonne--haut d-flex justify-content-evenly align-items-start">
 
-          <div
-            class="col-12 col-sm-4 col-md-3 col-xl-1 mb-2 pt-4 d-flex flex-column align-items-center"
-          >
-            <a href="./3services.html"><h5 class="section">Services</h5></a>
-            <a
-              href="./3services.html"
-              class="nav-link p-0 text-body-secondary sous-section"
-              ><p class="footer_sous_texte">Jardin</p></a
-            >
-            <a
-              href="./3services.html"
-              class="nav-link p-0 text-body-secondary sous-section"
-              ><p class="footer_sous_texte">Composte</p></a
-            >
-          </div>
+          
 
-          <div
-            class="col-12 col-sm-4 col-md-3 col-xl-1 mb-2 pt-4 d-flex flex-column align-items-center"
-          >
-            <a href="./4equipe.html"><h5 class="section">Équipes</h5></a>
-            <a
-              href="./4equipe.html"
-              class="nav-link p-0 text-body-secondary sous-section"
-              ><p class="footer_sous_texte">Notre équipe</p></a
-            >
-            <a
-              href="./4equipe.html"
-              class="nav-link p-0 text-body-secondary sous-section"
-              ><p class="footer_sous_texte">Joindre l'équipe</p></a
-            >
-          </div>
+          <div class="row col-12 col-sm-11 col-md-9 col-lg-9 col-xl-8 d-flex justify-content-center align-content-center align-items-centers text-center flex-wrap">
 
-          <div
-            class="col-12 col-sm-4 col-md-3 col-xl-1 mb-2 pt-4 d-flex flex-column align-items-center"
-          >
-            <a href="./5histoire.html"><h5 class="section">Histoire</h5></a>
-            <a href="#" class="nav-link p-0 text-body-secondary sous-section"
-              ><p class="footer_sous_texte">Notre histoire</p></a
-            >
-          </div>
-
-          <div
-            class="col-12 col-sm-4 col-md-3 col-xl-1 mb-2 pt-4 d-flex flex-column align-items-center"
-          >
-            <a href="./6propos.html"><h5 class="section">À Propos</h5></a>
-            <a
-              href="./6propos.html"
-              class="nav-link p-0 text-body-secondary sous-section"
-              ><p class="footer_sous_texte">FAQ</p></a
-            >
-          </div>
-
-          <div
-            class="col-12 col-md-9 col-xl-4 mb-2 pt-4 d-flex flex-column align-items-center"
-          >
-            <h5 class="section px-2">Joingnez-vous à une bonne cause !</h5>
-            <div
-              class="d-flex flex-wrap flex-lg-row justify-content-evenly sociaux mt-3 mt-xl-0"
-            >
-              <a
-                href="https://www.facebook.com/craquebitume"
-                class="footer__btn d-flex justify-content-end align-items-center text-center mx-4 mt-3"
-                ><i class="bi bi-facebook"></i
-              ></a>
-              <a
-                href="https://www.instagram.com/craque.bitume/"
-                class="footer__btn d-flex justify-content-end align-items-center text-center mx-4 mt-3"
-                ><i class="bi bi-instagram"></i
-              ></a>
-              <a
-                href="https://www.youtube.com/@craque-bitumeobnl4387"
-                class="footer__btn d-flex justify-content-end align-items-center text-center mx-4 mt-3"
-                ><i class="bi bi-youtube"></i
-              ></a>
-              <a
-                href="https://craquebitume.org/products/faites-un-don-a-craque-bitume"
-                class="footer__btn d-flex justify-content-end align-items-center text-center mx-4 mt-3"
-                ><i class="bi bi-cash-coin"></i
-              ></a>
-              <a
-                href="https://maps.app.goo.gl/16J4zraB6vR6eccZ9"
-                class="footer__btn d-flex justify-content-end align-items-center text-center mx-4 mt-3"
-                ><i class="bi bi-geo-alt"></i
-              ></a>
-              <a
-                href="https://craquebitume.org/"
-                class="footer__btn d-flex justify-content-end align-items-center text-center mx-4 mt-3"
-                ><i class="bi bi-box-arrow-up-right"></i
-              ></a>
+            <div class="footer-nav col-12 col-md-4 col-lg-3 col-xl-1 mb-2 mt-5 d-flex flex-column align-items-center">
+              <a href="index.html" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"><img class="footer__logo " src="./sources/logo.png" alt="Logo"></a>
             </div>
-            <p class="sous-section telephone mt-4">
-              <i class="bi bi-telephone-inbound-fill"></i> +1 (418) 523-4580
-            </p>
+
+            <div class="footer-nav col-12 col-md-4 col-lg-4 col-xl-2 mb-2 mt-5 d-flex flex-column align-items-center align-content-start">
+              <a href="./2nouvelles.html"> <h5 class="section">Nouvelles</h5></a>
+              <a href="./2nouvelles.html" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">Actualités</p></a>
+            </div>
+          
+            <div class="footer-nav col-12 col-md-4 col-lg-4 col-xl-2 mb-2 mt-5 d-flex flex-column align-items-center">
+              <a href="./3services.html"><h5 class="section">Services</h5></a>
+              <a href="./3services.html" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">Jardin</p></a>
+              <a href="./3services.html" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">Composte</p></a>
+            </div>
+
+            <div class="footer-nav col-12 col-md-4 col-lg-4 col-xl-2 mb-2 mt-5 d-flex flex-column align-items-center">
+              <a href="./4equipe.html"><h5 class="section">Équipes</h5></a>
+              <a href="./4equipe.html" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">Notre équipe</p></a>
+              <a href="./4equipe.html" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">Joindre l'équipe</p></a>
+            </div>
+          
+            <div class="footer-nav col-12 col-md-4 col-lg-4 col-xl-2 mb-2 mt-5 d-flex flex-column align-items-center">
+              <a href="./5histoire.html"><h5 class="section">Histoire</h5></a>
+              <a href="#" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">Notre histoire</p></a>
+            </div>
+
+            <div class="footer-nav col-12 col-md-4 col-lg-4 col-xl-2 mb-2 mt-5 d-flex flex-column align-items-center">
+              <a href="./6propos.html"><h5 class="section">À Propos</h5></a>
+              <a href="./6propos.html" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">FAQ</p></a>
+            </div>
           </div>
+          <div class="col-12 col-md-9 col-xl-4 mb-2 pt-4  d-flex flex-column align-items-center">
+            <h5 class="section px-2 col-11 ">Joingnez-vous à une bonne cause !</h5>
+            <div class="d-flex flex-wrap flex-lg-row justify-content-center sociaux mt-3  mt-xl-0">
+              <a href="https://www.facebook.com/craquebitume"                           class="footer__btn d-flex justify-content-end align-items-center text-center mx-4 mt-3"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/craque.bitume/"                        class="footer__btn d-flex justify-content-end align-items-center text-center mx-4 mt-3"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.youtube.com/@craque-bitumeobnl4387"                  class="footer__btn d-flex justify-content-end align-items-center text-center mx-4 mt-3"><i class="bi bi-youtube"></i></a>
+              <a href="https://craquebitume.org/products/faites-un-don-a-craque-bitume" class="footer__btn d-flex justify-content-end align-items-center text-center mx-4 mt-3"><i class="bi bi-cash-coin"></i></a>
+              <a href="https://maps.app.goo.gl/16J4zraB6vR6eccZ9"                       class="footer__btn d-flex justify-content-end align-items-center text-center mx-4 mt-3"><i class="bi bi-geo-alt"></i></a>
+              <a href="https://craquebitume.org/"                                       class="footer__btn d-flex justify-content-end align-items-center text-center mx-4 mt-3"><i class="bi bi-box-arrow-up-right"></i></a>
+            </div>
+            <p class="sous-section telephone mt-4"><i class="bi bi-telephone-inbound-fill"></i>+1 (418) 523-4580</p>
+          </div>  
 
           <!-- <a href="https://maps.app.goo.gl/16J4zraB6vR6eccZ9" class="adresse"><p class="sous-section adresse">Centre des opérations : 435 Rue du Roi, Québec, QC G1K 2X1</p></a> -->
           <!-- <a href="https://maps.app.goo.gl/16J4zraB6vR6eccZ9" class="adresse"><p class="sous-section adresse">Centre administratif : 870 Av. De Salaberry, Québec, QC G1R 2T9 </p></a> -->
+
         </div>
 
-        <div class="row"><div class="ligne-design"></div></div>
+
+        <div class="row"><div class="ligne-design my-1"></div></div>
+        
 
         <div class="row">
           <div class="d-flex flex-row flex-wrap mb-6 sponsor-colonne">
-            <a
-              class="d-flex align-items-center justify-content-center col-3 col-lg-1"
-              href="https://www.capucin.org/"
-              ><img
-                class="logo sponsor"
-                src="./sources/medias/footer/logo_partenaire_jaune/capucin.png"
-                alt="Capucin"
-            /></a>
-            <a
-              class="d-flex align-items-center justify-content-center col-3 col-lg-1"
-              href="https://clj.cssc.gouv.qc.ca/"
-              ><img
-                class="logo sponsor"
-                src="./sources/medias/footer/logo_partenaire_jaune/centre_louis-jolliet.png"
-                alt="centre_louis-jolliet"
-            /></a>
-            <a
-              class="d-flex align-items-center justify-content-center col-3 col-lg-1"
-              href="https://www.quebec.ca/sante/systeme-et-services-de-sante/organisation-des-services/cisss-et-ciusss"
-              ><img
-                class="logo sponsor"
-                src="./sources/medias/footer/logo_partenaire_jaune/centre_uni_quebec.png"
-                alt="centre_uni_quebec"
-            /></a>
-            <a
-              class="d-flex align-items-center justify-content-center col-3 col-lg-1"
-              href="https://collectivitezenquebec.org/"
-              ><img
-                class="logo sponsor"
-                src="./sources/medias/footer/logo_partenaire_jaune/collectivite_zen_quebec.png"
-                alt="collectivite_zen_quebec"
-            /></a>
-            <a
-              class="d-flex align-items-center justify-content-center col-3 col-lg-1"
-              href="https://www.desjardins.com/votre-caisse/index.jsp?transit=81520366"
-              ><img
-                class="logo sponsor"
-                src="./sources/medias/footer/logo_partenaire_jaune/desjardins.png"
-                alt="Desjardins"
-            /></a>
-            <a
-              class="d-flex align-items-center justify-content-center col-3 col-lg-1"
-              href="https://cdcbeauport.ca/"
-              ><img
-                class="logo sponsor"
-                src="./sources/medias/footer/logo_partenaire_jaune/dev_comunautaire_beauport.png"
-                alt="dev_comunautaire_beauport"
-            /></a>
-            <a
-              class="d-flex align-items-center justify-content-center col-3 col-lg-1"
-              href="https://www.canada.ca/fr/emploi-developpement-social.html"
-              ><img
-                class="logo sponsor"
-                src="./sources/medias/footer/logo_partenaire_jaune/dev_social_canada.png"
-                alt="dev_social_canada"
-            /></a>
-            <a
-              class="d-flex align-items-center justify-content-center col-3 col-lg-1"
-              href="https://www.inspq.qc.ca/"
-              ><img
-                class="logo sponsor"
-                src="./sources/medias/footer/logo_partenaire_jaune/insp_qc.png"
-                alt="insp_qc"
-            /></a>
-            <a
-              class="d-flex align-items-center justify-content-center col-3 col-lg-1"
-              href="https://www.littoralcitoyen.org/"
-              ><img
-                class="logo sponsor"
-                src="./sources/medias/footer/logo_partenaire_jaune/litoral_citoyen.png"
-                alt="litoral_citoyen"
-            /></a>
-            <a
-              class="d-flex align-items-center justify-content-center col-3 col-lg-1"
-              href="https://www.omhq.qc.ca/"
-              ><img
-                class="logo sponsor"
-                src="./sources/medias/footer/logo_partenaire_jaune/omhg.png"
-                alt="omhg"
-            /></a>
-            <a
-              class="d-flex align-items-center justify-content-center col-3 col-lg-1"
-              href="http://repac.org/"
-              ><img
-                class="logo sponsor"
-                src="./sources/medias/footer/logo_partenaire_jaune/repac-03-12.png"
-                alt="repac-03-12"
-            /></a>
-            <a
-              class="d-flex align-items-center justify-content-center col-3 col-lg-1"
-              href="https://www.saintsuave.com/"
-              ><img
-                class="logo sponsor"
-                src="./sources/medias/footer/logo_partenaire_jaune/saint-suave.png"
-                alt="saint-suave"
-            /></a>
+            <a class="d-flex align-items-center justify-content-center col-3 col-lg-1" href="https://www.capucin.org/"><img class="logo sponsor" src="./sources/medias/footer/logo_partenaire_jaune/capucin.png" alt="Capucin"></a>
+            <a class="d-flex align-items-center justify-content-center col-3 col-lg-1" href="https://clj.cssc.gouv.qc.ca/"><img class="logo sponsor" src="./sources/medias/footer/logo_partenaire_jaune/centre_louis-jolliet.png" alt="centre_louis-jolliet"></a>
+            <a class="d-flex align-items-center justify-content-center col-3 col-lg-1" href="https://www.quebec.ca/sante/systeme-et-services-de-sante/organisation-des-services/cisss-et-ciusss"><img class="logo sponsor" src="./sources/medias/footer/logo_partenaire_jaune/centre_uni_quebec.png" alt="centre_uni_quebec"></a>
+            <a class="d-flex align-items-center justify-content-center col-3 col-lg-1" href="https://collectivitezenquebec.org/"><img class="logo sponsor" src="./sources/medias/footer/logo_partenaire_jaune/collectivite_zen_quebec.png" alt="collectivite_zen_quebec"></a>
+            <a class="d-flex align-items-center justify-content-center col-3 col-lg-1" href="https://www.desjardins.com/votre-caisse/index.jsp?transit=81520366" ><img class="logo sponsor" src="./sources/medias/footer/logo_partenaire_jaune/desjardins.png" alt="Desjardins"></a>
+            <a class="d-flex align-items-center justify-content-center col-3 col-lg-1" href="https://cdcbeauport.ca/"><img class="logo sponsor" src="./sources/medias/footer/logo_partenaire_jaune/dev_comunautaire_beauport.png" alt="dev_comunautaire_beauport"></a>
+            <a class="d-flex align-items-center justify-content-center col-3 col-lg-1" href="https://www.canada.ca/fr/emploi-developpement-social.html"><img class="logo sponsor" src="./sources/medias/footer/logo_partenaire_jaune/dev_social_canada.png" alt="dev_social_canada"></a>
+            <a class="d-flex align-items-center justify-content-center col-3 col-lg-1" href="https://www.inspq.qc.ca/"><img class="logo sponsor" src="./sources/medias/footer/logo_partenaire_jaune/insp_qc.png" alt="insp_qc"></a>
+            <a class="d-flex align-items-center justify-content-center col-3 col-lg-1" href="https://www.littoralcitoyen.org/"><img class="logo sponsor" src="./sources/medias/footer/logo_partenaire_jaune/litoral_citoyen.png" alt="litoral_citoyen"></a>
+            <a class="d-flex align-items-center justify-content-center col-3 col-lg-1" href="https://www.omhq.qc.ca/"><img class="logo sponsor" src="./sources/medias/footer/logo_partenaire_jaune/omhg.png" alt="omhg"></a>
+            <a class="d-flex align-items-center justify-content-center col-3 col-lg-1" href="http://repac.org/"><img class="logo sponsor" src="./sources/medias/footer/logo_partenaire_jaune/repac-03-12.png" alt="repac-03-12"></a>
+            <a class="d-flex align-items-center justify-content-center col-3 col-lg-1" href="https://www.saintsuave.com/"><img class="logo sponsor" src="./sources/medias/footer/logo_partenaire_jaune/saint-suave.png" alt="saint-suave"></a>
           </div>
         </div>
-        <div
-          class="copyright d-flex justify-content-center align-content-center text-center mt-4"
-        >
-          <p class="credit text-body-secondary sous-section mb-0">
-            &copy; 2023, Craque-Bitume, TFT
-          </p>
+        <div class="copyright d-flex justify-content-center align-content-center text-center mt-2">
+          <p class="credit text-body-secondary sous-section mb-0">&copy; 2023, Craque-Bitume, TFT</p>
         </div>
       </section>
     </footer>
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="./scripts/script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

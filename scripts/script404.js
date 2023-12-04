@@ -1,7 +1,7 @@
-let fleche = gsap.timeline({paused:true})
-    .from('.fleche.jaune', { y: '100vh',  ease: "slow(1.5, 1.5, false)"})
-    .from('.fleche.vert', { y: '100vh',  ease: "slow(1.5, 1.5, false)" })
-    .from('.fleche.rouge', { y: '100vh',  ease: "slow(1.5, 1.5, false)" })
-;
-
-document.addEventListener("DOMContentLoaded", () => fleche.play(0));
+gsap.timeline({})
+    .to('#feuilleun', { y: '30vh',  ease: "bounce.out",duration:4})
+    .to('#feuilledeux', { y: '30vh',  ease: "bounce.out",duration:2 },'-=0.5')
+    .to('#feeuilletrois', { y: '30vh',  ease: "bounce.out",duration:2},'-=0.5')
+    .to('#feuilleequatre', { y: '20vh',  ease: "bounce.out",duration:2 }, '-=0.5')
+    .to('#feuillecinq', { y: '30vh',  ease: "bounce.out",duration:2},'-=0.5')
+    .to('#feuillesix', { y: '40vh',  ease: "bounce.out",duration:2 }, '-=0.5')

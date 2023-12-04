@@ -1,0 +1,10 @@
+{
+    "post_types":{
+        "service-unique":{},
+        "question":{},
+        "membre":{},
+        "information":{},
+        "detail-service":{},
+        "detail-formation":{}
+    }
+}

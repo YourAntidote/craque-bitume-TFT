@@ -50,7 +50,7 @@
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-dark navbar-expand-lg justify-content-end align-items-center fixed-top py-0">
-      <div class="container-fluid justify-content-space-between align-items-center">
+      <div class="container-fluid justify-content-space-between align-items-center max-width">
         <a class="navbar-brand " href="index.html">
           <img src="./sources/logo.png" class="logo">
         </a>
@@ -73,11 +73,21 @@
       </div>
     </nav>
     
-    <div class="service_acueil fade-in-title">
-      <h1 class="text-center">Nos Services</h1>
-    </div>
-
+   
     <div class="contenu">
+
+      <div class="service__hero">
+        <h1 class="service__hero-title">SERVICES</h1>
+      </div>
+  
+      <div class="service__container__description">
+        <div class="card-body col-12 d-flex justify-content-center align-content-center text-center">
+          <p>
+            Craque-Bitume offre des services pour preserver le sentiment de communauté entre nos membres et la nature qu'elle desire preserver.
+          </p>
+        </div>
+      </div>
+     
 
       <!--<div class="message-erreur">
       <h1 class="erreur-titre">Page Services</h1>
@@ -86,40 +96,78 @@
       <button type="button" id="return-btn">Retour à la page d'accueil</button>
     </div>--->
 
-
-
-    <section class="section__services2 container-fluid d-flex justify-content-center align-items-center">
+    <section class="section__services2 max-width my-5 py-5 container-fluid d-flex justify-content-center align-items-center">
       
         <div class="service__all_cards_master row d-flex  flex-md-row justify-content-evenly align-items-center ">
 
-          <div class="services__all__cards col-12 col-md-6 col-lg-12 col-xl-12">
+          <div class="services__all__cards col-12 col-md-6 col-lg-6 col-xl-6">
             <div class="service__card__all__cards__container card text-center fade-in-image">
               <img class="service__card__img img-fluid rounded-start" src="assets/img/couverturesitewebalt_2800x.png" alt="Card image cap">
               <div class="service__card__body card-body text-center">
                 <h5 class="service__card__title card-title text-center"><i class="bi bi-flower1"></i>Jardinage urbain collectif</h5>
                 <p class="service__card__text card-text text-center">Avoir un potager contribue à améliorer la biodiversité urbaine, à réduire les effets d’îlots de chaleur et à embellir des espaces. Le jardinage est également un excellent vecteur pour favoriser le tissage des liens dans la communauté, les contacts intergénérationnels, favoriser l'apprentissage et pour contrer l’isolement social. Vous habitez à Québec et désirez jardiner? Plusieurs options s’offrent à vous.</p>
+
+                <h6 class="service__card__title card-title text-center">C'est quoi le jardin collectif?</h6>
+                <p class="service__card__text card-text text-center">
+                  <ul>
+                    <li>C'est un atelier collectif depuis 1997!</li>
+                    <li>Elle se place sur un jardin avec une grande superficie de 2000 m2!</li>
+                    <li>Elle te sert a apprendre l'agriculture écologique et son autonomie alimentaire!</li>
+                  </ul>  
+                </p>
+
                 <a type="submit" href="#" class="service__btn btn btn-primary">S'inscrire</a>
               </div>
             </div>
           </div>
 
-          <div class="services__all__cards col-12 col-md-6 col-lg-12 col-xl-12">
+          <div class="services__all__cards col-12 col-md-6 col-lg-6 col-xl-6">
             <div class="service__card__all__cards__container card text-center fade-in-image">
               <img class="service__card__img img-fluid rounded-start" src="assets/img/imagecompostcommunautaire_2800x.png" alt="Card image cap">
               <div class="service__card__body card-body text-center">
                 <h5 class="service__card__title card-title text-center"><i class="bi bi-bucket-fill"></i>Compostage Communautaire</h5>
                 <p class="service__card__text card-text text-center"> Gérez vos propres matières résiduelles de façon responsable et écologique. 🌿 Rapprochez-vous de la nature en ayant une meilleure compréhension des cycles de la vie. 🌻 Transformez vos « déchets » en ressource de qualité pour les plantes!</p>
+
+                <h6 class="service__card__title card-title text-center">C'est quoi le compostage communautaire</h6>
+                <p class="service__card__text card-text text-center">
+                  <ul>
+                    <li>C'est un atelier qui se base sur un systeme de compost en ville!</li>
+                    <li>Plus de 36 sites de compost communautaires!</li>
+                    <li>Un services gratuit!</li>
+                  </ul>  
+                </p>
+
                 <a type="submit" href="#" class="service__btn btn btn-primary">S'inscrire</a>
+
               </div>
             </div>
           </div>
 
-          <div class="services__all__cards col-12 col-md-6 col-lg-12 col-xl-12">
+          <div class="services__all__cards col-12 col-md-6 col-lg-6 col-xl-6">
             <div class="service__card__all__cards__container card text-center fade-in-image">
               <div class="service__card__body card-body text-center">
                 <h5 class="service__card__title card-title text-center"><i class="bi bi-calendar-check"></i>Formation</h5>
-                <p class="service__card__text card-text text-center">Demandez une formation en groupe pour pouvoir participer a des activites ecologiques ensembles!</p>
-                <a type="submit" href="#" class="service__btn btn btn-primary">S'inscrire</a>
+                <p class="service__card__text card-text text-center">Demandez une formation en groupe pour pouvoir participer a des activites ecologiques ensembles!
+
+                  <form>
+
+                    <label for="fname">Prenom</label><br>
+                    <input type="text" id="fname" name="fname" value=""><br>
+                    <label for="lname">Nom de famille</label><br>
+                    <input type="text" id="lname" name="lname" value=""><br><br>
+
+                    <label for="email">Adresse Email</label><br>
+                    <input type="email" id="email" name="email" value=""><br>
+
+                    <input type="checkbox" id="service1" name="service1" value="jardin-collectif">
+                    <label for="jardin-collectif"> Je desire m'inscrire au Jardin Collectif</label><br>
+
+                    <input type="checkbox" id="service2" name="service2" value="compostage-collectif">
+                    <label for="compostage-collectif"> Je desire m'inscrire au Compostage Collectif</label><br><br>
+
+                    <a type="submit" href="#" class="service__btn btn btn-primary">S'inscrire</a>
+                  </form>
+                </p>
                 
               </div>
             </div>
@@ -141,51 +189,54 @@
 
     <section class="section__footer container-fluid d-flex flex-column">
 
-      <div class="row colonne--haut d-flex justify-content-evenly align-items-start">
+      <div class="row flex-xl-row colonne--haut d-flex justify-content-evenly align-items-start">
 
-        <div class="col-12 col-xl-1 mb-2 mt-5 d-flex flex-column align-items-center">
-          <a href="index.html" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"><img class="footer__logo " src="./sources/logo.png" alt="Logo"></a>
-        </div>
-
-
-        <div class="col-12 col-sm-4 col-md-3 col-xl-1 mb-2 pt-4 d-flex flex-column align-items-center align-content-start">
-          <a href="./2nouvelles.html"> <h5 class="section">Nouvelles</h5></a>
-          <a href="./2nouvelles.html" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">Actualités</p></a>
-        </div>
-
-        <div class="col-12 col-sm-4 col-md-3 col-xl-1 mb-2 pt-4 d-flex flex-column align-items-center">
-          <a href="./3services.html"><h5 class="section">Services</h5></a>
-          <a href="./3services.html" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">Jardin</p></a>
-          <a href="./3services.html" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">Composte</p></a>
-        </div>
         
-        <div class="col-12 col-sm-4 col-md-3 col-xl-1 mb-2 pt-4 d-flex flex-column align-items-center">
-          <a href="./4equipe.html"><h5 class="section">Équipes</h5></a>
-          <a href="./4equipe.html" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">Notre équipe</p></a>
-          <a href="./4equipe.html" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">Joindre l'équipe</p></a>
-        </div>
 
-        <div class="col-12 col-sm-4 col-md-3 col-xl-1 mb-2 pt-4 d-flex flex-column align-items-center">
-          <a href="./5histoire.html"><h5 class="section">Histoire</h5></a>
-          <a href="#" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">Notre histoire</p></a>
-        </div>
+        <div class="row col-12 col-sm-11 col-md-9 col-lg-9 col-xl-8 d-flex justify-content-center align-content-center align-items-centers text-center flex-wrap">
 
-        <div class="col-12 col-sm-4 col-md-3 col-xl-1 mb-2 pt-4 d-flex flex-column align-items-center">
-          <a href="./6propos.html"><h5 class="section">À Propos</h5></a>
-          <a href="./6propos.html" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">FAQ</p></a>
-        </div>
-
-        <div class="col-12 col-md-9 col-xl-4 mb-2 pt-4  d-flex flex-column align-items-center">
-          <h5 class="section px-2 ">Joingnez-vous à une bonne cause !</h5>
-          <div class="d-flex flex-wrap flex-lg-row justify-content-evenly sociaux mt-3  mt-xl-0">
-            <a href="https://www.facebook.com/craquebitume"                           class="footer__btn d-flex  justify-content-end align-items-center text-center mx-4 mt-3"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/craque.bitume/"                        class="footer__btn d-flex  justify-content-end align-items-center text-center mx-4 mt-3"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.youtube.com/@craque-bitumeobnl4387"                  class="footer__btn d-flex  justify-content-end align-items-center text-center mx-4 mt-3"><i class="bi bi-youtube"></i></a>
-            <a href="https://craquebitume.org/products/faites-un-don-a-craque-bitume" class="footer__btn d-flex  justify-content-end align-items-center text-center mx-4 mt-3"><i class="bi bi-cash-coin"></i></a>
-            <a href="https://maps.app.goo.gl/16J4zraB6vR6eccZ9"                       class="footer__btn d-flex  justify-content-end align-items-center text-center mx-4 mt-3"><i class="bi bi-geo-alt"></i></a>
-            <a href="https://craquebitume.org/"                                       class="footer__btn d-flex  justify-content-end align-items-center text-center mx-4 mt-3"><i class="bi bi-box-arrow-up-right"></i></a>
+          <div class="footer-nav col-12 col-md-4 col-lg-3 col-xl-1 mb-2 mt-5 d-flex flex-column align-items-center">
+            <a href="index.html" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"><img class="footer__logo " src="./sources/logo.png" alt="Logo"></a>
           </div>
-          <p class="sous-section telephone mt-4"><i class="bi bi-telephone-inbound-fill"></i>        +1 (418) 523-4580</p>
+
+          <div class="footer-nav col-12 col-md-4 col-lg-4 col-xl-2 mb-2 mt-5 d-flex flex-column align-items-center align-content-start">
+            <a href="./2nouvelles.html"> <h5 class="section">Nouvelles</h5></a>
+            <a href="./2nouvelles.html" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">Actualités</p></a>
+          </div>
+        
+          <div class="footer-nav col-12 col-md-4 col-lg-4 col-xl-2 mb-2 mt-5 d-flex flex-column align-items-center">
+            <a href="./3services.html"><h5 class="section">Services</h5></a>
+            <a href="./3services.html" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">Jardin</p></a>
+            <a href="./3services.html" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">Composte</p></a>
+          </div>
+
+          <div class="footer-nav col-12 col-md-4 col-lg-4 col-xl-2 mb-2 mt-5 d-flex flex-column align-items-center">
+            <a href="./4equipe.html"><h5 class="section">Équipes</h5></a>
+            <a href="./4equipe.html" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">Notre équipe</p></a>
+            <a href="./4equipe.html" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">Joindre l'équipe</p></a>
+          </div>
+        
+          <div class="footer-nav col-12 col-md-4 col-lg-4 col-xl-2 mb-2 mt-5 d-flex flex-column align-items-center">
+            <a href="./5histoire.html"><h5 class="section">Histoire</h5></a>
+            <a href="#" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">Notre histoire</p></a>
+          </div>
+
+          <div class="footer-nav col-12 col-md-4 col-lg-4 col-xl-2 mb-2 mt-5 d-flex flex-column align-items-center">
+            <a href="./6propos.html"><h5 class="section">À Propos</h5></a>
+            <a href="./6propos.html" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">FAQ</p></a>
+          </div>
+        </div>
+        <div class="col-12 col-md-9 col-xl-4 mb-2 pt-4  d-flex flex-column align-items-center">
+          <h5 class="section px-2 col-11 ">Joingnez-vous à une bonne cause !</h5>
+          <div class="d-flex flex-wrap flex-lg-row justify-content-center sociaux mt-3  mt-xl-0">
+            <a href="https://www.facebook.com/craquebitume"                           class="footer__btn d-flex justify-content-end align-items-center text-center mx-4 mt-3"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/craque.bitume/"                        class="footer__btn d-flex justify-content-end align-items-center text-center mx-4 mt-3"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/@craque-bitumeobnl4387"                  class="footer__btn d-flex justify-content-end align-items-center text-center mx-4 mt-3"><i class="bi bi-youtube"></i></a>
+            <a href="https://craquebitume.org/products/faites-un-don-a-craque-bitume" class="footer__btn d-flex justify-content-end align-items-center text-center mx-4 mt-3"><i class="bi bi-cash-coin"></i></a>
+            <a href="https://maps.app.goo.gl/16J4zraB6vR6eccZ9"                       class="footer__btn d-flex justify-content-end align-items-center text-center mx-4 mt-3"><i class="bi bi-geo-alt"></i></a>
+            <a href="https://craquebitume.org/"                                       class="footer__btn d-flex justify-content-end align-items-center text-center mx-4 mt-3"><i class="bi bi-box-arrow-up-right"></i></a>
+          </div>
+          <p class="sous-section telephone mt-4"><i class="bi bi-telephone-inbound-fill"></i>+1 (418) 523-4580</p>
         </div>  
 
         <!-- <a href="https://maps.app.goo.gl/16J4zraB6vR6eccZ9" class="adresse"><p class="sous-section adresse">Centre des opérations : 435 Rue du Roi, Québec, QC G1K 2X1</p></a> -->
@@ -194,7 +245,7 @@
       </div>
 
 
-      <div class="row"><div class="ligne-design"></div></div>
+      <div class="row"><div class="ligne-design my-1"></div></div>
       
 
       <div class="row">
@@ -213,12 +264,14 @@
           <a class="d-flex align-items-center justify-content-center col-3 col-lg-1" href="https://www.saintsuave.com/"><img class="logo sponsor" src="./sources/medias/footer/logo_partenaire_jaune/saint-suave.png" alt="saint-suave"></a>
         </div>
       </div>
-      <div class="copyright d-flex justify-content-center align-content-center text-center mt-4">
+      <div class="copyright d-flex justify-content-center align-content-center text-center mt-2">
         <p class="credit text-body-secondary sous-section mb-0">&copy; 2023, Craque-Bitume, TFT</p>
       </div>
     </section>
   </footer>
 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="./scripts/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"

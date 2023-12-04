@@ -1,7 +1,8 @@
 <?php 
 /**
- * 	Template Name: À propos
- * 	Identique à page, mais avec une barre latérale
+ * 	Template Name: details formations
+ * 	Template Post Type: detail formation, articles, post, page
+ *
  */
 
 get_header(); // Affiche header.php
@@ -19,6 +20,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 		<?php endif; ?>
 		
 		<?php the_content(); // Contenu principal de la page ?>
+		<h3>hello</hello>
 	</article>
 <?php endwhile; // Fermeture de la boucle
 

@@ -46,6 +46,10 @@ body {
 main {
   position: relative;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 h5 {
@@ -70,6 +74,13 @@ h6 {
   border: 1px solid #E7C762;
   color: #F5EDD8;
   font-size: 15px;
+}
+.description_generique_texte {
+  max-width: 1920px;
+}
+
+.max-width {
+  max-width: 1920px;
 }
 
 /* ----------------- SECTION PAGE ACCUEIL ----------------------- */
@@ -291,6 +302,8 @@ h6 {
   border-radius: 15px;
   height: 150px;
   max-width: 600px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 @media (min-width: 1199px) {
   .nouvelle__carte {
@@ -339,6 +352,8 @@ h6 {
   height: 40px;
   padding: 0px;
   font-size: 18px !important;
+  max-width: 150px;
+  margin-bottom: 20px;
 }
 .services__container #voirPlusButton:hover {
   background-color: #E7C762;
@@ -520,11 +535,11 @@ a.nouvelle_link {
 }
 
 body {
-  background-color: #354E38;
+  background-color: #354e38;
 }
 
 .nouvelle-individuel__container {
-  margin: 15px auto;
+  margin: 25px auto;
   display: flex;
   flex-direction: column;
   width: 90vw;
@@ -537,10 +552,10 @@ body {
   flex-direction: column;
   width: 100%;
   background-image: url();
-  background-color: #E7C762;
+  background-color: #e7c762;
   border-radius: 18px;
   padding: 10px 25px;
-  color: #354E38;
+  color: #354e38;
   background-image: url(/assets/img/hero_picturedetail_nouvelle.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -572,16 +587,16 @@ body {
 /*styles pour la section info de details de nouvelles */
 .nouvelles-individuel__info {
   display: flex;
-  margin-top: 15px;
+  margin-top: 25px;
   width: 100%;
   align-self: center;
 }
 
 .nouvelle-individuel__info-title {
   font-size: 25px;
-  background-color: #E7C762;
+  background-color: #e7c762;
   border-radius: 18px;
-  color: #354E38;
+  color: #354e38;
   padding: 10px 55px 10px 25px;
   width: 80%;
   min-width: 523px;
@@ -599,8 +614,8 @@ body {
   transform: translateX(-15%);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  color: #354E38;
+  justify-content: space-evenly;
+  color: #354e38;
   margin-left: 20px;
   min-width: 250px;
 }
@@ -611,28 +626,58 @@ body {
 .nouvelles-individuel__top-card {
   padding: 15px;
   border-radius: 18px;
-  background-color: #F5EDD8;
+  background-color: #f5edd8;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition-property: transform, color, background-color;
+  transition-duration: 130ms;
+  transition-timing-function: ease-in-out;
+}
+
+.nouvelles-individuel__top-card:hover {
+  transform: scale(1.2);
+  color: #F5EDD8;
+  background-color: #E7C762;
+  fill: #F5EDD8;
 }
 
 .nouvelles-individuel__middle-card {
   padding: 15px;
   border-radius: 18px;
-  background-color: #F5EDD8;
+  background-color: #f5edd8;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition-property: transform, color, background-color;
+  transition-duration: 130ms;
+  transition-timing-function: ease-in-out;
+}
+
+.nouvelles-individuel__middle-card:hover {
+  transform: scale(1.2);
+  color: #F5EDD8;
+  background-color: #E7C762;
+  fill: #F5EDD8;
 }
 
 .nouvelles-individuel__bottom-card {
   padding: 15px;
   border-radius: 18px;
-  background-color: #F5EDD8;
+  background-color: #f5edd8;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition-property: transform, color, background-color;
+  transition-duration: 130ms;
+  transition-timing-function: ease-in-out;
+}
+
+.nouvelles-individuel__bottom-card:hover {
+  transform: scale(1.2);
+  color: #F5EDD8;
+  background-color: #E7C762;
+  fill: #F5EDD8;
 }
 
 .nouvelles-individuel__info-card-left {
@@ -650,6 +695,82 @@ body {
 
 .svg__formateur {
   width: 50px;
+}
+
+/* section prix de la nouvelles/achat */
+.nouvelle-individuel__prix {
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: #E7C762;
+  font-weight: bold;
+}
+.nouvelle-individuel__prix h3 {
+  font-weight: bolder;
+  font-size: 45;
+}
+
+.prix-left__row-two {
+  color: #F5EDD8;
+}
+
+.prix-left__row-three {
+  color: #F5EDD8;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+.prix-left__row-three .nouvelle-individuel__qte {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 35%;
+}
+.prix-left__row-three .nouvelle-individuel__stock {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 25%;
+}
+.prix-left__row-three .nouvelle-individuel__stock .nbr-stock-restant {
+  background-color: #E7C762;
+  width: 20%;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.prix-left__row-four {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #354e38;
+  background-color: #F5EDD8;
+  border-radius: 15px;
+  width: 95%;
+  padding: 11px 15px 10px 15px;
+  transition: background-color 100ms ease-in-out;
+}
+.prix-left__row-four p {
+  margin-bottom: 0;
+}
+
+.prix-left__row-four:hover {
+  background-color: #E7C762;
+}
+.prix-left__row-four:hover p {
+  color: #F5EDD8;
+}
+.prix-left__row-four:hover .panier-achat {
+  stroke: #F5EDD8;
+  fill: #F5EDD8;
+}
+
+.nouvelle-individuel__prix-right {
+  width: 35vw;
+  border-radius: 18px;
+  background-image: url("../assets/img/service_hero_pic.jpg");
+  background-size: cover;
+  background-position: center center;
 }
 
 /* ----------------- SECTION index TÉMOIGNAGE ---------------------- */
@@ -704,6 +825,7 @@ body {
 .temoignage__personne {
   margin: 0px;
   border-radius: 20px;
+  max-width: 330px;
 }
 .temoignage__image {
   border-radius: 20px 20px 0px 0px;
@@ -722,6 +844,10 @@ body {
 /* ---------------------- SECTION DON --------------------------- */
 .section_donation {
   position: relative;
+}
+
+.max-width-donation {
+  max-width: 1920px;
 }
 
 .donation {
@@ -785,6 +911,7 @@ body {
 /*Changer la classe ici pour autre chose*/
 .section__services2 {
   display: grid;
+  gap: 20px;
   border-color: #e7c762;
   border-width: 10px;
   border-style: double;
@@ -796,7 +923,31 @@ body {
 .service__card__img {
   object-fit: fill;
   background: rgb(53, 78, 56);
-  background: linear-gradient(0deg, rgb(53, 78, 56) 3%, rgba(53, 78, 56, 0) 100%);
+}
+
+.service__hero {
+  width: 100vw;
+  height: 40vh;
+  background-image: url(../assets/img/service_hero_pic.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  font-weight: bold;
+  font-size: 65px;
+  font-family: "rubik";
+}
+
+.service__hero-title {
+  font-weight: bold;
+  font-size: 65px;
+  font-family: "rubik";
+}
+
+.service__container__description {
+  max-width: 1920px;
+  color: #E7C762;
+  font-family: "rubik";
+  background-color: #8d3126;
 }
 
 .fade-in-image {
@@ -815,8 +966,16 @@ body {
     opacity: 1;
   }
 }
-.service__all_cards {
+.service__all__cards {
   text-align: center;
+}
+
+.service__all__cards:hover {
+  text-align: center;
+  background-color: #569e5d;
+}
+
+.service__card__all__cards__container {
   border-radius: 10%;
 }
 
@@ -858,6 +1017,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-image: url(../assets/img/service_hero_pic.jpg);
   font-family: "rubik";
   font-weight: bold;
   padding: 40px;
@@ -873,6 +1033,19 @@ body {
   font-weight: bold;
   color: #F5EDD8;
   font-size: 40px;
+}
+
+/* ----------------- SECTION PAGE DETAIL SERVICE ----------------------- */
+.titre_detail_service {
+  color: #E7C762;
+}
+
+.titre_case_service {
+  color: #F5EDD8 !important;
+}
+
+.p_case_service {
+  color: #E5A484 !important;
 }
 
 /* ----------------- SECTION PAGE HISTOIRE ---------------------- */
@@ -926,10 +1099,9 @@ body {
 
 .line {
   width: 5px;
-  height: 0;
   background-color: #F5EDD8;
   position: fixed;
-  top: 100px;
+  top: 50px;
   left: 5%;
   transition: height 0.3s;
 }
@@ -989,7 +1161,7 @@ a.equipe_href {
   justify-content: center;
 }
 .equipe_modal_img {
-  width: 100%;
+  width: 80%;
   max-width: 50vw;
   border-radius: 40%;
 }
@@ -1019,6 +1191,7 @@ a.equipe_href {
   color: #F5EDD8;
   font-family: "rubik";
   font-weight: bold;
+  margin: 0px auto;
 }
 .propos__text {
   color: #8D3126;
@@ -1082,7 +1255,7 @@ div.accordion-item {
 .erreur__hero {
   width: 100vw;
   height: 40vh;
-  background-image: url(../sources/medias/erreur_404/montagne_vide_erreur.jpg);
+  background: linear-gradient(to left top, #8D3126, #354e38);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -1111,73 +1284,47 @@ div.accordion-item {
   color: #F5EDD8;
 }
 
-@media screen and (max-width: 375px) {
-  .fleche {
-    width: 300px;
+.faq__hero {
+  width: 100vw;
+  height: 40vh;
+  background-image: url(../sources/medias/a_propos/volet_vie_associative.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .svg_plante {
+    width: 20%;
     z-index: 1;
-  }
-  .fleche.rouge {
     position: absolute;
-    top: 3vh;
-    left: -8vw;
-  }
-  .fleche.jaune {
-    position: absolute;
-    top: 3vh;
-    left: -10vw;
-  }
-  .fleche.vert {
-    position: absolute;
-    top: 3vh;
-    left: -12vw;
+    right: 0px;
+    top: 32vh;
   }
 }
-@media screen and (min-width: 376px) {
-  .fleche {
-    width: 300px;
+@media screen and (min-width: 768px) {
+  .svg_plante {
+    width: 20%;
     z-index: 1;
-  }
-  .fleche.rouge {
     position: absolute;
-    top: 2vh;
-    left: -6vw;
-  }
-  .fleche.jaune {
-    position: absolute;
-    top: 2vh;
-    left: -5vw;
-  }
-  .fleche.vert {
-    position: absolute;
-    top: 2vh;
-    left: -7vw;
+    right: 0px;
+    top: 20vh;
   }
 }
 @media screen and (min-width: 1200px) {
-  .fleche {
-    width: 300px;
+  .svg_plante {
+    width: 15%;
     z-index: 1;
-  }
-  .fleche.rouge {
     position: absolute;
-    top: 0vh;
-    left: -4vw;
-  }
-  .fleche.jaune {
-    position: absolute;
-    top: 0vh;
-    left: -3vw;
-  }
-  .fleche.vert {
-    position: absolute;
-    top: 0vh;
-    left: -2vw;
+    right: 30vw;
+    top: 15vh;
   }
 }
 /*-----------------------Footer----------------------------------*/
 .section__footer {
   width: 100%;
   position: relative;
+  max-width: 1920px;
 }
 
 .grid {
@@ -1233,14 +1380,18 @@ div.accordion-item {
 }
 
 footer {
-  border: 5px solid #E7C762;
-  border-bottom: none;
-  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  opacity: 0.8;
   bottom: 0px;
   position: relative;
   width: 100%;
   height: auto;
-  background-color: #354e38;
+  border-radius: 15px 15px 0px 0px;
+  border: 1px solid #E7C762;
+  border-bottom: none;
+  background-color: #8D3126;
 }
 footer a {
   text-decoration: none;
@@ -1263,8 +1414,11 @@ footer a:hover {
   border: 2px solid #E7C762;
   background-color: #E7C762;
   color: white;
-  font-size: 40px;
-  aspect-ratio: 16/1;
+  font-size: 25px;
+  max-width: 40px;
+  max-height: 40px !important;
+  width: 100%;
+  height: 100% !important;
   border-radius: 10px;
   font-family: "Times New Roman", Times, serif;
 }
@@ -1301,6 +1455,10 @@ footer a:hover {
   color: white;
 }
 
+.footer-nav {
+  min-width: 180px;
+}
+
 .footer__logo {
   width: 100%;
 }
@@ -1327,10 +1485,9 @@ footer a:hover {
 }
 
 .ligne-design {
-  background-color: #8D3126;
+  background-color: #E7C762;
   width: 80vw;
   height: 0.1vh;
-  margin: 25px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1380,4 +1537,4 @@ footer a:hover {
     justify-content: center;
     flex-direction: column;
   }
-}/*# sourceMappingURL=styles.css.map */
+}

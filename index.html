@@ -50,11 +50,11 @@
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-dark navbar-expand-lg justify-content-end align-items-center fixed-top py-0">
-      <div class="container-fluid justify-content-space-between align-items-center">
+      <div class="container-fluid justify-content-space-between align-items-center max-width">
         <a class="navbar-brand " href="index.html">
           <img src="./sources/logo.png" class="logo">
         </a>
-        <button class="navbar-toggler menu" type="button" width="20%" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Affichage/masquage de la navigation">
+        <button class="navbar-toggler menu hamburger_menu" type="button" width="20%" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Affichage/masquage de la navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -74,37 +74,39 @@
     </nav>
 
     <!-------------- HERO --------------->
-    <section id="hero" class="accueil container-fluid hero row d-flex justify-content-evenly justify-content-xl-center">
-      <div class="cote gauche pt-5 d-flex flex-column col-11 col-sm-8 col-md-9 col-xl-5 justify-content-center justify-content-md-center justify-content-lg-center  align-items-md-center align-items-center align-items-xl-start">
-        <h1 class="text-center text-md-start text-overflow hero-titre-1">La nature et</h1>
-        <h1 class="text-center text-md-start text-overflow hero-titre-2">l'écocitoyenneté</h1>
-        <h1 class="text-center text-md-start text-lg-start text-overflow hero-titre-3">vous interpellent?</h1>
-        <h4 class="text-center text-md-center text-md-start text-lg-start text-overflow pb-3 hero-titre-4" >Craque-Bitume, un collectif d'écologie urbain, pourrait bien être l'écho à votre appel !</h4>
-        <button class="collectif d-flex flex-column col-9 col-md-5 col-lg-5 hero-btn">Un collectif, qu'est-ce que ça mange en hivers?</button>
-      </div>
-      <div class="cote droit d-flex flex-column col-11 col-sm-8 col-md-7 col-xl-4 justify-content-start justify-content-lg-center align-items-start align-items-lg-start">
-        <div class="container">
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="./sources/medias/accueil/carroussel_1.jpg" alt="Image 1"></div>
-              <div class="swiper-slide"><img src="./sources/medias/accueil/carroussel_2.jpg" alt="Image 2"></div>
-              <div class="swiper-slide"><img src="./sources/medias/accueil/carroussel_3.jpg" alt="Image 3"></div>
-              <div class="swiper-slide"><img src="./sources/medias/accueil/carroussel_4.jpg" alt="Image 4"></div>
-              <div class="swiper-slide"><img src="./sources/medias/accueil/carroussel_5.jpg" alt="Image 5"></div>
+    <section id="hero" class="accueil max-width container-fluid hero row d-flex justify-content-evenly justify-content-xl-center">
+      
+        <div class="cote gauche pt-5 d-flex flex-column col-11 col-sm-8 col-md-9 col-xl-5 justify-content-center justify-content-md-center justify-content-lg-center  align-items-md-center align-items-center align-items-xl-start">
+          <h1 class="text-center text-md-start text-overflow hero-titre-1">La nature et</h1>
+          <h1 class="text-center text-md-start text-overflow hero-titre-2">l'écocitoyenneté</h1>
+          <h1 class="text-center text-md-start text-lg-start text-overflow hero-titre-3">vous interpellent?</h1>
+          <h4 class="text-center text-md-center text-md-start text-lg-start text-overflow pb-3 hero-titre-4" >Craque-Bitume, un collectif d'écologie urbain, pourrait bien être l'écho à votre appel !</h4>
+          <button class="collectif d-flex flex-column col-9 col-md-5 col-lg-5 hero-btn">Un collectif, qu'est-ce que ça mange en hivers?</button>
+        </div>
+        <div class="cote droit d-flex flex-column col-11 col-sm-8 col-md-7 col-xl-4 justify-content-start justify-content-lg-center align-items-start align-items-lg-start">
+          <div class="container">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./sources/medias/accueil/carroussel_1.jpg" alt="Image 1"></div>
+                <div class="swiper-slide"><img src="./sources/medias/accueil/carroussel_2.jpg" alt="Image 2"></div>
+                <div class="swiper-slide"><img src="./sources/medias/accueil/carroussel_3.jpg" alt="Image 3"></div>
+                <div class="swiper-slide"><img src="./sources/medias/accueil/carroussel_4.jpg" alt="Image 4"></div>
+                <div class="swiper-slide"><img src="./sources/medias/accueil/carroussel_5.jpg" alt="Image 5"></div>
+              </div>
+              <!-- Pagination -->
+              <div class="swiper-pagination d-flex justify-content-between"></div>
+              <!-- Navigation (boutons précédent/suivant) -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
-            <!-- Pagination -->
-            <div class="swiper-pagination d-flex justify-content-between"></div>
-            <!-- Navigation (boutons précédent/suivant) -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
           </div>
         </div>
-      </div>
+
     </section>  
 
     <!-------------- SERVICES --------------->
     <section class="section__services container-fluid d-flex justify-content-center align-items-center">
-      <div class="services__container services p-5 col-xl-11 ">
+      <div class="services__container services p-5 col-xl-11 max-width">
       <h1 class="section__titre pb-1 text-center">Nos Services</h1>
         <div class="row d-flex flex-column flex-md-row justify-content-evenly align-items-center align-items-md-start">
 
@@ -133,14 +135,14 @@
 <!-------------- NOUVELLES --------------->
 
     <section class="section__services container-fluid d-flex justify-content-center align-items-center">
-      <div class="services__container row d-flex services p-5 col-xl-11 justify-content-center align-content-center">
+      <div class="services__container row d-flex services p-sm-3 p-md-5 col-xl-11 justify-content-center align-content-center max-width">
         <h1 class="section__titre pb-1 text-center">Nouvelles formations</h1>
 
-        <div class="row d-flex m-0 p-0 flex-md-row justify-content-evenly align-items-center align-items-md-start">
+        <div class="row d-flex m-0 p-0 flex-md-row justify-content-center align-items-center align-items-md-start">
 
-          <div class="nouvelle__carte nouvelle my-4  col-12 col-md-8 col-lg-5 col-xl-4 d-flex justify-content-center justify-content-lg-start align-items-center">
+          <div class="nouvelle__carte nouvelle my-4 col-12 col-md-8 col-lg-5 col-xl-4 d-flex justify-content-center justify-content-lg-start align-items-center">
             <div class="col p-0 m-0 d-flex justify-content-evenly flex">
-              <div class="col-2 col-xl-1 d-flex justify-content-center align-content-center text-center"><i class="bi bi-rocket-takeoff-fill nouvelle__logo logo__atelier"></i></div>
+              <div class="col-2 col-xl-1 mr-2 d-flex justify-content-center align-content-center text-center"><i class="bi bi-rocket-takeoff-fill nouvelle__logo logo__atelier"></i></div>
               <div class="col-10 p-0">
                 <h6 class="my-1">Lancement Atelier<i class="nouvelle__icon bi bi-fire"></i></h6>
                 <p>Nous lancons un atelier de fabrication de pain sans gluten.    <i class="bi bi-arrow-up-right"></i></p>
@@ -148,9 +150,9 @@
             </div>
           </div>
 
-          <div class="nouvelle__carte nouvelle my-4  col-12 col-md-8 col-lg-5 col-xl-4 d-flex justify-content-center justify-content-lg-start align-items-center">
+          <div class="nouvelle__carte nouvelle my-4 col-12 col-md-8 col-lg-5 col-xl-4 d-flex justify-content-center justify-content-lg-start align-items-center">
             <div class="col p-0 m-0 d-flex justify-content-evenly flex">
-              <div class="col-2 col-xl-1 d-flex justify-content-center align-content-center text-center"><i class="bi bi-recycle nouvelle__logo logo__atelier"></i></div>
+              <div class="col-2 col-xl-1 mr-2 d-flex justify-content-center align-content-center text-center"><i class="bi bi-recycle nouvelle__logo logo__atelier"></i></div>
               <div class="col-10  p-0">
                 <h6 class="my-1">Diminution gaspillage</h6>
                 <p>Comment diminuer son gaspillage alimentaire avec des recette adapté.    <i class="bi bi-arrow-up-right"></i></p>
@@ -158,9 +160,9 @@
             </div>
           </div>
 
-          <div class="nouvelle__carte nouvelle my-4  col-12 col-md-8 col-lg-5 col-xl-4 d-flex justify-content-center justify-content-lg-start align-items-center">
+          <div class="nouvelle__carte nouvelle my-4 col-12 col-md-8 col-lg-5 col-xl-4 d-flex justify-content-center justify-content-lg-start align-items-center">
             <div class="col p-0 m-0 d-flex justify-content-evenly flex">
-              <div class="col-2 col-xl-1 d-flex justify-content-center align-content-center text-center"><i class="bi bi-egg-fill nouvelle__logo logo__atelier col-1 d-flex"></i></div>
+              <div class="col-2 col-xl-1 mr-2 d-flex justify-content-center align-content-center text-center"><i class="bi bi-egg-fill nouvelle__logo logo__atelier col-1 d-flex"></i></div>
               <div class="col-10  p-0">
                 <h6 class="my-1">La pêche écolo</h6>
                 <p>Article sur le pêcheur écologiste. Comment entretenir nos écosystème.    <i class="bi bi-arrow-up-right"></i></p>
@@ -168,9 +170,9 @@
             </div>
           </div>
 
-          <div class="nouvelle__carte none nouvelle my-4  col-12 col-md-8 col-lg-5 col-xl-4 d-flex justify-content-center justify-content-lg-start align-items-center">
+          <div class="nouvelle__carte none nouvelle my-4 col-12 col-md-8 col-lg-5 col-xl-4 d-flex justify-content-center justify-content-lg-start align-items-center">
             <div class="col p-0 m-0 d-flex justify-content-evenly flex">
-              <div class="col-2 col-xl-1 d-flex justify-content-center align-content-center text-center"><i class="bi bi-rocket-takeoff-fill nouvelle__logo logo__atelier"></i></div>
+              <div class="col-2 col-xl-1 mr-2 d-flex justify-content-center align-content-center text-center"><i class="bi bi-rocket-takeoff-fill nouvelle__logo logo__atelier"></i></div>
               <div class="col-10 p-0">
                 <h6 class="my-1">Lancement Atelier<i class="nouvelle__icon bi bi-fire"></i></h6>
                 <p>Nous lancons un atelier de fabrication de pain sans gluten.    <i class="bi bi-arrow-up-right"></i></p>
@@ -180,7 +182,7 @@
 
           <div class="nouvelle__carte none nouvelle my-4  col-12 col-md-8 col-lg-5 col-xl-4 d-flex justify-content-center justify-content-lg-start align-items-center">
             <div class="col p-0 m-0 d-flex justify-content-evenly flex">
-              <div class="col-2 col-xl-1 d-flex justify-content-center align-content-center text-center"><i class="bi bi-recycle nouvelle__logo logo__atelier"></i></div>
+              <div class="col-2 col-xl-1 mr-2 d-flex justify-content-center align-content-center text-center"><i class="bi bi-recycle nouvelle__logo logo__atelier"></i></div>
               <div class="col-10  p-0">
                 <h6 class="my-1">Diminution gaspillage</h6>
                 <p>Comment diminuer son gaspillage alimentaire avec des recette adapté.    <i class="bi bi-arrow-up-right"></i></p>
@@ -190,16 +192,16 @@
 
           <div class="nouvelle__carte none nouvelle my-4  col-12 col-md-8 col-lg-5 col-xl-4 d-flex justify-content-center justify-content-lg-start align-items-center">
             <div class="col p-0 m-0 d-flex justify-content-evenly flex">
-              <div class="col-2 col-xl-1 d-flex justify-content-center align-content-center text-center"><i class="bi bi-egg-fill nouvelle__logo logo__atelier col-1 d-flex"></i></div>
+              <div class="col-2 col-xl-1 mr-2 d-flex justify-content-center align-content-center text-center"><i class="bi bi-egg-fill nouvelle__logo logo__atelier col-1 d-flex"></i></div>
               <div class="col-10  p-0">
                 <h6 class="my-1">La pêche écolo</h6>
                 <p>Article sur le pêcheur écologiste. Comment entretenir nos écosystème.    <i class="bi bi-arrow-up-right"></i></p>
               </div>
             </div>
           </div>
-          <div class="nouvelle__carte none nouvelle my-4  col-12 col-md-8 col-lg-5 col-xl-4 d-flex justify-content-center justify-content-lg-start align-items-center">
+          <div class="nouvelle__carte none nouvelle my-4 col-12 col-md-8 col-lg-5 col-xl-4 d-flex justify-content-center justify-content-lg-start align-items-center">
             <div class="col p-0 m-0 d-flex justify-content-evenly flex">
-              <div class="col-2 col-xl-1 d-flex justify-content-center align-content-center text-center"><i class="bi bi-rocket-takeoff-fill nouvelle__logo logo__atelier"></i></div>
+              <div class="col-2 col-xl-1 mr-2 d-flex justify-content-center align-content-center text-center"><i class="bi bi-rocket-takeoff-fill nouvelle__logo logo__atelier"></i></div>
               <div class="col-10 p-0">
                 <h6 class="my-1">Lancement Atelier<i class="nouvelle__icon bi bi-fire"></i></h6>
                 <p>Nous lancons un atelier de fabrication de pain sans gluten.    <i class="bi bi-arrow-up-right"></i></p>
@@ -207,9 +209,9 @@
             </div>
           </div>
 
-          <div class="nouvelle__carte none nouvelle my-4  col-12 col-md-8 col-lg-5 col-xl-4 d-flex justify-content-center justify-content-lg-start align-items-center">
+          <div class="nouvelle__carte none nouvelle my-4 col-12 col-md-8 col-lg-5 col-xl-4 d-flex justify-content-center justify-content-lg-start align-items-center">
             <div class="col p-0 m-0 d-flex justify-content-evenly flex">
-              <div class="col-2 col-xl-1 d-flex justify-content-center align-content-center text-center"><i class="bi bi-recycle nouvelle__logo logo__atelier"></i></div>
+              <div class="col-2 col-xl-1 mr-2 d-flex justify-content-center align-content-center text-center"><i class="bi bi-recycle nouvelle__logo logo__atelier"></i></div>
               <div class="col-10  p-0">
                 <h6 class="my-1">Diminution gaspillage</h6>
                 <p>Comment diminuer son gaspillage alimentaire avec des recette adapté.    <i class="bi bi-arrow-up-right"></i></p>
@@ -219,7 +221,7 @@
 
           <div class="nouvelle__carte none nouvelle my-4  col-12 col-md-8 col-lg-5 col-xl-4 d-flex justify-content-center justify-content-lg-start align-items-center">
             <div class="col p-0 m-0 d-flex justify-content-evenly flex">
-              <div class="col-2 col-xl-1 d-flex justify-content-center align-content-center text-center"><i class="bi bi-egg-fill nouvelle__logo logo__atelier col-1 d-flex"></i></div>
+              <div class="col-2 col-xl-1 mr-2 d-flex justify-content-center align-content-center text-center"><i class="bi bi-egg-fill nouvelle__logo logo__atelier col-1 d-flex"></i></div>
               <div class="col-10  p-0">
                 <h6 class="my-1">La pêche écolo</h6>
                 <p>Article sur le pêcheur écologiste. Comment entretenir nos écosystème.    <i class="bi bi-arrow-up-right"></i></p>
@@ -238,24 +240,24 @@
 <!-------------- TÉMOIGNAGE --------------->
 
     <section id="simple-list-item-3" class="section-testimonials  container-fluid d-flex justify-content-center align-items-center">
-      <div class="col-xl-11 testimonials row mt-8 d-flex flex-column justify-content-center align-items-center align-content-center">
+      <div class="col-xl-11 max-width testimonials row mt-8 d-flex flex-column justify-content-center align-items-center align-content-center max-width">
       <div class="row">
         <h2 class="text-center mb-4 mt-5 section__titre mx-0">Témoignages</h2>
         <h5 class="text-center mb-4 px-0 mx-0">Voici le témoignage d'une personne qui partage son expérience avec notre équipe</h3>
       </div>
-      <div class="temoignage__personne d-flex my-4 m-sm-3 m-md-0 my-md-3 my-lg-4 my-xl-5 col-12 col-sm-9 col-lg-6 col-xl-4 justify-content-center align-items-center align-items-md-start">
+
+      <div class="temoignage__personne d-flex my-4 m-sm-3 m-md-0 my-md-3 my-lg-4 my-xl-5 justify-content-center align-items-center align-items-md-start">
         <div class="temoignage__card people">
           <img class="temoignage__image card-img-top" src="./assets/portrait/portrait-3.jpg" alt="portrait-3">
           <i class="bi bi-chat-right-quote temoignage__quote"></i>
           <div class="card-body container-fluid">
-            
             <h6 class="temoignage__texte card-text text-center text-lg-start">Le collectif Craque-Bitume est un lieu d'apprentissage continu. J'ai acquis des compétences précieuses en matière d'écologie urbaine et j'ai contribué à des projets qui ont un impact réel.</h6>
             <br>
             <h5 class="temoignage__nom card-title text-center text-lg-end">Gabrielle S.</h5>
             <h5 class="temoignage__description description text-center text-lg-end">Québec</h5>
           </div>
         </div>
-    </div>
+      </div>
       
     </div>
   </section>
@@ -263,7 +265,7 @@
 
   <!-------------- Donation --------------->
   <section class="section_donation container-fluid d-flex justify-content-center align-items-center">
-    <div class="services__container row d-flex donation p-5 col-xl-11 justify-content-center align-content-center">
+    <div class="services__container row d-flex donation p-5 col-xl-11 justify-content-center align-content-center max-width-donation">
       <h1 class="section__titre pb-1 text-center">Donation</h1>
       <div class="col d-flex flex-column donation__column justify-content-center align-content-center">
         <div class="col-12 pb-5 d-flex justify-content-center align-items-center">
@@ -292,10 +294,10 @@
             <a href="https://craquebitume.org/products/faites-un-don-a-craque-bitume?variant=42587564540080" type="button" class="d-flex col-12 justify-content-end btn btn-outline-warning btn-lg ml-lg-2 mt-2 mt-lg-0 text-center">10$</a>
           </div>
           <div class="donation__button col-4 col-md-3 col-lg-2 col-xl-1 d-flex justify-content-center align-content-center">
-            <a href="https://craquebitume.org/products/faites-un-don-a-craque-bitume?variant=42587564605616" type="button" class="d-flex col-12 justify-content-end btn btn-outline-warning btn-lg ml-lg-2 mt-2 mt-lg-0 text-center">15$</a>
+            <a href="https://craquebitume.org/products/faites-un-don-a-craque-bitume?variant=42587564605616" type="button" class="d-flex col-12 justify-content-end btn btn-outline-warning btn-lg ml-lg-2 mt-2 mt-lg-0 text-center">20$</a>
           </div>
           <div class="donation__button col-4 col-md-3 col-lg-2 col-xl-1 d-flex justify-content-center align-content-center">
-            <a href="https://craquebitume.org/products/faites-un-don-a-craque-bitume?variant=42587564671152" type="button" class="d-flex col-12 justify-content-end btn btn-outline-warning btn-lg ml-lg-2 mt-2 mt-lg-0 text-center">20$</a>
+            <a href="https://craquebitume.org/products/faites-un-don-a-craque-bitume?variant=42587564671152" type="button" class="d-flex col-12 justify-content-end btn btn-outline-warning btn-lg ml-lg-2 mt-2 mt-lg-0 text-center">50$</a>
           </div>
           <div class="donation__button col-4 col-md-3 col-lg-2 col-xl-1 d-flex justify-content-center align-content-center">
             <a href="https://craquebitume.org/products/faites-un-don-a-craque-bitume" type="button" class="d-flex col-12 justify-content-end btn btn-outline-warning btn-lg ml-lg-2 mt-2 mt-lg-0 text-center">Autre</a>
@@ -337,51 +339,54 @@
 
       <section class="section__footer container-fluid d-flex flex-column">
 
-        <div class="row colonne--haut d-flex justify-content-evenly align-items-start">
+        <div class="row flex-xl-row colonne--haut d-flex justify-content-evenly align-items-start">
 
-          <div class="col-12 col-xl-1 mb-2 mt-5 d-flex flex-column align-items-center">
-            <a href="index.html" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"><img class="footer__logo " src="./sources/logo.png" alt="Logo"></a>
-          </div>
-
-
-          <div class="col-12 col-sm-4 col-md-3 col-xl-1 mb-2 pt-4 d-flex flex-column align-items-center align-content-start">
-            <a href="./2nouvelles.html"> <h5 class="section">Nouvelles</h5></a>
-            <a href="./2nouvelles.html" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">Actualités</p></a>
-          </div>
-  
-          <div class="col-12 col-sm-4 col-md-3 col-xl-1 mb-2 pt-4 d-flex flex-column align-items-center">
-            <a href="./3services.html"><h5 class="section">Services</h5></a>
-            <a href="./3services.html" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">Jardin</p></a>
-            <a href="./3services.html" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">Composte</p></a>
-          </div>
           
-          <div class="col-12 col-sm-4 col-md-3 col-xl-1 mb-2 pt-4 d-flex flex-column align-items-center">
-            <a href="./4equipe.html"><h5 class="section">Équipes</h5></a>
-            <a href="./4equipe.html" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">Notre équipe</p></a>
-            <a href="./4equipe.html" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">Joindre l'équipe</p></a>
-          </div>
-  
-          <div class="col-12 col-sm-4 col-md-3 col-xl-1 mb-2 pt-4 d-flex flex-column align-items-center">
-            <a href="./5histoire.html"><h5 class="section">Histoire</h5></a>
-            <a href="#" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">Notre histoire</p></a>
-          </div>
 
-          <div class="col-12 col-sm-4 col-md-3 col-xl-1 mb-2 pt-4 d-flex flex-column align-items-center">
-            <a href="./6propos.html"><h5 class="section">À Propos</h5></a>
-            <a href="./6propos.html" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">FAQ</p></a>
-          </div>
+          <div class="row col-12 col-sm-11 col-md-9 col-lg-9 col-xl-8 d-flex justify-content-center align-content-center align-items-centers text-center flex-wrap">
 
-          <div class="col-12 col-md-9 col-xl-4 mb-2 pt-4  d-flex flex-column align-items-center">
-            <h5 class="section px-2 ">Joingnez-vous à une bonne cause !</h5>
-            <div class="d-flex flex-wrap flex-lg-row justify-content-evenly sociaux mt-3  mt-xl-0">
-              <a href="https://www.facebook.com/craquebitume"                           class="footer__btn d-flex  justify-content-end align-items-center text-center mx-4 mt-3"><i class="bi bi-facebook"></i></a>
-              <a href="https://www.instagram.com/craque.bitume/"                        class="footer__btn d-flex  justify-content-end align-items-center text-center mx-4 mt-3"><i class="bi bi-instagram"></i></a>
-              <a href="https://www.youtube.com/@craque-bitumeobnl4387"                  class="footer__btn d-flex  justify-content-end align-items-center text-center mx-4 mt-3"><i class="bi bi-youtube"></i></a>
-              <a href="https://craquebitume.org/products/faites-un-don-a-craque-bitume" class="footer__btn d-flex  justify-content-end align-items-center text-center mx-4 mt-3"><i class="bi bi-cash-coin"></i></a>
-              <a href="https://maps.app.goo.gl/16J4zraB6vR6eccZ9"                       class="footer__btn d-flex  justify-content-end align-items-center text-center mx-4 mt-3"><i class="bi bi-geo-alt"></i></a>
-              <a href="https://craquebitume.org/"                                       class="footer__btn d-flex  justify-content-end align-items-center text-center mx-4 mt-3"><i class="bi bi-box-arrow-up-right"></i></a>
+            <div class="footer-nav col-12 col-md-4 col-lg-3 col-xl-1 mb-2 mt-5 d-flex flex-column align-items-center">
+              <a href="index.html" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"><img class="footer__logo " src="./sources/logo.png" alt="Logo"></a>
             </div>
-            <p class="sous-section telephone mt-4"><i class="bi bi-telephone-inbound-fill"></i>        +1 (418) 523-4580</p>
+
+            <div class="footer-nav col-12 col-md-4 col-lg-4 col-xl-2 mb-2 mt-5 d-flex flex-column align-items-center align-content-start">
+              <a href="./2nouvelles.html"> <h5 class="section">Nouvelles</h5></a>
+              <a href="./2nouvelles.html" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">Actualités</p></a>
+            </div>
+          
+            <div class="footer-nav col-12 col-md-4 col-lg-4 col-xl-2 mb-2 mt-5 d-flex flex-column align-items-center">
+              <a href="./3services.html"><h5 class="section">Services</h5></a>
+              <a href="./3services.html" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">Jardin</p></a>
+              <a href="./3services.html" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">Composte</p></a>
+            </div>
+
+            <div class="footer-nav col-12 col-md-4 col-lg-4 col-xl-2 mb-2 mt-5 d-flex flex-column align-items-center">
+              <a href="./4equipe.html"><h5 class="section">Équipes</h5></a>
+              <a href="./4equipe.html" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">Notre équipe</p></a>
+              <a href="./4equipe.html" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">Joindre l'équipe</p></a>
+            </div>
+          
+            <div class="footer-nav col-12 col-md-4 col-lg-4 col-xl-2 mb-2 mt-5 d-flex flex-column align-items-center">
+              <a href="./5histoire.html"><h5 class="section">Histoire</h5></a>
+              <a href="#" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">Notre histoire</p></a>
+            </div>
+
+            <div class="footer-nav col-12 col-md-4 col-lg-4 col-xl-2 mb-2 mt-5 d-flex flex-column align-items-center">
+              <a href="./6propos.html"><h5 class="section">À Propos</h5></a>
+              <a href="./6propos.html" class="nav-link p-0 text-body-secondary sous-section"><p class="footer_sous_texte">FAQ</p></a>
+            </div>
+          </div>
+          <div class="col-12 col-md-9 col-xl-4 mb-2 pt-4  d-flex flex-column align-items-center">
+            <h5 class="section px-2 col-11 ">Joingnez-vous à une bonne cause !</h5>
+            <div class="d-flex flex-wrap flex-lg-row justify-content-center sociaux mt-3  mt-xl-0">
+              <a href="https://www.facebook.com/craquebitume"                           class="footer__btn d-flex justify-content-end align-items-center text-center mx-4 mt-3"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/craque.bitume/"                        class="footer__btn d-flex justify-content-end align-items-center text-center mx-4 mt-3"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.youtube.com/@craque-bitumeobnl4387"                  class="footer__btn d-flex justify-content-end align-items-center text-center mx-4 mt-3"><i class="bi bi-youtube"></i></a>
+              <a href="https://craquebitume.org/products/faites-un-don-a-craque-bitume" class="footer__btn d-flex justify-content-end align-items-center text-center mx-4 mt-3"><i class="bi bi-cash-coin"></i></a>
+              <a href="https://maps.app.goo.gl/16J4zraB6vR6eccZ9"                       class="footer__btn d-flex justify-content-end align-items-center text-center mx-4 mt-3"><i class="bi bi-geo-alt"></i></a>
+              <a href="https://craquebitume.org/"                                       class="footer__btn d-flex justify-content-end align-items-center text-center mx-4 mt-3"><i class="bi bi-box-arrow-up-right"></i></a>
+            </div>
+            <p class="sous-section telephone mt-4"><i class="bi bi-telephone-inbound-fill"></i>+1 (418) 523-4580</p>
           </div>  
 
           <!-- <a href="https://maps.app.goo.gl/16J4zraB6vR6eccZ9" class="adresse"><p class="sous-section adresse">Centre des opérations : 435 Rue du Roi, Québec, QC G1K 2X1</p></a> -->
@@ -390,7 +395,7 @@
         </div>
 
 
-        <div class="row"><div class="ligne-design"></div></div>
+        <div class="row"><div class="ligne-design my-1"></div></div>
         
 
         <div class="row">
@@ -409,7 +414,7 @@
             <a class="d-flex align-items-center justify-content-center col-3 col-lg-1" href="https://www.saintsuave.com/"><img class="logo sponsor" src="./sources/medias/footer/logo_partenaire_jaune/saint-suave.png" alt="saint-suave"></a>
           </div>
         </div>
-        <div class="copyright d-flex justify-content-center align-content-center text-center mt-4">
+        <div class="copyright d-flex justify-content-center align-content-center text-center mt-2">
           <p class="credit text-body-secondary sous-section mb-0">&copy; 2023, Craque-Bitume, TFT</p>
         </div>
       </section>
