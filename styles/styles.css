@@ -878,50 +878,64 @@ body {
 }
 
 /* ----------------- SECTION PAGE SERVICE ----------------------- */
-.section__services {
+.img-service {
+  margin-bottom: 35px;
+  width: 20vw;
+}
+
+/*.section__services {
   width: 100%;
-  background-color: #354e38;
+  background-color: variables.$foret;
   margin-bottom: 40vh;
 }
 
 .services {
   text-align: center;
-  background: linear-gradient(to bottom, #8D3126 70px, transparent 0%);
+  background: linear-gradient(to bottom, variables.$red 70px, transparent 0%);
   border-radius: 50px 50px 50px 50px;
   box-shadow: 2px 2px 7px 0px #182c1a;
-}
-.services____container {
-  color: #000;
-  font-family: "rubik";
-  width: 90%;
-  width: 100%;
-  height: 100%;
-}
-.services__logo {
-  background-color: #E7C762;
-  width: 80px;
-  padding: 15px;
-  border-radius: 40%;
-}
-.services__container p {
-  text-align: center;
-  color: white;
-}
 
-/*Changer la classe ici pour autre chose*/
+  &____container {
+    color: variables.$black;
+    font-family: "rubik";
+    width: 90%;
+    width: 100%;
+    height: 100%;
+  }
+  &__logo {
+    background-color: variables.$sable;
+    width: 80px;
+    padding: 15px;
+    border-radius: 40%;
+  }
+  &__container {
+    p {
+      text-align: center;
+      color: variables.$white;
+    }
+  }
+}
+/*Changer la classe ici pour autre chose
 .section__services2 {
   display: grid;
   gap: 20px;
+
   border-color: #e7c762;
   border-width: 10px;
   border-style: double;
   border-radius: 2%;
+
   background: rgb(35, 49, 14);
-  background: linear-gradient(90deg, rgb(35, 49, 14) 0%, rgba(0, 66, 15, 0.3393558107) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(35, 49, 14, 1) 0%,
+    rgba(0, 66, 15, 0.3393558106836485) 100%
+  );
 }
 
 .service__card__img {
   object-fit: fill;
+
   background: rgb(53, 78, 56);
 }
 
@@ -932,20 +946,24 @@ body {
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+
   font-weight: bold;
   font-size: 65px;
+
   font-family: "rubik";
 }
 
 .service__hero-title {
   font-weight: bold;
   font-size: 65px;
+
   font-family: "rubik";
 }
 
 .service__container__description {
   max-width: 1920px;
-  color: #E7C762;
+
+  color: variables.$sable;
   font-family: "rubik";
   background-color: #8d3126;
 }
@@ -966,8 +984,10 @@ body {
     opacity: 1;
   }
 }
+
 .service__all__cards {
   text-align: center;
+
 }
 
 .service__all__cards:hover {
@@ -981,6 +1001,7 @@ body {
 
 .service__card__body {
   text-align: center;
+
   background-color: #182c1a;
 }
 
@@ -989,41 +1010,50 @@ body {
 }
 
 .service__card__title {
-  color: #E7C762;
+  color: variables.$sable;
   font-family: "rubik";
 }
 
 .service__card__text {
-  color: #F5EDD8;
+  color: variables.$creme;
   font-family: "rubik";
 }
 
 .service__btn {
-  color: #E7C762;
-  background-color: #354e38;
+  color: variables.$sable;
+  background-color: variables.$foret;
   border: none;
 }
 
 .service__btn:hover {
-  color: #354e38;
-  background-color: #E7C762;
+  color: variables.$foret;
+  background-color: variables.$sable;
 }
 
 .service_acueil {
-  color: #E7C762;
+  color: variables.$sable;
+
   background: rgb(121, 9, 9);
-  background: radial-gradient(circle, rgba(121, 9, 9, 0.3085434858) 0%, rgba(0, 66, 15, 0.3393558107) 100%);
+  background: radial-gradient(
+    circle,
+    rgba(121, 9, 9, 0.3085434857536765) 0%,
+    rgba(0, 66, 15, 0.3393558106836485) 100%
+  );
   border-radius: 2%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-image: url(../assets/img/service_hero_pic.jpg);
+
   font-family: "rubik";
   font-weight: bold;
+
   padding: 40px;
+
   position: relative;
   display: block;
   top: 10px;
+
   width: 100vw;
   height: 40hv;
 }
@@ -1031,10 +1061,11 @@ body {
 .service_acueil h1 {
   font-family: "rubik";
   font-weight: bold;
-  color: #F5EDD8;
-  font-size: 40px;
-}
 
+  color: variables.$creme;
+
+  font-size: 40px;
+}*/
 /* ----------------- SECTION PAGE DETAIL SERVICE ----------------------- */
 .titre_detail_service {
   color: #E7C762;
@@ -1383,7 +1414,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  opacity: 0.8;
+  opacity: 1;
   bottom: 0px;
   position: relative;
   width: 100%;
