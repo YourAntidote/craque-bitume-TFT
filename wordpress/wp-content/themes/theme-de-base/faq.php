@@ -13,7 +13,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 <main>
 	<!------------------------------------ HERO ----------------------------------------------------->
 		<div class="contenu-news">
-      <div class="histoire__hero">
+      <div class="histoire__hero" style="background-image: url(<?php the_post_thumbnail_url(); ?>)">
         <h1 class="nouvelles__hero-title"><?php the_title(); ?></h1>
       </div>
 
@@ -30,9 +30,12 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
     <div class="accordion accordion_faq m-5">
 		
 		<?php
-  $projects = new WP_Query('post_type=question');
+  $projects = new WP_Query(array(
+    'post_type'      => 'question',
+    'posts_per_page' => -1, // Affiche tous les posts
+  ));
   while ($projects->have_posts()) : $projects->the_post(); 
-?>
+?> 	
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne<?php the_ID(); ?>"

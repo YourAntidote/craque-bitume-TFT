@@ -14,7 +14,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 	<main>
 	<!------------------------------------ HERO ----------------------------------------------------->
 		<div class="contenu-news">
-      <div class="histoire__hero">
+      <div class="propos__hero" style="background-image: url(<?php the_post_thumbnail_url(); ?>)">
         <h1 class="nouvelles__hero-title"><?php the_title(); ?></h1>
       </div>
 
@@ -24,9 +24,9 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
       <p class="description_generique_texte text-justify"><?php the_content(); ?></p>
     </div>
 </div>
+			</div>
 
 			<!------------------------------------ Texte à propos ----------------------------------------------------->
-<h2 class="equipe__title ml-5">Informations sur nous</h2>
 
 			<?php
   $projects = new WP_Query('post_type=information');
@@ -38,7 +38,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
       <h1 class="display-4 fw-bold lh-1 apropos_section_titre"><?php the_title(); ?></h1>
       <div class="lead apropos_section_texte">
 		  <?php the_content(); ?>
-		</div> >
+		</div>
     </div>
     <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
 		<?php the_post_thumbnail('medium_large', array('class' => 'rounded-lg-3')); ?>
@@ -55,9 +55,12 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
     <div class="accordion accordion_faq m-5">
 		
 		<?php
-  $projects = new WP_Query('post_type=question');
+  $projects = new WP_Query(array(
+    'post_type'      => 'question',
+    'posts_per_page' => -1, // Affiche tous les posts
+  ));
   while ($projects->have_posts()) : $projects->the_post(); 
-?>
+?> 	
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne<?php the_ID(); ?>"

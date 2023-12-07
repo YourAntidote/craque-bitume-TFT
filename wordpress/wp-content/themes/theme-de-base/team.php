@@ -28,7 +28,6 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 			
 		
 <!------------------------------ MEMBRES ----------------------------------------------------->
-			<h2 class="equipe__title my-4 max-width text-center">Notre équipe</h2>
       <div class="container">
 		  <div class="row justify-content-evenly">
 			  

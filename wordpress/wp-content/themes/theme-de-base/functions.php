@@ -6,6 +6,29 @@
 
 /* --------------------------------
 Ajoute les vignettes dans les posts de type Article */
+
+/* -------------------------------------------------------- */
+/* --------- Cours 7 - 11 et 13 octobre 2023  ------------- */
+/* --- Ajout de filtres utilitaires pour Bootstrap NavBar --*/
+/* --- Pour ajouter classe sur les <li> --- */
+function add_menu_list_item_class($classes, $item, $args) {
+    if (property_exists($args, 'list_item_class')) {
+        $classes[] = $args->list_item_class;
+    }
+    return $classes;
+}
+add_filter('nav_menu_css_class', 'add_menu_list_item_class', 1, 3);
+
+// Ajout des classes aux éléments <a>
+function add_additional_class_on_a($classes, $item, $args){
+    if (isset($args->link_item_class)) {
+        $classes['class'] = $args->link_item_class;
+    }
+    return $classes;
+}
+add_filter('nav_menu_link_attributes', 'add_additional_class_on_a', 1, 3);
+
+
 add_theme_support( 'post-thumbnails' );
 
 
