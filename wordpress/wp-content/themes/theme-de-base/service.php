@@ -31,6 +31,66 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
   $projects = new WP_Query('post_type=service-unique');
 ?>	
 
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary m-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Apercu
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content equipe_modal">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 equipe_modal_titre" id="exampleModalLabel">
+			<?php
+$next_post = get_adjacent_post(false, '', false);
+$prev_post = get_adjacent_post(false, '', true);
+
+if ($next_post) {
+
+    // Output the content of the next post
+    echo apply_filters('the_title', $next_post->post_title);
+} else if ($prev_post){
+
+    // Output the content of the next post
+    echo apply_filters('the_title', $prev_post->post_title);
+}else {
+    // If there is no next post, you can provide a default message or do something else
+    echo '<p>No more posts to display.</p>';
+}
+			?> </h1>
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body equipe_modal_body">
+		  <p class="text-center equipe_modal_texte">
+		  <?php
+$next_post = get_adjacent_post(false, '', false);
+$prev_post = get_adjacent_post(false, '', true);
+
+if ($next_post) {
+
+    // Output the content of the next post
+    echo apply_filters('the_content', $next_post->post_content);
+} else if ($prev_post){
+
+    // Output the content of the next post
+    echo apply_filters('the_content', $prev_post->post_content);
+}else {
+    // If there is no next post, you can provide a default message or do something else
+    echo '<p>No more posts to display.</p>';
+}
+			  ?> </p>
+      </div>
+      <div class="modal-footer">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 
 
 <?php endwhile; // Fermeture de la boucle
