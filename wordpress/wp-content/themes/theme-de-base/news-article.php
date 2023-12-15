@@ -18,14 +18,20 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 			
 <!-------------------contenu html------------------>
       <div class="contenu-news">
+		  
+		  <div class="card description_generique d-flex justify-content-center align-content-center align-items-center">
+      <div class="card-body max-width ">
+      <p class="description_generique_texte text-justify"><?php the_title(); ?></p>
+    </div>
+</div>
 
 
         <!--section contennant le contenu de la page dynamique-->
-        <div class="nouvelle-individuel__container">
+        <div itemscope itemtype="https://schema.org/Course" class="nouvelle-individuel__container">
           <div class="nouvelle-individuel__hero">
             <div class="nouvelle-individuel__hero-top">
               <p class="nouvelle__type">Nouvelle</p>
-              <p class="nouvelle__date"> <?php the_date() ?></p>
+              <p itemprop="about" class="nouvelle__date"> <?php the_date() ?></p>
             </div>
              <div class="nouvelle-individuel__hero-middle">
                <p class="nouvelle-individuel__title">Nouvelle</br> Formation</p>
@@ -39,9 +45,9 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
         </svg>
             </div>
           </div>
-          <div class="nouvelles-individuel__info">
+          <div itemscope itemtype="https://schema.org/Course" class="nouvelles-individuel__info">
             <div class="nouvelle-individuel__info-title">
-              <h2><?php the_title()?></h2>
+              <h2 itemprop="about"><?php the_title()?></h2>
               <p class="nouvelle-individuel__info-description"> <?php the_content() ?> </p>
             </div>
             <div class="nouvelle-individuel__side-info">
@@ -50,7 +56,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                    <h3 class="nouvelles-individuel__info-card-title">
                     Heure
                   </h3>
-                  <p class="nouvelles-individuel__info-card-detail">
+                  <p itemprop="hasCourseInstance" class="nouvelles-individuel__info-card-detail">
                     <?php the_field("heure_formation")?>
                   </p>
                 </div>
@@ -66,7 +72,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                    <h3 class="nouvelles-individuel__info-card-title">
                     Lieu
                   </h3>
-                  <p class="nouvelles-individuel__info-card-detail">
+                  <p itemprop="contentLocation" class="nouvelles-individuel__info-card-detail">
                     <?php the_field("lieu_formation")?>
                   </p>
                 </div>
@@ -82,7 +88,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                    <h3 class="nouvelles-individuel__info-card-title">
                     Formateur
                   </h3>
-                  <p class="nouvelles-individuel__info-card-detail">
+                  <p itemprop="author" class="nouvelles-individuel__info-card-detail">
                     <?php the_field("formateur")?>
                   </p>
                 </div>
@@ -95,10 +101,11 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
               </div>
               </div>
             </div>
-          <div class="nouvelle-individuel__prix">
-            <div class="nouvelles-individuel__prix-left">         
-                <h3 class="prix-left__row-one"> <?php the_title()?> </h3>
-                <p class="prix-left__row-two"><?php the_field("prix_formation") ?>$</p>
+          <div itemscope itemtype="https://schema.org/Course" class="nouvelle-individuel__prix">
+            <div class="nouvelles-individuel__prix-left">   
+				<div class="prix-left__row-one">
+              <h3 class="prix-left__row-one"> <?php the_title()?> </h3></div>
+                <p itemprop="about" class="prix-left__row-two"><?php the_field("prix_formation") ?>$</p>
                 <div class="prix-left__row-three">
                   <div class="nouvelle-individuel__qte">
                     <p class="qte">Nombre de participants:</p>
@@ -112,7 +119,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                   </div>
                   <div class="nouvelle-individuel__stock">
                     <p class="stock">place restante</p>
-                    <p class="nbr-stock-restant"><?php the_field("place_restant")?></p>
+                    <p itemprop="audience" class="nbr-stock-restant"><?php the_field("place_restant")?></p>
                   </div>  
                 </div>
                 <div class="prix-left__row-four">
@@ -127,6 +134,63 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
               <span> </span>
               </div>
           </div>
+
+<button type="button" class="btn btn-primary m-5 nouvelle_card text-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Apercu
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content equipe_modal">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 equipe_modal_titre" id="exampleModalLabel">
+			<?php
+$next_post = get_adjacent_post(false, '', false);
+$prev_post = get_adjacent_post(false, '', true);
+
+if ($next_post) {
+
+    // Output the content of the next post
+    echo apply_filters('the_title', $next_post->post_title);
+} else if ($prev_post){
+
+    // Output the content of the next post
+    echo apply_filters('the_title', $prev_post->post_title);
+}else {
+    // If there is no next post, you can provide a default message or do something else
+    echo '<p>No more posts to display.</p>';
+}
+			?> </h1>
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body equipe_modal_body">
+		  <div class="text-center equipe_modal_texte">
+		  <?php
+$next_post = get_adjacent_post(false, '', false);
+$prev_post = get_adjacent_post(false, '', true);
+
+if ($next_post) {
+
+    // Output the content of the next post
+    echo apply_filters('the_content', $next_post->post_content);
+} else if ($prev_post){
+
+    // Output the content of the next post
+    echo apply_filters('the_content', $prev_post->post_content);
+}else {
+    // If there is no next post, you can provide a default message or do something else
+    echo '<p>No more posts to display.</p>';
+}
+			  ?> </div>
+      </div>
+      <div class="modal-footer">
+
+      </div>
+    </div>
+  </div>
+</div>
 
 			
 			

@@ -11,6 +11,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 	while ( have_posts() ) : the_post(); 
 ?>
 
+
 <!------------------------------------ HERO ----------------------------------------------------->
 		<div class="contenu-news">
       <div class="histoire__hero" style="background-image: url(<?php the_post_thumbnail_url(); ?>)">
@@ -25,13 +26,23 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 </div>
 </div>
 
+        <!--section contennant les cartes de nouvelles-->
+        <div class="nouvelles__filter-bar">
+          <select class="custom-select filter-dropdown">
+            <option selected>Filtrer par</option>
+            <option value="date">Date récente</option>
+            <option value="alphabetical">Alphabetique</option>
+          </select>
+        </div>
+
 <div class="nouvelle__card-list">
 	<?php
   $projects = new WP_Query(array(
     'post_type'      => 'detail-formation',
-    'posts_per_page' => -1, // Affiche tous les posts
+    'posts_per_page' => -1, 
   ));
-  while ($projects->have_posts()) : $projects->the_post(); 
+  while ($projects->have_posts() && $current_post_count < $posts_per_page) : $projects->the_post(); 
+    $current_post_count++;
 ?> 	
 	
           <a href="<?php the_permalink(); ?>" class="nouvelle_link">
@@ -58,10 +69,54 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
   endwhile; 
   wp_reset_postdata(); 
 ?>
-	
-	</div>
-		
-	
+
+	<?php if ($projects->post_count > $current_post_count) : ?>
+    <button class="load-more-posts" id="load-more-posts">Voir plus</button>
+<?php endif; ?>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var postsContainer = document.querySelector('.nouvelle__card-list');
+    var posts = document.querySelectorAll('.nouvelle_link');
+    var postsPerPage = 3;
+    var currentPage = 2; // Commencez à partir de la deuxième page pour afficher les 10 premiers posts
+
+    function showNextPosts() {
+      var startIndex = (currentPage - 1) * postsPerPage;
+      var endIndex = startIndex + postsPerPage;
+
+      for (var i = startIndex; i < endIndex; i++) {
+        if (posts[i]) {
+          posts[i].style.display = 'block';
+        }
+      }
+
+      currentPage++;
+
+      if (endIndex >= posts.length) {
+        document.getElementById('load-more-posts').style.display = 'none';
+      }
+    }
+
+    document.getElementById('load-more-posts').addEventListener('click', showNextPosts);
+
+    // Initialisez la visibilité des premiers posts
+    for (var i = 0; i < 6; i++) {
+      if (posts[i]) {
+        posts[i].style.display = 'block';
+      }
+    }
+
+    // Masquez les autres posts au début
+    for (var i = 6; i < posts.length; i++) {
+      if (posts[i]) {
+        posts[i].style.display = 'none';
+      }
+    }
+  });
+</script>
+
+
+
 
 
 <?php endwhile; // Fermeture de la boucle
